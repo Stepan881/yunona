@@ -1,18 +1,25 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+  
+# OS
+.DS_Store
+Thumbs.db
 
-# Other files and folders
-.settings/
+# IDE
+.idea
+.vscode
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Node
+node_modules/
+node_modules
+npm-debug.log
+yarn-error.log
+lerna-debug.log
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+todo.md
+coverage
+
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+npm-debug.*
