@@ -1,3 +1,8 @@
 .logo {
-  
+  &__image {
+    min-width: auto;
+    width: 160px;
+
+    object-fit: contain;
+  }
 }

@@ -1,5 +1,4 @@
 .first-screen {
-
   position: relative;
 
   &__bg {
@@ -14,7 +13,13 @@
     transform: translate(0, -50%);
     color: $color-head;
     max-width: 793px;
-    margin: 28px 0 0 0;
+
+
+    @media (max-width: $md) {
+      padding: 0 5%;
+      top: 53%;
+    }
+    
   }
   &__head {
     font-family: 'Yeseva One', cursive;
@@ -23,6 +28,16 @@
     font-size: 108px;
     line-height: 116px;
     margin: 5px 0 26px;
+
+    @media (max-width: $lg) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    @media (max-width: $md) {
+      margin: 16px 0 23px;
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
   &__text {
     font-family: 'Raleway', sans-serif;
@@ -30,5 +45,83 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
+
+    @media (max-width: $lg) {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media (max-width: $md) {
+
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
+
+  &__arrow {
+    position: absolute;
+    bottom: 80px;
+    left: 49.4%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+    transition: 0.3s;
+    &:hover {
+      .first-screen__icon {
+        rect {
+          transition: 0.3s;
+          stroke: $color-btn;  
+        }
+  
+      }
+      .first-screen__down {
+        transition: 0.3s;
+        color: $color-btn;  
+      }
+    }
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+  &__down {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-head;
+    margin-bottom: 13px;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    
+  }
+  &__chat {
+    position: fixed;
+    bottom: 44px;
+    right: 15px;
+    transition: 0.3s;
+
+    &:hover {
+      z-index: 10;
+      path {
+        transition: 0.3s;
+        fill: $color-head;
+      }
+      rect {
+        transition: 0.3s;
+        fill: $color-btn;
+      }
+    }
+    @media (max-width: $sm) {
+      bottom: 62px;
+      right: 0px;
+    }
+  }
+
 }

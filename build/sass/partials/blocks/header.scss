@@ -6,6 +6,8 @@
   background: linear-gradient(180deg, #532A13 0%, rgba(83, 42, 19, 0.927083) 21.88%, rgba(83, 42, 19, 0) 100%);
   filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
 
+
+
   &__wrapper {
     display: flex;
     min-height: 74px;
@@ -24,9 +26,12 @@
     }
     @media (max-width: $md) {// $md: 768px;
       max-width: 526px;
+      min-height: 88px;
     }
     @media (max-width: $sm) {// $sm: 576px;
-      max-width: 320px;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 5%;
     }
 
   } 
@@ -36,6 +41,9 @@
     max-width: 175px;
     width: 100%;
     margin-right: 25px;
+    @media (max-width: $sm) {// $sm: 576px;
+      margin-right: 20px;
+    }
   }
   
   &__tel-wrapper {
@@ -63,8 +71,9 @@
   }
   &__number-svg {
     display: none;
+    
     @media (max-width: $lg) {
-      display: block;
+      display: flex;
       transition: 0.3s;
       &:hover {
         transition: 0.3s;
@@ -97,6 +106,34 @@
       color: $color-btn;
       border: 2px solid $color-btn;
     }
+
+    @media (max-width: $lg) {
+      min-width: auto;
+      margin: 0 28px;
+      border: none;
+      &:hover {
+        border: none;
+        path {
+          transition: 0.3s;
+          fill: $color-btn;
+        }
+      }
+    }
+
+    @media (max-width: $sm) {
+      margin: 0 10px;
+    }
+  }
+  &__tel-text {
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+  &__tel-icon {
+    display: none;
+    @media (max-width: $lg) {
+      display: block;
+    }
   }
 
   &__social-wrapper {
@@ -107,10 +144,16 @@
     @media (max-width: $lg) {
       margin-left: 10px;
     }
+    @media (max-width: $md) {
+      display: none;
+    }
   }
   
   &__language-wrapper {
     margin-left: 30px;
+    @media (max-width: $md) {
+      display: none;
+    }
   }
   
   &__wrapper-menu {
@@ -120,6 +163,9 @@
     }
     @media (max-width: $lg) {
       margin-left: 20px;
+    }
+    @media (max-width: $md) {
+      margin: 0;
     }
   }
 
