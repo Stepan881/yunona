@@ -1,0 +1,26 @@
+.social {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      path {
+        transition: 0.3s;
+        fill: $color-btn;
+      }
+    }
+  }
+  a {
+    padding: 8px;
+    display: flex;
+    min-width: 28px;
+    min-height: 28px;
+    @media (max-width: $lg) {
+      padding: 2px;
+    }
+  }
+}

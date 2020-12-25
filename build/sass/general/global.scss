@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $color;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Yeseva One', cursive;
+  font-size: 18px;
+  line-height: 24px;
+
+
+  @media (min-width: $xl) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  @media (min-width: $sm) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+body {
+  position: relative;    
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+h1, h2, h3, p{
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: $color;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-head {
+  margin: 0 auto;
+  max-width: $xxl;
+  // background-color: black;
+
+  @media (max-width: $xxl) {
+    max-width: $xl;
+    // background-color: lime;
+  }
+
+  @media (max-width: $xl) {
+    max-width: $lg;
+    // background-color: yellow;
+  }
+  @media (max-width: $lg) {
+    max-width: $md;
+    // background-color: salmon;
+  }
+  @media (max-width: $md) {
+    max-width: $sm;
+    // background-color: red;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+    // background-color: green;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+
+  @media (max-width: $xxl) {
+    max-width: $xl;
+  }
+  @media (max-width: $xl) {
+    max-width: $lg;
+  }
+  @media (max-width: $lg) {
+    max-width: $md;
+  }
+  @media (max-width: $md) {
+    max-width: $sm;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+
+  }
+}
+
+@media (max-width: $xxl) {// $xxl: 1400px;
+}
+@media (max-width: $xl) {// $xl: 1200px;
+}
+@media (max-width: $lg) {// $lg: 992px;
+}
+@media (max-width: $md) {// $md: 768px;
+}
+@media (max-width: $sm) {// $sm: 576px;
+}

@@ -1,0 +1,13 @@
+.nav-menu {
+
+
+  ul {
+    display: none;
+    position: absolute;
+    width: 315px;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    background: $bg-color-menu;
+  }
+}

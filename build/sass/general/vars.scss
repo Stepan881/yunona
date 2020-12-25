@@ -1,13 +1,14 @@
-$xs: 0;
+$xs: 320px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
-
-
-
+$color: #252525;
+$color-head: #ffffff;
+$color-btn: #EDB362;
+$bg-color-menu: #F6F3EE;
 // User variables:
 // $accent: #748DAC;
 // $red-simple: #E74A36;
@@ -20,4 +21,3 @@ $xxl: 1400px;
 // // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
 // // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
 // // Default variables: node_modules/bootstrap/scss/_variables.scss
-
