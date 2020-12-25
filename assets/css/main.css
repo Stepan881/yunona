@@ -337,11 +337,11 @@ button {
 
 .main-nav {
   position: fixed;
-  right: 128px;
+  right: 147px;
   width: auto;
   min-width: 200px;
   z-index: 2;
-  top: 50vh;
+  top: 53vh;
   -webkit-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
 }
@@ -393,6 +393,7 @@ button {
   transition: 0.3s;
   border: 4px solid #EDB362;
   background: #EDB362;
+  margin-right: -2px;
 }
 
 .main-nav__text {
@@ -464,7 +465,7 @@ button {
   transform: translate(0, -50%);
   color: #ffffff;
   max-width: 793px;
-  margin: 13px 0 0 0;
+  margin: 28px 0 0 0;
 }
 
 .first-screen__head {
