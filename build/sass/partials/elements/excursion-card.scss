@@ -1,0 +1,196 @@
+.excursion-card {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); 
+  border-radius: 20px;
+  transition: 0.3s;
+  // min-height: 456px;
+  margin: 0 0 30px 0;
+  max-width: 555px;
+
+  @media (max-width: $xxl) {// $xxl: 1400px;
+  }
+  @media (max-width: $xl) {// $xl: 1200px;
+    max-width: 485px;
+  }
+  @media (max-width: $lg) {// $lg: 992px;
+    max-width: 365px;
+  }
+  @media (max-width: $md) {// $md: 768px;
+    max-width: 100%;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__bonuses {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    
+  }
+  
+  &__icon {
+    margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $color-head;
+
+    &--percent {
+      background: #2AB662;
+    }
+
+    &--new {
+      background: #812AB6 ;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &--star {
+      background: #DA1F1F;
+    }
+
+  }
+
+
+  &__wrapper-img {  
+    // max-height: 264px;
+  }
+
+  &__img {
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+    box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
+
+  }
+
+  &__content {
+    padding: 8px 20px 30px 20px;  
+  }
+
+  &__options {
+   
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: $c-benefit;
+
+    span {
+      margin-right: 40px;
+      white-space: nowrap;
+    }
+  }
+
+  &__day {
+
+  }
+
+  &__time {
+
+  }
+
+  &__price-underline {
+    text-decoration: line-through;
+    margin-right: 20px !important;
+  }
+
+  &__price-new {
+
+  }
+
+  &__price-gold {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-btn;
+  }
+
+  &__head {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 12px;
+  }
+
+  &__buttons {
+    margin: 32px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    height: 38px;
+    background: none;
+    border: 1px solid $color-btn;
+    border-radius: 29px;
+    margin-right: 36px;
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      background: $color-btn;
+      border: 1px solid $color-btn;
+    }
+
+    @media (max-width: $sm) {// $sm: 576px;
+      margin-right: auto;
+      min-width: 100px;
+    } 
+  }
+
+  &__tobook {
+    min-width: 145px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-btn;
+    border: 1px solid $color-btn;
+    border-radius: 29px;
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      background: $color-btn-hover;
+      border: 1px solid $color-btn-hover;
+    }
+
+    @media (max-width: $sm) {// $sm: 576px;
+      margin-left: auto;
+      min-width: 120px;
+    } 
+  }
+
+}

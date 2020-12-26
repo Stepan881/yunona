@@ -1,0 +1,23 @@
+.excursion {
+  padding-bottom: 66px;
+
+
+  &__cards {
+    width: 100%;
+    margin-top: 84px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: $md) {// $md: 768px;
+      margin-top: 64px;
+    }
+  }
+
+  &__paginations {
+    width: 169px;
+    margin: 60px auto 0;
+  }
+}

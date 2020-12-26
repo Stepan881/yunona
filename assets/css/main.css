@@ -609,6 +609,7 @@ button {
   right: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .first-screen__chat:hover {
@@ -850,6 +851,223 @@ button {
   margin: auto -150px -50px auto;
 }
 
+.excursion {
+  padding-bottom: 66px;
+}
+
+.excursion__cards {
+  width: 100%;
+  margin-top: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.excursion__paginations {
+  width: 169px;
+  margin: 60px auto 0;
+}
+
+.excursion-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 0 30px 0;
+  max-width: 555px;
+}
+
+.excursion-card:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+}
+
+.excursion-card__wrapper {
+  position: relative;
+}
+
+.excursion-card__bonuses {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.excursion-card__icon {
+  margin-left: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.excursion-card__icon--percent {
+  background: #2AB662;
+}
+
+.excursion-card__icon--new {
+  background: #812AB6;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.excursion-card__icon--star {
+  background: #DA1F1F;
+}
+
+.excursion-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  -webkit-box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
+  box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
+}
+
+.excursion-card__content {
+  padding: 8px 20px 30px 20px;
+}
+
+.excursion-card__options {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #686868;
+}
+
+.excursion-card__options span {
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+.excursion-card__price-underline {
+  text-decoration: line-through;
+  margin-right: 20px !important;
+}
+
+.excursion-card__price-gold {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #EDB362;
+}
+
+.excursion-card__head {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.excursion-card__buttons {
+  margin: 32px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #252525;
+}
+
+.excursion-card__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 145px;
+  height: 38px;
+  background: none;
+  border: 1px solid #EDB362;
+  border-radius: 29px;
+  margin-right: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.excursion-card__details:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+}
+
+.excursion-card__tobook {
+  min-width: 145px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+  border-radius: 29px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.excursion-card__tobook:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #DF9B3B;
+  border: 1px solid #DF9B3B;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -909,6 +1127,10 @@ button {
 
   .location__content {
     max-width: 416px;
+  }
+
+  .excursion-card {
+    max-width: 485px;
   }
 }
 
@@ -1016,6 +1238,10 @@ button {
     -ms-flex-order: -1;
     order: -1;
   }
+
+  .excursion-card {
+    max-width: 365px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1083,6 +1309,14 @@ button {
     font-size: 36px;
     line-height: 44px;
   }
+
+  .excursion__cards {
+    margin-top: 64px;
+  }
+
+  .excursion-card {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1123,7 +1357,7 @@ button {
   }
 
   .first-screen__chat {
-    bottom: 62px;
+    bottom: 0px;
     right: 0px;
   }
 
@@ -1146,5 +1380,15 @@ button {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 26px auto 60px;
+  }
+
+  .excursion-card__details {
+    margin-right: auto;
+    min-width: 100px;
+  }
+
+  .excursion-card__tobook {
+    margin-left: auto;
+    min-width: 120px;
   }
 }
