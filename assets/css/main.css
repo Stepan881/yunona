@@ -92,6 +92,10 @@ button {
   top: -30px;
   width: 295px;
   max-height: 218px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: right top;
+  object-position: right top;
 }
 
 .container-head {
@@ -897,6 +901,7 @@ button {
   transition: 0.3s;
   margin: 0 0 30px 0;
   max-width: 555px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -910,6 +915,7 @@ button {
 .excursion-card__wrapper {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .excursion-card__bonuses {
@@ -975,11 +981,10 @@ button {
   height: 100%;
   -webkit-box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
   box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
-  height: 100%;
 }
 
 .excursion-card__content {
-  padding: 8px 20px 30px 20px;
+  padding: 8px 20px 100px 20px;
 }
 
 .excursion-card__options {
@@ -1018,8 +1023,19 @@ button {
   margin-top: 12px;
 }
 
+.excursion-card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .excursion-card__buttons {
-  margin: 32px 0 0 0;
+  position: absolute;
+  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1050,7 +1066,7 @@ button {
   background: none;
   border: 1px solid #EDB362;
   border-radius: 29px;
-  margin-right: 36px;
+  margin-right: 24px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1090,7 +1106,6 @@ button {
 
 .excursion-card.horizon {
   max-width: 100%;
-  min-height: 356px;
 }
 
 .excursion-card.horizon .excursion-card__wrapper {
@@ -1121,7 +1136,11 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 36px 90px 36px 30px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 36px 90px 100px 30px;
 }
 
 .excursion-card.horizon .excursion-card__head {
@@ -1161,7 +1180,6 @@ button {
 
 .excursion-card.house {
   max-width: 31%;
-  min-height: 600px;
 }
 
 .excursion-card.house .excursion-card__cards {
@@ -1251,6 +1269,43 @@ button {
   margin: 60px auto 0;
 }
 
+.events {
+  background: #ffffff;
+}
+
+.events__btn-bottom {
+  margin: 80px auto 0;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 325px;
+  height: 48px;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.events__btn-bottom:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #DF9B3B;
+  border: 1px solid #DF9B3B;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -1314,6 +1369,10 @@ button {
 
   .excursion-card {
     max-width: 485px;
+  }
+
+  .excursion-card.house {
+    max-width: 48%;
   }
 }
 
@@ -1425,10 +1484,6 @@ button {
   .excursion-card {
     max-width: 365px;
   }
-
-  .excursion-card.house {
-    max-width: 48%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1531,7 +1586,6 @@ button {
 
   .excursion-card.house {
     max-width: 100%;
-    min-height: auto;
   }
 
   .excursion-card.house .excursion-card__wrapper-img {
@@ -1610,6 +1664,10 @@ button {
     margin: 26px auto 60px;
   }
 
+  .excursion-card__buttons {
+    width: calc(100% - 20px);
+  }
+
   .excursion-card__details {
     margin-right: 0;
     min-width: 0;
@@ -1625,10 +1683,10 @@ button {
   }
 
   .excursion-card.horizon .excursion-card__content {
-    padding: 8px 20px 30px;
+    padding: 8px 10px 100px;
   }
 
   .excursion-card.house .excursion-card__content {
-    padding: 8px 20px 30px;
+    padding: 8px 10px 100px;
   }
 }

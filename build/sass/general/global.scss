@@ -81,6 +81,9 @@ button {
   top: -30px;
   width: 295px;
   max-height: 218px;
+  object-fit: contain;
+  object-position: right top;
+
   @media (max-width: $md) {// $md: 768px;
     width: 120px;
     

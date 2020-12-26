@@ -1,0 +1,32 @@
+.events {
+
+  background: $color-head;
+
+  &__btn-bottom {
+    margin: 80px auto 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    width: 100%;
+    max-width: 325px;
+    height: 48px;
+
+    background: $color-btn;
+    border: 1px solid $color-btn;
+    border-radius: 30px;
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      background: $color-btn-hover;
+      border: 1px solid $color-btn-hover;
+    }
+  }
+}

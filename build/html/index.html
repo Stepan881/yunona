@@ -295,7 +295,7 @@
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
-              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "text": "Даты заездов: каждую субботу. ",
               "classname": "horizon"
             })
             
@@ -307,7 +307,7 @@
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
               "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)",
-              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», ",
               "classname": "horizon"
             })
             
@@ -355,7 +355,7 @@
               "underline": "",
               "new" : "1 000 ₽",
               "gold": "",
-              "head": "Локомотив — Енисей 14.12.2020",
+              "head": " Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020",
               "text": "",
               "classname": ""
             })
@@ -403,8 +403,7 @@
       </div>
     </section>   
 
-
-    <section class="tours hotels" id="tours">
+    <section class="tours hotels" id="hotels">
       <img class="section-icon" src="./assets/img/tours.svg" alt="tours">
       <div class="container">
         <h2 class="container__title">Гостиницы</h2>
@@ -423,7 +422,7 @@
               "new" : "",
               "gold": "",
               "head": "Вилла «Медведь»",
-              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "text": "Даты заездов: каждую субботу. ",
               "classname": "house"
             })
             
@@ -435,7 +434,7 @@
               "new" : "",
               "gold": "",
               "head": "Вилла «Медведь»",
-              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда».",
               "classname": "house"
             })
             
@@ -494,32 +493,185 @@
       </div> 
     </section>   
 
-
-
-
-
-
-
-
-
-
-
-
-    <section class="museums" id="museums">
+    <section class="activity museums" id="museums">
+      <img class="section-icon" src="./assets/img/museums.png" alt="car">
       <div class="container">
         <h2 class="container__title">Музеи</h2>
+        <div class="activity__wrapper">
+          <div class="activity__cards">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Музей Мирового океана",
+              "text": "",
+              "classname": ""
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Подводная лодка-музей Б-413 ",
+              "text": "",
+              "classname": ""
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Музей-квартира Альтес Хаус",
+              "text": "",
+              "classname": ""
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Музей Марципана",
+              "text": "",
+              "classname": ""
+            })
+          </div>
+          <div class="activity__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+        </div>
       </div>
     </section>   
-    <section class="restaurants" id="restaurants">
+
+    <section class="tours restaurants" id="restaurants">
+      <img class="section-icon" src="./assets/img/restaurants.png" alt="restaurants">
       <div class="container">
         <h2 class="container__title">Рестораны</h2>
-      </div>
+        <div class="tours__wrapper">
+          <div class="tours__nav">
+            @@include('./templates/components/sub-nav.html', {
+              "text" : ['Калининград', 'Побережье', 'Черняховск', 'Гусев']
+            })
+          </div>
+          <div class="tours__cards">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Зеленоградск",
+              "time": "Cредний чек 1 000 ₽",
+              "underline": "",
+              "new" : "",
+              "gold": "",
+              "head": "Вилла «Медведь»",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "house"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Зеленоградск",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Локомотив — Енисей 14.12.2020",
+              "text": "Даты заездов: каждую субботу. Тур в",
+              "classname": "house"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Зеленоградск",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Локомотив — Енисей 14.12.2020",
+              "text": "Даты заездов: каждую субботу. Тур в",
+              "classname": "house"
+            })
+          </div>
+          <div class="tours__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+        </div>
+      </div> 
     </section>   
-    <section class="events" id="events">
+
+ 
+    <section class="tours events" id="events">
+      <img class="section-icon" src="./assets/img/events.png" alt="events">
       <div class="container">
         <h2 class="container__title">События</h2>
-      </div>
+        <div class="tours__wrapper">
+          <div class="tours__cards">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/events-avatar.png",
+              "day" : "",
+              "time": "",
+              "underline": "",
+              "new" : "4 600 ₽ ",
+              "gold": "",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/events-avatar.png",
+              "day" : "",
+              "time": "",
+              "underline": "",
+              "new" : "4 600 ₽ ",
+              "gold": "",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/events-avatar.png",
+              "day" : "",
+              "time": "",
+              "underline": "",
+              "new" : "4 600 ₽ ",
+              "gold": "",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/events-avatar.png",
+              "day" : "",
+              "time": "",
+              "underline": "",
+              "new" : "4 600 ₽ ",
+              "gold": "",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+          </div>
+          <div class="tours__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+        </div>
+        <a class="events__btn-bottom" href="#">Все события в google календаре</a>
+      </div> 
     </section>   
+
+
     <section class="safety" id="safety">
       <div class="container">
         <h2 class="container__title">Безопасность</h2>
