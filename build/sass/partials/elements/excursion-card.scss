@@ -4,12 +4,10 @@
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); 
   border-radius: 20px;
   transition: 0.3s;
-  // min-height: 456px;
   margin: 0 0 30px 0;
   max-width: 555px;
+  overflow: hidden;
 
-  @media (max-width: $xxl) {// $xxl: 1400px;
-  }
   @media (max-width: $xl) {// $xl: 1200px;
     max-width: 485px;
   }
@@ -19,7 +17,6 @@
   @media (max-width: $md) {// $md: 768px;
     max-width: 100%;
   }
-
   &:hover {
     transition: 0.3s;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
@@ -68,11 +65,6 @@
 
   }
 
-
-  &__wrapper-img {  
-    // max-height: 264px;
-  }
-
   &__img {
     display: flex;
     object-fit: cover;
@@ -99,21 +91,9 @@
     }
   }
 
-  &__day {
-
-  }
-
-  &__time {
-
-  }
-
   &__price-underline {
     text-decoration: line-through;
     margin-right: 20px !important;
-  }
-
-  &__price-new {
-
   }
 
   &__price-gold {
@@ -192,5 +172,56 @@
       min-width: 120px;
     } 
   }
+}
 
+.excursion-card.horizon {
+  max-width: 100%;
+  min-height: 356px;
+  .excursion-card {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: $md) {// $md: 768px;
+        flex-direction: column;
+      }
+    }
+    &__bonuses {
+      left: 20px;
+      top: 20px;
+      @media (max-width: $md) {// $md: 768px;
+        left: auto;
+        right: 20px;
+      }
+    }
+    &__wrapper-img {
+      min-width: 50%;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 36px 90px 36px 30px;
+
+    }
+    &__head {
+      order: 0;
+      margin: 0;
+    }
+    &__options {
+      order: 1;
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 20px;
+      order: 2;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      flex: 1;
+    }
+    &__buttons {
+      order: 3;
+    }
+  }
 }

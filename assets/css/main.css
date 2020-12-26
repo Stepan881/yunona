@@ -86,6 +86,13 @@ button {
   background: #DF9B3B;
 }
 
+.section-icon {
+  position: absolute;
+  right: 3%;
+  top: -30px;
+  width: 295px;
+}
+
 .container-head {
   margin: 0 auto;
   max-width: 1400px;
@@ -889,6 +896,7 @@ button {
   transition: 0.3s;
   margin: 0 0 30px 0;
   max-width: 555px;
+  overflow: hidden;
 }
 
 .excursion-card:hover {
@@ -1068,6 +1076,96 @@ button {
   border: 1px solid #DF9B3B;
 }
 
+.excursion-card.horizon {
+  max-width: 100%;
+  min-height: 356px;
+}
+
+.excursion-card.horizon .excursion-card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.excursion-card.horizon .excursion-card__bonuses {
+  left: 20px;
+  top: 20px;
+}
+
+.excursion-card.horizon .excursion-card__wrapper-img {
+  min-width: 50%;
+}
+
+.excursion-card.horizon .excursion-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 36px 90px 36px 30px;
+}
+
+.excursion-card.horizon .excursion-card__head {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+  margin: 0;
+}
+
+.excursion-card.horizon .excursion-card__options {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-top: 20px;
+}
+
+.excursion-card.horizon .excursion-card__text {
+  margin-top: 20px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.excursion-card.horizon .excursion-card__buttons {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.tours {
+  position: relative;
+  background: #F6F3EE;
+  padding-bottom: 100px;
+}
+
+.tours__nav {
+  margin-top: 60px;
+}
+
+.tours__cards {
+  width: 100%;
+  margin-top: 84px;
+}
+
+.tours__paginations {
+  width: 169px;
+  margin: 60px auto 0;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -1245,6 +1343,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .section-icon {
+    width: 120px;
+  }
+
   .container-head {
     max-width: 100%;
   }
@@ -1316,6 +1418,22 @@ button {
 
   .excursion-card {
     max-width: 100%;
+  }
+
+  .excursion-card.horizon .excursion-card__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .excursion-card.horizon .excursion-card__bonuses {
+    left: auto;
+    right: 20px;
+  }
+
+  .tours__cards {
+    margin-top: 64px;
   }
 }
 

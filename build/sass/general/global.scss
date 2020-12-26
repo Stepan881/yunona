@@ -73,8 +73,17 @@ button {
     transition: 0.3s;
     background: $color-btn-hover;
   }
+}
 
-
+.section-icon {
+  position: absolute;
+  right: 3%;
+  top: -30px;
+  width: 295px;
+  @media (max-width: $md) {// $md: 768px;
+    width: 120px;
+    
+  }
 }
 
 .container-head {

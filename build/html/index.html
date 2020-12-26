@@ -104,6 +104,7 @@
         </li>
       </ul>
     </section>
+
     <section class="first-screen" id="first-screen">
       <img class="first-screen__bg" src="./assets/img/bg_head.jpg" alt="фон">
       <div class="container">
@@ -276,10 +277,75 @@
     </section>   
 
     <section class="tours" id="tours">
+      <img class="section-icon" src="./assets/img/car.svg" alt="car">
       <div class="container">
         <h2 class="container__title">Туры</h2>
-      </div>
+        <div class="tours__wrapper">
+          <div class="tours__nav">
+            @@include('./templates/components/sub-nav.html', {
+              "text" : ['Все туры', 'Еженедельные туры', 'Туры для компаний', 'Туры на праздники и события', 'Школьные туры']
+            })
+          </div>
+          <div class="tours__cards">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Чт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Lorem ipsum dolor sit amet..",
+              "classname": "horizon"
+            })
+            
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla quos quis ea numquam natus expedita, excepturi exercitationem a praesentium!",
+              "classname": "horizon"
+            })
+          </div>
+          <div class="tours__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+        </div>
+      </div> 
     </section>   
+
+    
+
+
+
+
     <section class="activity" id="activity">
       <div class="container">
         <h2 class="container__title">Активности</h2>
