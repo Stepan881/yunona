@@ -80,6 +80,7 @@ button {
   right: 3%;
   top: -30px;
   width: 295px;
+  max-height: 218px;
   @media (max-width: $md) {// $md: 768px;
     width: 120px;
     

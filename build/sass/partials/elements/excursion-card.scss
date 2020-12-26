@@ -24,6 +24,7 @@
 
   &__wrapper {
     position: relative;
+    width: 100%;
   }
 
   &__bonuses {
@@ -34,6 +35,11 @@
     
   }
   
+  &__stars {
+    margin-top: 14px;
+    padding-left: 10px;
+  }
+
   &__icon {
     margin-left: 15px;
     font-family: 'Raleway', sans-serif;
@@ -65,12 +71,19 @@
 
   }
 
+  &__wrapper-img {
+    height: 264px;
+    @media (max-width: $md) {// $md: 768px;
+      height: 212px;
+    }
+  }
+
   &__img {
     display: flex;
     object-fit: cover;
     height: 100%;
     box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
-
+    height: 100%;
   }
 
   &__content {
@@ -124,6 +137,7 @@
     font-size: 14px;
     line-height: 22px;
     color: $color;
+    
   }
 
   &__details {
@@ -145,8 +159,11 @@
     }
 
     @media (max-width: $sm) {// $sm: 576px;
-      margin-right: auto;
-      min-width: 100px;
+      margin-right: 0;
+      min-width: 0;
+      width: 50%;
+      max-width: 145px;
+      
     } 
   }
 
@@ -169,9 +186,12 @@
 
     @media (max-width: $sm) {// $sm: 576px;
       margin-left: auto;
-      min-width: 120px;
+      min-width: 0;
+      width: 50%;
+      max-width: 145px;
     } 
   }
+
 }
 
 .excursion-card.horizon {
@@ -195,12 +215,18 @@
     }
     &__wrapper-img {
       min-width: 50%;
+      height: 100%;
+      @media (max-width: $md) {// $md: 768px;
+        height: 220px;
+      }
     }
     &__content {
       display: flex;
       flex-direction: column;
       padding: 36px 90px 36px 30px;
-
+      @media (max-width: $sm) {// $sm: 576px;
+        padding: 8px 20px 30px;
+      } 
     }
     &__head {
       order: 0;
@@ -223,5 +249,52 @@
     &__buttons {
       order: 3;
     }
+  }
+}
+
+.excursion-card.house {
+  max-width: 31%;
+  min-height: 600px;
+
+  @media (max-width: $lg) {// $lg: 992px;
+    max-width: 48%;
+  }
+
+  @media (max-width: $md) {// $md: 768px;
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .excursion-card {
+    &__cards {
+      margin-top: 14px;
+    }
+
+    &__wrapper-img {
+      height: 300px;
+      @media (max-width: $md) {// $md: 768px;
+        height: 220px;
+      }
+    }
+
+    &__content {
+      @media (max-width: $sm) {// $sm: 576px;
+        padding: 8px 20px 30px;
+      } 
+    }
+    &__text {
+      margin-top: 20px;
+      order: 2;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      flex: 1;
+    }
+    &__text {
+      margin-top: 14px;
+    }
+    
   }
 }

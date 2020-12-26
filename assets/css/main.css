@@ -91,6 +91,7 @@ button {
   right: 3%;
   top: -30px;
   width: 295px;
+  max-height: 218px;
 }
 
 .container-head {
@@ -908,6 +909,7 @@ button {
 
 .excursion-card__wrapper {
   position: relative;
+  width: 100%;
 }
 
 .excursion-card__bonuses {
@@ -917,6 +919,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.excursion-card__stars {
+  margin-top: 14px;
+  padding-left: 10px;
 }
 
 .excursion-card__icon {
@@ -955,6 +962,10 @@ button {
   background: #DA1F1F;
 }
 
+.excursion-card__wrapper-img {
+  height: 264px;
+}
+
 .excursion-card__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,6 +975,7 @@ button {
   height: 100%;
   -webkit-box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
   box-shadow: 0px 4px 30px rgba(150, 150, 150, 0.25);
+  height: 100%;
 }
 
 .excursion-card__content {
@@ -1098,6 +1110,7 @@ button {
 
 .excursion-card.horizon .excursion-card__wrapper-img {
   min-width: 50%;
+  height: 100%;
 }
 
 .excursion-card.horizon .excursion-card__content {
@@ -1146,6 +1159,38 @@ button {
   order: 3;
 }
 
+.excursion-card.house {
+  max-width: 31%;
+  min-height: 600px;
+}
+
+.excursion-card.house .excursion-card__cards {
+  margin-top: 14px;
+}
+
+.excursion-card.house .excursion-card__wrapper-img {
+  height: 300px;
+}
+
+.excursion-card.house .excursion-card__text {
+  margin-top: 20px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.excursion-card.house .excursion-card__text {
+  margin-top: 14px;
+}
+
 .tours {
   position: relative;
   background: #F6F3EE;
@@ -1159,9 +1204,49 @@ button {
 .tours__cards {
   width: 100%;
   margin-top: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .tours__paginations {
+  width: 169px;
+  margin: 60px auto 0;
+}
+
+.activity {
+  position: relative;
+  background: #ffffff;
+  padding-bottom: 80px;
+}
+
+.activity__cards {
+  width: 100%;
+  margin-top: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.activity__paginations {
   width: 169px;
   margin: 60px auto 0;
 }
@@ -1340,6 +1425,10 @@ button {
   .excursion-card {
     max-width: 365px;
   }
+
+  .excursion-card.house {
+    max-width: 48%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1420,6 +1509,10 @@ button {
     max-width: 100%;
   }
 
+  .excursion-card__wrapper-img {
+    height: 212px;
+  }
+
   .excursion-card.horizon .excursion-card__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1432,7 +1525,24 @@ button {
     right: 20px;
   }
 
+  .excursion-card.horizon .excursion-card__wrapper-img {
+    height: 220px;
+  }
+
+  .excursion-card.house {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .excursion-card.house .excursion-card__wrapper-img {
+    height: 220px;
+  }
+
   .tours__cards {
+    margin-top: 64px;
+  }
+
+  .activity__cards {
     margin-top: 64px;
   }
 }
@@ -1501,12 +1611,24 @@ button {
   }
 
   .excursion-card__details {
-    margin-right: auto;
-    min-width: 100px;
+    margin-right: 0;
+    min-width: 0;
+    width: 50%;
+    max-width: 145px;
   }
 
   .excursion-card__tobook {
     margin-left: auto;
-    min-width: 120px;
+    min-width: 0;
+    width: 50%;
+    max-width: 145px;
+  }
+
+  .excursion-card.horizon .excursion-card__content {
+    padding: 8px 20px 30px;
+  }
+
+  .excursion-card.house .excursion-card__content {
+    padding: 8px 20px 30px;
   }
 }
