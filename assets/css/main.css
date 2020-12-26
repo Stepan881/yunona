@@ -1306,6 +1306,10 @@ button {
   border: 1px solid #DF9B3B;
 }
 
+.benefits.safety {
+  background: #F6F3EE;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;

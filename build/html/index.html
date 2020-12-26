@@ -608,7 +608,6 @@
       </div> 
     </section>   
 
- 
     <section class="tours events" id="events">
       <img class="section-icon" src="./assets/img/events.png" alt="events">
       <div class="container">
@@ -672,11 +671,41 @@
     </section>   
 
 
-    <section class="safety" id="safety">
+    <section class="benefits safety" id="safety">
       <div class="container">
-        <h2 class="container__title">Безопасность</h2>
+        <h2 class="container__title">Безопасность на отдыхе</h2>
+        <div class="benefits__wrapper-cards">
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon1.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon2.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon3.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon4.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon1.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon2.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon3.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon4.svg"
+          })
+        </div>
+        <div class="benefits__pagination">
+          @@include('./templates/components/pagination.html')
+        </div>
       </div>
-    </section>   
+    </section>
+
     <section class="instagram" id="instagram">
       <div class="container">
         <h2 class="container__title">Instagram</h2>
