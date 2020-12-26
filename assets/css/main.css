@@ -1310,6 +1310,89 @@ button {
   background: #F6F3EE;
 }
 
+.instagram {
+  background: #ffffff;
+}
+
+.instagram__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.instagram .container__title {
+  padding-top: 161px;
+  max-width: 458px;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.instagram__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 580px;
+  width: 100%;
+  margin: 80px 0 100px auto;
+}
+
+.instagram__img {
+  width: 169px;
+  height: 169px;
+  margin: 10px 12px;
+}
+
+.instagram__btn-bottom {
+  margin: -180px 0 0;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 146px;
+  height: 48px;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.instagram__btn-bottom:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #DF9B3B;
+  border: 1px solid #DF9B3B;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -1339,6 +1422,10 @@ button {
 
   .location__wrapper-img {
     margin: auto 0 -50px auto;
+  }
+
+  .instagram__images {
+    margin: 80px 20px 100px auto;
   }
 }
 
@@ -1377,6 +1464,10 @@ button {
 
   .excursion-card.house {
     max-width: 48%;
+  }
+
+  .instagram__images {
+    max-width: 390px;
   }
 }
 
@@ -1487,6 +1578,26 @@ button {
 
   .excursion-card {
     max-width: 365px;
+  }
+
+  .instagram__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .instagram .container__title {
+    padding-top: 60px;
+  }
+
+  .instagram__images {
+    max-width: 580px;
+    margin: 60px 0;
+  }
+
+  .instagram__btn-bottom {
+    margin: 0 0 56px 0;
   }
 }
 
@@ -1692,5 +1803,10 @@ button {
 
   .excursion-card.house .excursion-card__content {
     padding: 8px 10px 100px;
+  }
+
+  .instagram__btn-bottom {
+    width: 100%;
+    max-width: 100%;
   }
 }
