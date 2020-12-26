@@ -84,26 +84,37 @@ button {
 
   @media (max-width: $xxl) {
     max-width: $xl;
-    // background-color: lime;
   }
-
   @media (max-width: $xl) {
     max-width: $lg;
-    // background-color: yellow;
   }
   @media (max-width: $lg) {
     max-width: $md;
-    // background-color: salmon;
   }
   @media (max-width: $md) {
     max-width: 100%;
-    // background-color: red;
   }
 
   @media (max-width: $sm) {
     max-width: 100%;
-    // background-color: green;
   }
+
+  // @media (max-width: $xxl) {// $xxl: 1400px;
+  //   background-color: lime;
+  // }
+  // @media (max-width: $xl) {// $xl: 1200px;
+  //   background-color: yellow;
+  // }
+  // @media (max-width: $lg) {// $lg: 992px;
+  //   background-color: salmon;
+  // }
+  // @media (max-width: $md) {// $md: 768px;
+  //   background-color: red;
+  // }
+  // @media (max-width: $sm) {// $sm: 576px;
+  //   background-color: green;
+  // }
+  
 }
 
 .container {
