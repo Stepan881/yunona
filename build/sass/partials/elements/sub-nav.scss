@@ -1,0 +1,25 @@
+.sub-nav {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__link {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    border-bottom: 2px solid transparent;
+    margin-right: 48px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+
+    &--active {
+      border-bottom: 2px solid $color-btn;
+      font-weight: bold;
+    }
+  }
+}

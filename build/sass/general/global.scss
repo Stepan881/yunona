@@ -8,7 +8,7 @@ html {
   font-family: 'Yeseva One', cursive;
   font-size: 18px;
   line-height: 24px;
-
+  overflow-x: hidden;
 
   @media (min-width: $xl) {
     font-size: 20px;
@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p{
@@ -52,6 +52,31 @@ button {
   cursor: pointer;
 }
 
+.btn-modal {
+  width: 100%;
+  height: 100%;
+  color: $color;
+  background: $color-btn;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    background: $color-btn-hover;
+  }
+
+
+}
+
 .container-head {
   margin: 0 auto;
   max-width: $xxl;
@@ -59,25 +84,25 @@ button {
 
   @media (max-width: $xxl) {
     max-width: $xl;
-    background-color: lime;
+    // background-color: lime;
   }
 
   @media (max-width: $xl) {
     max-width: $lg;
-    background-color: yellow;
+    // background-color: yellow;
   }
   @media (max-width: $lg) {
     max-width: $md;
-    background-color: salmon;
+    // background-color: salmon;
   }
   @media (max-width: $md) {
     max-width: 100%;
-    background-color: red;
+    // background-color: red;
   }
 
   @media (max-width: $sm) {
     max-width: 100%;
-    background-color: green;
+    // background-color: green;
   }
 }
 
@@ -99,7 +124,7 @@ button {
 
   @media (max-width: $sm) {
     max-width: 100%;
-
+    padding: 0 16px;
   }
 
   &__title {
@@ -114,12 +139,19 @@ button {
       font-size: 36px;
       line-height: 44px;
     }
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       font-size: 28px;
       line-height: 34px;
     }
   }
 }
+
+
+
+
+
+
+
 
 @media (max-width: $xxl) {// $xxl: 1400px;
 }

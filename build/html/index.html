@@ -159,6 +159,42 @@
     <section class="benefits" id="benefits">
       <div class="container">
         <h2 class="container__title">Преимущества</h2>
+        <div class="benefits__nav">
+          @@include('./templates/components/sub-nav.html')
+        </div>
+        <div class="benefits__wrapper-cards">
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon1.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon2.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon3.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon4.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon1.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon2.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon3.svg"
+          })
+          @@include('./templates/components/article-benefit.html', {
+            "url": "./assets/img/benefit/icon4.svg"
+          })
+        </div>
+        <div class="benefits__pagination">
+          @@include('./templates/components/pagination.html')
+        </div>
+        <div class="benefits__btn-wrapper">
+          <a class="btn-modal" href="#">Как попасть в Калининград</a>
+        </div>
+
       </div>
     </section>
     <section class="location" id="location">
@@ -166,7 +202,7 @@
         <h2 class="container__title">Местоположение</h2>
       </div>
     </section>   
-    <section class="tours" id="tours">
+    <section class="excursion" id="excursion">
       <div class="container">
         <h2 class="container__title">Экскурсии</h2>
       </div>
