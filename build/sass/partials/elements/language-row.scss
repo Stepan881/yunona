@@ -1,0 +1,30 @@
+.language-row {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    transition: 0.3s opacity, top 0.3s 0.3s;
+  }
+
+  &__item {
+    margin: 44px 12px 0 0;
+    opacity: 0.6;
+
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  a {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -391,14 +391,239 @@ button {
   height: 24px;
 }
 
-.nav-menu ul {
-  display: none;
-  position: absolute;
+.nav-menu {
+  position: fixed;
   width: 315px;
-  min-height: 100%;
-  right: 0;
-  top: 0;
+  right: 0%;
+  top: -100vh;
+  bottom: 0;
+  height: 100vh;
   background: #F6F3EE;
+  z-index: 11;
+  padding-bottom: 20px;
+  -webkit-transition: 0.3s top;
+  transition: 0.3s top;
+}
+
+.nav-menu--open {
+  -webkit-transition: 0.3s top;
+  transition: 0.3s top;
+  top: 0;
+}
+
+.nav-menu__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-menu__close:before {
+  position: absolute;
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 1px;
+  background: #686868;
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-menu__close::after {
+  position: absolute;
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 1px;
+  background: #686868;
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-menu__close:hover:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #EDB362;
+}
+
+.nav-menu__close:hover::after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #EDB362;
+}
+
+.nav-menu__wrapper {
+  min-height: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.nav-menu__list {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.nav-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.nav-menu__item--active,
+.nav-menu__item:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #F7EEDF;
+}
+
+.nav-menu__item--active .nav-menu__link,
+.nav-menu__item:hover .nav-menu__link {
+  font-weight: bold;
+  color: #EDB362;
+}
+
+.nav-menu__item--active .nav-menu__link::before,
+.nav-menu__item:hover .nav-menu__link::before {
+  background: #EDB362;
+  border: 2px solid #EDB362;
+  width: 8px;
+  height: 8px;
+  right: 100px;
+}
+
+.nav-menu__link {
+  padding-right: 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-menu__link::before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  content: "";
+  right: 102px;
+  border: 2px solid #686868;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.nav-menu__language {
+  display: none;
+}
+
+.nav-menu__btn {
+  background: #EDB362;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 323px;
+  height: 48px;
+  border-radius: 29px;
+  display: none;
+}
+
+.nav-menu__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #DF9B3B;
+}
+
+.language-row__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.3s opacity, top 0.3s 0.3s;
+  transition: 0.3s opacity, top 0.3s 0.3s;
+}
+
+.language-row__item {
+  margin: 44px 12px 0 0;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.language-row__item:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.language-row__item--active {
+  opacity: 1;
+}
+
+.language-row a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
 }
 
 .main-nav {
@@ -988,6 +1213,7 @@ button {
 }
 
 .excursion-card__options {
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1636,6 +1862,51 @@ button {
     margin: 0;
   }
 
+  .nav-menu {
+    max-width: 355px;
+    width: 100%;
+  }
+
+  .nav-menu__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 8px;
+  }
+
+  .nav-menu__list {
+    padding-top: 8px;
+  }
+
+  .nav-menu__link {
+    font-size: 16px;
+    margin-left: 70px;
+  }
+
+  .nav-menu__language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .nav-menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .first-screen__wrapper {
     padding: 0 5%;
     top: 53%;
@@ -1808,5 +2079,20 @@ button {
   .instagram__btn-bottom {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav-menu__item--active .nav-menu__link::before,
+  .nav-menu__item:hover .nav-menu__link::before {
+    right: 48px;
+  }
+
+  .nav-menu__link {
+    padding-right: 90px;
+  }
+
+  .nav-menu__link::before {
+    right: 50px;
   }
 }
