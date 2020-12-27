@@ -7,13 +7,26 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: $sm) {// $sm: 576px;
+      flex-direction: column;
+    } 
   }
+
+  &__rating {
+    @media (max-width: $sm) {// $sm: 576px;
+      margin-top: 40px;
+    } 
+  }  
+
   &__cards {
     margin-top: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: $sm) {// $sm: 576px;
+      margin-top: 40px;
+    } 
   }
   &__paginations {
     width: 169px;

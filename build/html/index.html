@@ -728,7 +728,7 @@
       <div class="container">
         <div class="reviews__titl-wrapper">
           <h2 class="container__title">Отзывы</h2>
-          <div class="container__rating">
+          <div class="reviews__rating">
             @@include('./templates/components/rating.html')
           </div>
         </div>
@@ -794,12 +794,13 @@
 
     <section class="help" id="help">
       <div class="container">
-        <h2 class="container__title">Помощь</h2>
+        <h2 class="container__title">Мы всегда готовы вам помочь</h2>
       </div>
     </section>   
+
     <section class="team reviews" id="team">
       <div class="container">
-        <h2 class="container__title">Команда</h2>
+        <h2 class="container__title">Кто вам поможет</h2>
         <div class="reviews__wrapper">
           <div class="reviews__cards">
             @@include('./templates/components/reviews-card.html', {
@@ -847,9 +848,60 @@
         </div>
       </div>
     </section>   
+
     <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="container__title">Контакты</h2>
+      </div>
+
+      <div class="contacts__wrapper">
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.5436695950684!2d20.51680781555462!3d54.700057480153106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3166ab622b42b%3A0xbdc188a047753449!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgNTcsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1609081925696!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div class="container">
+          <div class="contacts__left">
+            <div class="contacts__centers">
+              <p class="contacts__head">E-mail</p>
+              <a class="contacts__mail" href="mail:unona@kldtur.ru">unona@kldtur.ru</a>
+
+              <p class="contacts__head">Чаты</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="#" class="contacts__link">
+                    <img  class="contacts__icon" src="./assets/img/social/whatsapp.svg" alt="whatsapp">
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#" class="contacts__link">
+                    <img  class="contacts__icon" src="./assets/img/social/viber.svg" alt="viber">
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="#" class="contacts__link">
+                    <img class="contacts__icon" src="./assets/img/social/skype.svg" alt="skype">
+                  </a>
+                </li>
+              </ul>
+
+              <p class="contacts__head">Телефоны</p>
+              <div class="contacts__wrapper-tel">
+                <a class="contacts__tel" href="tel:+7(4012)307002">+7 (4012) 30-70-02</a>
+                <a class="contacts__tel" href="tel:+7(4012)751999">+7 (4012) 75-19-99</a>
+                <a class="contacts__tel" href="tel:+7(40150)33760">+7 (40150) 3-37-60</a>
+                <a class="contacts__tel" href="tel:+7(4012)307003">+7 (4012) 30-70-03</a>
+              </div>
+
+              <p class="contacts__head">Адрес</p>
+              <address class="contacts__address">
+              г. Калининград, ул. Октябрьская, 57.<br/>
+              Пн-Пт: 9:00 — 19:00<br/>
+              Сб-Вс: 9:00 — 17:00
+              </address>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>  
 
