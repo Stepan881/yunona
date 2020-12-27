@@ -51,7 +51,11 @@
     width: 169px;
     height: 169px;
     margin: 10px 12px;
-    
+    @media (max-width: $sm) {// $sm: 576px;
+      width: 140px;
+      height: 140px;
+      margin: 0;
+    } 
   }
 
   &__btn-bottom {

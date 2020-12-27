@@ -1,0 +1,80 @@
+.reviews-card {
+  max-width: 360px;
+  padding: 40px 20px;
+  background-color: $color-head;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  margin-bottom: 25px;
+
+  &:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  }
+  @media (max-width: $xl) {// $xl: 1200px;
+    max-width: 310px;
+  }
+  @media (max-width: $lg) {// $lg: 992px;
+    max-width: 48%;
+  }
+  @media (max-width: $md) {// $md: 768px;
+    max-width: 100%;
+  }
+
+  &__wrapper {
+
+  }
+  &__top {
+    display: flex;
+    flex-direction: row;
+
+  }
+  &__img-wrapper {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    margin-left: 28px;
+  }
+  &__name {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color;
+  }
+  &__job {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-btn; 
+    @media (max-width: $lg) {// $lg: 992px;
+      color: $c-benefit; 
+    }
+  }
+  &__data {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: $c-benefit; 
+    @media (max-width: $lg) {// $lg: 992px;
+      display: none;
+    }
+  }
+
+  &__text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color; 
+    margin-top: 24px;
+  }
+}

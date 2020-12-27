@@ -1,0 +1,39 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 230px;
+  align-items: center;
+
+  &__icon-wrapper {
+    width: 24px;
+    height: 24px;    
+  }
+  &__icon {
+
+    
+  }
+  &__rating {
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+  }
+  &__star {
+    margin-left: 20px;    
+    
+    margin-top: -5px;
+  }
+  &__reviews {
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: $c-benefit;
+  }
+}

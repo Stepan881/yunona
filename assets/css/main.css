@@ -1650,6 +1650,171 @@ button {
   border: 1px solid #DF9B3B;
 }
 
+.reviews {
+  background: #F6F3EE;
+  padding-bottom: 100px;
+}
+
+.reviews__titl-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.reviews__cards {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.reviews__paginations {
+  width: 169px;
+  margin: 60px auto 0;
+}
+
+.reviews-card {
+  max-width: 360px;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  margin-bottom: 25px;
+}
+
+.reviews-card:hover {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+}
+
+.reviews-card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.reviews-card__img-wrapper {
+  width: 84px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews-card__profile {
+  margin-left: 28px;
+}
+
+.reviews-card__name {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #252525;
+}
+
+.reviews-card__job {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #EDB362;
+}
+
+.reviews-card__data {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #686868;
+}
+
+.reviews-card__text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252525;
+  margin-top: 24px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 230px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rating__icon-wrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.rating__rating {
+  margin-left: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #252525;
+}
+
+.rating__star {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+.rating__reviews {
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #686868;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -1725,6 +1890,10 @@ button {
 
   .instagram__images {
     max-width: 390px;
+  }
+
+  .reviews-card {
+    max-width: 310px;
   }
 }
 
@@ -1855,6 +2024,18 @@ button {
 
   .instagram__btn-bottom {
     margin: 0 0 56px 0;
+  }
+
+  .reviews-card {
+    max-width: 48%;
+  }
+
+  .reviews-card__job {
+    color: #686868;
+  }
+
+  .reviews-card__data {
+    display: none;
   }
 }
 
@@ -2016,6 +2197,10 @@ button {
   .activity__cards {
     margin-top: 64px;
   }
+
+  .reviews-card {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2105,6 +2290,12 @@ button {
 
   .excursion-card.house .excursion-card__content {
     padding: 8px 10px 100px;
+  }
+
+  .instagram__img {
+    width: 140px;
+    height: 140px;
+    margin: 0;
   }
 
   .instagram__btn-bottom {
