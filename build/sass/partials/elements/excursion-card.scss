@@ -147,7 +147,11 @@
     line-height: 22px;
     color: $color;
     @media (max-width: $sm) {
-      width: calc(100% - 20px);
+      // width: calc(100% - 20px);
+      width: calc(100% - 30px);
+
+      display: flex;
+      justify-content: space-between;
     }
   }
 
