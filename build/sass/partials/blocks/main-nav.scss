@@ -115,3 +115,40 @@
   }
   
 }
+
+
+
+.main-nav {
+    // 
+    min-width: 20px;
+    right: 40px;
+    
+    &__link {
+      position: relative;
+      height: 25px;
+      
+      &:hover {
+        width: 20px;
+
+        .main-nav__text {
+          left: -160px;
+        }
+      }
+    }
+    
+    &__text {
+      position: absolute;
+      margin-left: 15px;
+      width: 140px;
+
+      &::before {
+        transform: rotate(-50deg) translate(50%);
+        right: 0px;
+        top: 45%;
+      }
+    }
+    
+    &__dot {
+      margin: 0;
+    }
+}

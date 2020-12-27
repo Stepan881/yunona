@@ -109,7 +109,7 @@
     z-index: 1;
 
     &:hover {
-      z-index: 10;
+      // z-index: 10;
       path {
         transition: 0.3s;
         fill: $color-head;

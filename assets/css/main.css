@@ -755,6 +755,41 @@ button {
   cursor: pointer;
 }
 
+.main-nav {
+  min-width: 20px;
+  right: 40px;
+}
+
+.main-nav__link {
+  position: relative;
+  height: 25px;
+}
+
+.main-nav__link:hover {
+  width: 20px;
+}
+
+.main-nav__link:hover .main-nav__text {
+  left: -160px;
+}
+
+.main-nav__text {
+  position: absolute;
+  margin-left: 15px;
+  width: 140px;
+}
+
+.main-nav__text::before {
+  -webkit-transform: rotate(-50deg) translate(50%);
+  transform: rotate(-50deg) translate(50%);
+  right: 0px;
+  top: 45%;
+}
+
+.main-nav__dot {
+  margin: 0;
+}
+
 .first-screen {
   position: relative;
 }
@@ -847,10 +882,6 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 1;
-}
-
-.first-screen__chat:hover {
-  z-index: 10;
 }
 
 .first-screen__chat:hover path {
