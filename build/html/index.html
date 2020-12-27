@@ -797,9 +797,54 @@
         <h2 class="container__title">Помощь</h2>
       </div>
     </section>   
-    <section class="team" id="team">
+    <section class="team reviews" id="team">
       <div class="container">
         <h2 class="container__title">Команда</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__cards">
+            @@include('./templates/components/reviews-card.html', {
+              "url": "./assets/img/avatar.png",
+              "data" : "23/06/19",
+              "name": "Инга Миллер",
+              "job": "Экскурсия «Тайны подземного Кёнигсберга» Экскурсия «Тайны подземного Кёнигсберга» Экскурсия «Тайны подземного Кёнигсберга»",
+              "text": "ectetur adipisicing elit. Animi, incidunt.",
+              "tel": "8 (900) 000 00 00",
+              "mail": "ivanova_o@gmail.com"
+            })
+            @@include('./templates/components/reviews-card.html', {
+              "url": "./assets/img/avatar.png",
+              "data" : "23/06/19",
+              "name": "Инга Миллер",
+              "job": "Экскурсия «Тайны подземного Кёнигсберга»",
+              "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente eaque eveniet, ex quod rerum laboriosam sequi similique incidunt dolor placeat animi pariatur laudantium ea deleniti atque maxime, corporis doloremque sit asperiores non ullam. Inventore assumenda iure ad autem atque..",
+              "tel": "8 (900) 000 00 00",
+              "mail": "ivanova_o@gmail.com"
+            })
+            @@include('./templates/components/reviews-card.html', {
+              "url": "./assets/img/avatar.png",
+              "data" : "23/06/19",
+              "name": "Инга Миллер",
+              "job": "Экскурсия «Тайны подземного Кёнигсберга»",
+              "text": "ectetur adipisicing elit. Animi, incidunt.",
+              "tel": "8 (900) 000 00 00",
+              "mail": "ivanova_o@gmail.com"
+            })
+            @@include('./templates/components/reviews-card.html', {
+              "url": "./assets/img/avatar.png",
+              "data" : "23/06/19",
+              "name": "Инга Миллер",
+              "job": "Экскурсия «Тайны подземного Кёнигсберга»",
+              "text": "ectetur adipisicing elit. Animi, incidunt.",
+              "tel": "8 (900) 000 00 00",
+              "mail": "ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com"
+            })
+
+          </div>
+          
+          <div class="reviews__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+        </div>
       </div>
     </section>   
     <section class="contacts" id="contacts">
