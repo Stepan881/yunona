@@ -237,3 +237,80 @@
     }
   }
 }
+
+
+.header.header-white {
+  background: $color-head;
+  .header {
+    
+    &__number {
+      color: $c-benefit;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+    &__tel-text {
+      color: $c-benefit;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+    &__number-svg {
+      path {
+        fill: $c-benefit;
+      }   
+    }
+    &__tel-icon {
+      path {
+        fill: $c-benefit;
+      }  
+    }
+    &__tel-btn {
+      border-color: $color-btn;
+      @media (max-width: $lg) {
+        border: none;
+      }
+    }
+    &__social-wrapper {
+      .social {
+        li {
+          svg {
+            path {
+
+              fill: $color-btn;
+            }    
+          }
+          transition: 0.3s;
+          &:hover {
+            transition: 0.3s;
+            opacity: 0.5;
+          }
+        }
+        
+      }
+    }
+    &__language-wrapper {
+      .language__head {
+
+        &::before,
+        &::after {
+          background: $c-benefit;
+        }
+      }
+    }
+    &__btn {
+      span {
+        background: $c-benefit;
+      }
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+  }
+}

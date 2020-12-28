@@ -260,6 +260,81 @@ button {
   background: #ffffff;
 }
 
+.header.header-white {
+  background: #ffffff;
+}
+
+.header.header-white .header__number {
+  color: #686868;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.header-white .header__number:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.header.header-white .header__tel-text {
+  color: #686868;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.header-white .header__tel-text:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.header.header-white .header__number-svg path {
+  fill: #686868;
+}
+
+.header.header-white .header__tel-icon path {
+  fill: #686868;
+}
+
+.header.header-white .header__tel-btn {
+  border-color: #EDB362;
+}
+
+.header.header-white .header__social-wrapper .social li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.header-white .header__social-wrapper .social li svg path {
+  fill: #EDB362;
+}
+
+.header.header-white .header__social-wrapper .social li:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.header.header-white .header__language-wrapper .language__head::before,
+.header.header-white .header__language-wrapper .language__head::after {
+  background: #686868;
+}
+
+.header.header-white .header__btn {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.header-white .header__btn span {
+  background: #686868;
+}
+
+.header.header-white .header__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
 .logo__image {
   min-width: auto;
   width: 160px;
@@ -2466,6 +2541,10 @@ button {
 
   .header__wrapper-menu {
     margin-left: 20px;
+  }
+
+  .header.header-white .header__tel-btn {
+    border: none;
   }
 
   .social a {
