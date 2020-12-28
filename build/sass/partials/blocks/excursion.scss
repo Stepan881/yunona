@@ -1,7 +1,17 @@
 .excursion {
 
+  .container__title {
+    @media (max-width: $sm) {
+      padding-top: 70px;
+    }
+  }
+
   .benefits {
     margin-bottom: 60px;
+    
+    @media (max-width: $md) {
+      margin-bottom: 75px;
+    }    
   }
 
   &__cards {

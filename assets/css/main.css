@@ -12,6 +12,18 @@ html {
   overflow-x: hidden;
 }
 
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
 body {
   position: relative;
   display: -webkit-box;
@@ -2466,9 +2478,13 @@ button {
   }
 
   .first-screen__text {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .first-screen__text--top {
+    font-weight: 700;
   }
 
   .benefits__wrapper-cards .article-benefit {
@@ -2516,8 +2532,10 @@ button {
   }
 
   .instagram__img {
-    width: 140px;
-    height: 140px;
+    width: 50%;
+    min-width: 50%;
+    height: 50%;
+    min-height: 50%;
     margin: 0;
   }
 
@@ -2736,19 +2754,12 @@ button {
   }
 
   .first-screen__wrapper {
-    padding: 0 5%;
+    padding: 0 5% 0 0;
     top: 53%;
   }
 
   .first-screen__head {
     margin: 16px 0 23px;
-    font-size: 32px;
-    line-height: 38px;
-  }
-
-  .first-screen__text {
-    font-size: 14px;
-    line-height: 18px;
   }
 
   .benefits__wrapper-cards .article-benefit {
@@ -2768,6 +2779,10 @@ button {
   .location__title {
     font-size: 36px;
     line-height: 44px;
+  }
+
+  .excursion .benefits {
+    margin-bottom: 75px;
   }
 
   .excursion__cards {
@@ -2806,6 +2821,10 @@ button {
     height: 220px;
   }
 
+  .tours {
+    padding-bottom: 75px;
+  }
+
   .tours__cards {
     margin-top: 64px;
   }
@@ -2814,8 +2833,17 @@ button {
     margin-top: 64px;
   }
 
+  .reviews {
+    padding-bottom: 80px;
+  }
+
   .reviews-card {
     max-width: 100%;
+    padding: 18px 12px 30px 12px;
+  }
+
+  .about {
+    padding-bottom: 50px;
   }
 
   .about .section-icon {
@@ -2823,8 +2851,61 @@ button {
     bottom: -40px;
   }
 
+  .about__text {
+    margin-bottom: 25px;
+  }
+
+  .help .container__title {
+    padding-top: 60px;
+  }
+
+  .team.reviews .container__title {
+    padding-top: 60px;
+  }
+
+  .team.reviews .reviews__paginations {
+    margin: 35px auto 0;
+  }
+
+  .team.reviews .reviews__cards {
+    margin-top: 60px;
+  }
+
+  .contacts .container__title {
+    padding-top: 60px;
+  }
+
+  .contacts__map {
+    margin-top: 40px;
+  }
+
   .contacts__left {
-    display: none;
+    position: static;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    left: auto;
+    width: 100%;
+  }
+
+  .contacts__centers {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 33px;
+  }
+
+  .contacts__mail,
+  .contacts__tel,
+  .contacts__address {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .contacts__item {
+    width: 33px;
+    height: 33px;
+    margin: 0 31px 0 0;
   }
 }
 
@@ -2839,8 +2920,7 @@ button {
   }
 
   .container__title {
-    font-size: 28px;
-    line-height: 34px;
+    padding-top: 60px;
   }
 
   .header__wrapper {
@@ -2851,10 +2931,31 @@ button {
 
   .header__logo {
     margin-right: 20px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .header__tel-wrapper {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: 0 0 0 30px;
   }
 
   .header__tel-btn {
-    margin: 0 10px;
+    margin: 0;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .header__wrapper-menu {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    margin-left: 26px;
   }
 
   .main-nav {
@@ -2868,6 +2969,15 @@ button {
   .first-screen__chat {
     bottom: 0px;
     right: 0px;
+  }
+
+  .benefits {
+    margin-bottom: 80px;
+  }
+
+  .benefits .container__title {
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .benefits__wrapper-cards {
@@ -2889,6 +2999,28 @@ button {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 26px auto 60px;
+  }
+
+  .sub-nav__link {
+    margin-right: 30px;
+  }
+
+  .location__wrapper {
+    padding-bottom: 106px;
+  }
+
+  .excursion .container__title {
+    padding-top: 70px;
+  }
+
+  .excursion-card__content {
+    padding: 24px 10px 100px;
+  }
+
+  .excursion-card__head {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .excursion-card__buttons {
@@ -2923,9 +3055,20 @@ button {
     padding: 8px 10px 100px;
   }
 
-  .instagram .container__title {
-    font-size: 28px;
-    line-height: 38px;
+  .benefits.safety {
+    padding-bottom: 20px;
+  }
+
+  .benefits.safety .container__title {
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 60px;
+    width: 90%;
+  }
+
+  .instagram__images {
+    padding-top: 0px;
+    margin: 40px 0 58px;
   }
 
   .instagram__btn-bottom {
@@ -2938,6 +3081,9 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .reviews__rating {
@@ -2962,6 +3108,16 @@ button {
     -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
+    max-width: 230px;
+  }
+
+  .footer__social .social svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer__social li {
+    margin: 0px 16px;
   }
 
   .footer__social {
@@ -2986,7 +3142,7 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 40px 0 0 0;
+    margin: 34px 0 0 0;
   }
 
   .footer__tel-link {
@@ -3031,7 +3187,7 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
 }
 
@@ -3047,5 +3203,57 @@ button {
 
   .nav-menu__link::before {
     right: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .header__tel-wrapper {
+    margin: 0 0 0 10px;
+  }
+
+  .header__wrapper-menu {
+    margin-left: 13px;
+  }
+
+  .first-screen__wrapper {
+    padding: 0 5%;
+  }
+
+  .first-screen__head {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .first-screen__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .benefits .container__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .article-benefit__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .excursion-card__buttons {
+    width: calc(100% - 20px);
+  }
+
+  .instagram .container__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .footer__social li {
+    margin: 0px 10px;
   }
 }

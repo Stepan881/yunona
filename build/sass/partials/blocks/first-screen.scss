@@ -15,8 +15,12 @@
     max-width: 793px;
 
     @media (max-width: $md) {
-      padding: 0 5%;
+      padding: 0 5% 0 0;
       top: 53%;
+    }
+
+    @media (max-width: $m) {
+      padding: 0 5%;
     }
   }
 
@@ -34,6 +38,9 @@
     }
     @media (max-width: $md) {
       margin: 16px 0 23px;
+    }
+
+    @media (max-width: $m) {
       font-size: 32px;
       line-height: 38px;
     }
@@ -47,14 +54,20 @@
     line-height: 32px;
 
     @media (max-width: $lg) {
-      font-weight: bold;
+      font-weight: 400;
       font-size: 16px;
       line-height: 26px;
     }
-    @media (max-width: $md) {
 
+    @media (max-width: $m) {
       font-size: 14px;
       line-height: 18px;
+    }
+
+    &--top {
+      @media (max-width: $lg) {
+        font-weight: 700;
+      }
     }
   }
 

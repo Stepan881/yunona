@@ -2,9 +2,24 @@
   background: $color-head;
   margin-bottom: 100px;
 
+  @media (max-width: $sm) {
+    margin-bottom: 80px;
+  }
+
+
   .container__title {
     font-size: 44px;
     line-height: 52px;
+
+    @media (max-width: $sm) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    @media (max-width: $m) {
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
 
   &__nav {

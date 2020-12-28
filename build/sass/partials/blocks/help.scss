@@ -5,5 +5,9 @@
   .container__title {
     padding-top: 100px;
     max-width: 552px;
+
+    @media (max-width: $md) {
+      padding-top: 60px;
+    }
   }
 }

@@ -2,6 +2,10 @@
   background: $bg-color-menu;
   padding-bottom: 100px;
 
+  @media (max-width: $md) {
+    padding-bottom: 80px;
+  }
+
   &__titl-wrapper {
     display: flex;
     flex-direction: row;
@@ -10,7 +14,8 @@
 
     @media (max-width: $sm) {
       flex-direction: column;
-    } 
+      align-items: flex-start;
+    }   
   }
 
   &__rating {

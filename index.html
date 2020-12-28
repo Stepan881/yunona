@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Слик слайдер -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./assets/css/main.min.css">
   <title>yunona</title>
@@ -99,24 +105,24 @@
       <div class="header__language-wrapper"> 
         <div class="language">
   <span class="language__head">
-    <img class="language__head-img" src="./assets/img/country/rus.svg" >
+    <img class="language__head-img" src="./assets/img/country/rus.svg" alt="rus">
   </span>
   
   <ul class="language__list">
     <li>
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li>
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li>
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li>
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li>
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -177,22 +183,22 @@
       <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -214,6 +220,7 @@
 
   <main>
     <section class="main-nav">
+      <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul>
         <li>
           <a class="main-nav__link main-nav__link--active" href="#benefits">
@@ -318,7 +325,7 @@
       <img class="first-screen__bg" src="./assets/img/bg_head.jpg" alt="фон">
       <div class="container">
         <div class="first-screen__wrapper">
-          <p class="first-screen__text">Незабываемые туры в янтарную столицу</p>
+          <p class="first-screen__text first-screen__text--top">Незабываемые туры в янтарную столицу</p>
           <h1 class="first-screen__head">Калининград</h1>
           <p class="first-screen__text">Хотите увидеть город с многовековой историей <br />
             и получить эмоции на всю жизнь?<br />
@@ -381,11 +388,6 @@
         <a class="sub-nav__link sub-nav__link--active" href="#">Компания Юнона</a>
       </li>
     
-  </ul>
-
-
-  <ul>
-
   </ul>
 </div>
         </div>
@@ -529,11 +531,6 @@
         <a class="sub-nav__link sub-nav__link--active" href="#">Воскресенье</a>
       </li>
     
-  </ul>
-
-
-  <ul>
-
   </ul>
 </div>
           </div>
@@ -816,11 +813,6 @@
         <a class="sub-nav__link sub-nav__link--active" href="#">Школьные туры</a>
       </li>
     
-  </ul>
-
-
-  <ul>
-
   </ul>
 </div>
           </div>
@@ -1366,11 +1358,6 @@
         <a class="sub-nav__link sub-nav__link--active" href="#">Сельские усадьбы</a>
       </li>
     
-  </ul>
-
-
-  <ul>
-
   </ul>
 </div>
           </div>
@@ -2017,11 +2004,6 @@
       </li>
     
   </ul>
-
-
-  <ul>
-
-  </ul>
 </div>
           </div>
           <div class="tours__cards">
@@ -2616,28 +2598,27 @@
     </div>
     <p class="reviews-card__text">ectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2650,8 +2631,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">@@tel</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:@@mail">@@mail</a>
     </div>
@@ -2671,28 +2650,27 @@
     </div>
     <p class="reviews-card__text"> elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2705,8 +2683,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">@@tel</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:@@mail">@@mail</a>
     </div>
@@ -2726,28 +2702,27 @@
     </div>
     <p class="reviews-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2760,8 +2735,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">@@tel</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:@@mail">@@mail</a>
     </div>
@@ -2781,28 +2754,27 @@
     </div>
     <p class="reviews-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2815,8 +2787,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">@@tel</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:@@mail">@@mail</a>
     </div>
@@ -2895,28 +2865,27 @@
     </div>
     <p class="reviews-card__text">ectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2929,8 +2898,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">8 (900) 000 00 00</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:ivanova_o@gmail.com">ivanova_o@gmail.com</a>
     </div>
@@ -2950,28 +2917,27 @@
     </div>
     <p class="reviews-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente eaque eveniet, ex quod rerum laboriosam sequi similique incidunt dolor placeat animi pariatur laudantium ea deleniti atque maxime, corporis doloremque sit asperiores non ullam. Inventore assumenda iure ad autem atque..</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -2984,8 +2950,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">8 (900) 000 00 00</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:ivanova_o@gmail.com">ivanova_o@gmail.com</a>
     </div>
@@ -3005,28 +2969,27 @@
     </div>
     <p class="reviews-card__text">ectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -3039,8 +3002,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">8 (900) 000 00 00</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:ivanova_o@gmail.com">ivanova_o@gmail.com</a>
     </div>
@@ -3060,28 +3021,27 @@
     </div>
     <p class="reviews-card__text">ectetur adipisicing elit. Animi, incidunt.</p>
     <div class="reviews-card__additional">
-
       <p class="reviews-card__head">Языки</p>
       <div class="reviews-card__language">
         <div class="language-row language-row--open">
   <ul class="language-row__list">
     <li class="language-row__item language-row__item--active">
-      <a href="#"><img src="./assets/img/country/rus.svg" ></a>
+      <a href="#"><img src="./assets/img/country/rus.svg" alt="rus"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/germany.svg" ></a>
+      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/great-britain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/italia.svg" ></a>
+      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/spain.svg" ></a>
+      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
     </li>
     <li class="language-row__item">
-      <a href="#"><img src="./assets/img/country/china.svg" ></a>
+      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
     </li>
   </ul>
 </div>
@@ -3094,8 +3054,6 @@
         </svg>          
         <a class="reviews-card__tel" href="tel:89000000000">8 (900) 000 00 00</a>
       </div>
-      
-
       <p class="reviews-card__head">Эл. почта</p>
       <a class="reviews-card__mail" href="mail:ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com">ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com ivanova_o@gmail.com</a>
     </div>
@@ -3135,10 +3093,6 @@
       </div>
 
       <div class="contacts__wrapper">
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.5436695950684!2d20.51680781555462!3d54.700057480153106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3166ab622b42b%3A0xbdc188a047753449!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgNTcsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1609081925696!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-
         <div class="container">
           <div class="contacts__left">
             <div class="contacts__centers">
@@ -3180,6 +3134,10 @@
               </address>
             </div>
           </div>
+        </div>
+
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.5436695950684!2d20.51680781555462!3d54.700057480153106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3166ab622b42b%3A0xbdc188a047753449!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgNTcsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1609081925696!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
     </section>  
@@ -3246,6 +3204,10 @@
 </footer>
 
 
+
+
+  <!-- Слик слайдер -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 
   <script src="./assets/js/scripts.min.js"></script>
 </body>

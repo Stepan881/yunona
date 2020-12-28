@@ -12,6 +12,10 @@
       width: 132px;
       height: 130px;  
     }
+    @media (max-width: $m) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__text {

@@ -1,10 +1,14 @@
 .contacts {
   background: #F6F3EE;
   
-
   .container__title {
     padding-top: 100px;
+
+    @media (max-width: $md) {
+      padding-top: 60px;
+    }
   }
+
   &__wrapper {
     position: relative;  
     width: 100%;
@@ -21,6 +25,10 @@
       width: 100%;
       min-height: 572px;
       height: 100%;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 40px;
     }
   }
 
@@ -45,7 +53,12 @@
     }
 
     @media (max-width: $md) {
-      display: none;
+      position: static;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      left: auto;
+      width: 100%;
     }
   }
 
@@ -54,6 +67,12 @@
     height: 100%;
     margin-left: auto;
     padding-top: 5px;
+
+    @media (max-width: $md) {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 33px;
+    }
   }
 
   &__head {
@@ -74,6 +93,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width: $md) {
+      font-size: 18px;
+      line-height: 26px; 
+    }
   }
 
   &__mail,
@@ -114,6 +138,12 @@
     &:hover {
       transition: 0.3s;
       opacity: 0.5;
+    }
+
+    @media (max-width: $md) {
+      width: 33px;
+      height: 33px;
+      margin: 0 31px 0 0;
     }
   }
 

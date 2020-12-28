@@ -10,15 +10,16 @@
   overflow: hidden;
   
 
-  @media (max-width: $xl) {// $xl: 1200px;
+  @media (max-width: $xl) {
     max-width: 485px;
   }
-  @media (max-width: $lg) {// $lg: 992px;
+  @media (max-width: $lg) {
     max-width: 365px;
   }
-  @media (max-width: $md) {// $md: 768px;
+  @media (max-width: $md) {
     max-width: 100%;
   }
+
   &:hover {
     transition: 0.3s;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
@@ -90,6 +91,10 @@
 
   &__content {
     padding: 8px 20px 100px 20px;  
+
+    @media (max-width: $sm) {
+      padding: 24px 10px 100px;
+    }
   }
 
   &__options {
@@ -127,6 +132,12 @@
     font-size: 20px;
     line-height: 28px;
     margin-top: 12px;
+
+    @media (max-width: $sm) {
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 
   &__text {
@@ -147,11 +158,13 @@
     line-height: 22px;
     color: $color;
     @media (max-width: $sm) {
-      // width: calc(100% - 20px);
       width: calc(100% - 30px);
-
       display: flex;
       justify-content: space-between;
+    }
+
+    @media (max-width: $m) {
+      width: calc(100% - 20px); 
     }
   }
 
