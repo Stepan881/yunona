@@ -10,13 +10,16 @@
   &:hover {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
   }
-  @media (max-width: $xl) {// $xl: 1200px;
+
+  @media (max-width: $xl) {
     max-width: 310px;
   }
-  @media (max-width: $lg) {// $lg: 992px;
+
+  @media (max-width: $lg) {
     max-width: 48%;
   }
-  @media (max-width: $md) {// $md: 768px;
+
+  @media (max-width: $md) {
     max-width: 100%;
   }
 
@@ -25,18 +28,18 @@
     display: flex;
     flex-direction: column;
   }
+
   &__top {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   &__img-wrapper {
     width: 84px;
     height: 84px;
-    
     min-width: 84px;
     min-height: 84px;
-
     display: flex;
     align-items: center;
   }
@@ -44,6 +47,7 @@
   &__profile {
     margin-left: 28px;
   }
+
   &__name {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -52,6 +56,7 @@
     line-height: 28px;
     color: $color;
   }
+
   &__job {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -59,10 +64,12 @@
     font-size: 14px;
     line-height: 22px;
     color: $color-btn; 
-    @media (max-width: $lg) {// $lg: 992px;
+
+    @media (max-width: $lg) {
       color: $c-benefit; 
     }
   }
+
   &__data {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -70,7 +77,8 @@
     font-size: 14px;
     line-height: 22px;
     color: $c-benefit; 
-    @media (max-width: $lg) {// $lg: 992px;
+
+    @media (max-width: $lg) {
       display: none;
     }
   }
@@ -83,7 +91,6 @@
     line-height: 24px;
     color: $color; 
     margin-top: 24px;
-
     flex: 1;
   }
 
@@ -144,15 +151,18 @@
   }
 
   &__language {
+
     ul {
       justify-content: flex-start;
     }
+
     li {
       margin: 8px 12px 0 0;
       cursor: default;
       opacity: 1;
     }
-    a{
+
+    a {
       cursor: default;
     }
   }

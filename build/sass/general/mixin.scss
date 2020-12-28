@@ -12,17 +12,16 @@
 @mixin bottom-btn-link () {
   background: $color-btn;
   transition: 0.3s;
-
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
   &:hover {
     transition: 0.3s;
     background: $color-btn-hover;

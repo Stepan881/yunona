@@ -2,11 +2,12 @@
   background: #F6F3EE;
   
 
+  .container__title {
+    padding-top: 100px;
+  }
   &__wrapper {
     position: relative;  
     width: 100%;
-
-
   }
 
   &__map {
@@ -14,7 +15,6 @@
     height: 100%;
     width: 100%;
     margin-top: 80px;
-
 
     iframe {
       display: block;
@@ -34,24 +34,26 @@
     z-index: 1;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 0px 36px 36px 0;
-    left: calc(-50% - 230px);
+    left: calc(-50% - 210px);
 
-    @media (max-width: $xl) {// $xl: 1200px;
+    @media (max-width: $xl) {
       left: calc(-50% - 130px);
     }
-    @media (max-width: $lg) {// $lg: 992px;
+
+    @media (max-width: $lg) {
       left: calc(-50% - 20px);
     }
-    @media (max-width: $md) {// $md: 768px;
+
+    @media (max-width: $md) {
       display: none;
     }
-
   }
 
   &__centers {
     width: 360px;
     height: 100%;
     margin-left: auto;
+    padding-top: 5px;
   }
 
   &__head {
@@ -61,7 +63,6 @@
     font-size: 14px;
     line-height: 22px;
     color: $c-benefit;
-
     margin-top: 28px;
   }
 
@@ -73,8 +74,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-
-    
   }
 
   &__mail,
@@ -82,6 +81,7 @@
     display: flex;
     transition: 0.3s;
     white-space: nowrap;
+
     &:hover {
       transition: 0.3s;
       color: $color-btn;
@@ -93,14 +93,15 @@
     margin-top: 16px;
     display: flex;
   }
+
   &__tel {
     margin-top: 12px;
   }
+
   &__list {
     margin-top: 16px;
     display: flex;
     flex-direction: row;
-    
   }
 
   &__item {
@@ -109,6 +110,7 @@
     margin: 0 16px 0 0;
 
     transition: 0.3s;
+
     &:hover {
       transition: 0.3s;
       opacity: 0.5;
@@ -119,7 +121,5 @@
     margin: 4px 0 0 0;
     display: flex; 
     flex-direction: column;
-
   }
-
 }

@@ -6,14 +6,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    @media (max-width: $sm) {// $sm: 576px;
+    align-items: flex-end;
+
+    @media (max-width: $sm) {
       flex-direction: column;
     } 
   }
 
   &__rating {
-    @media (max-width: $sm) {// $sm: 576px;
+    @media (max-width: $sm) {
       margin-top: 40px;
     } 
   }  
@@ -24,12 +25,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: $sm) {// $sm: 576px;
+
+    @media (max-width: $sm) {
       margin-top: 40px;
     } 
   }
+
   &__paginations {
     width: 169px;
-    margin: 60px auto 0;
+    margin: 35px auto 0;
   }
 }

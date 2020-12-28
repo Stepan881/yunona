@@ -3,11 +3,6 @@
   background: $color-head;
   padding-bottom: 80px;
 
-
-  &__wrapper {
-
-  }
-
   &__cards {
     width: 100%;
     margin-top: 84px;
@@ -16,14 +11,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (max-width: $md) {// $md: 768px;
+    @media (max-width: $md) {
       margin-top: 64px;
     }
   }
 
   &__paginations {
     width: 169px;
-    margin: 60px auto 0;
+    margin: 44px auto 0;
   }
-
 }

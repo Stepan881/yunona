@@ -63,6 +63,7 @@
     top: -500px;
     opacity: 0;
     transition: 0.3s opacity, top 0.3s 0.3s;
+    
     li {
       margin-bottom: 8px;
       opacity: 0.6;
@@ -72,7 +73,6 @@
         opacity: 1;
         transition: 0.3s;
       }
-      
     }
 
     a {
@@ -81,7 +81,4 @@
       height: 24px;
     }
   }
-
-
-
 }

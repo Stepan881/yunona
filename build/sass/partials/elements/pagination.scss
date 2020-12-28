@@ -19,11 +19,14 @@
     align-items: center;
     cursor: pointer;
   }
+
   &__prew {
     transition: 0.3s;
+
     &:hover {
       transition: 0.3s;
       background-color: $color-btn;
+
       svg {
         path {
           fill: $color-head;
@@ -34,9 +37,11 @@
 
   &__next {
     transition: 0.3s;
+
     &:hover {
       transition: 0.3s;
       background-color: $color-btn;
+      
       svg {
         path {
           fill: $color-head;

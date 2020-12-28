@@ -14,13 +14,12 @@
     color: $color-head;
     max-width: 793px;
 
-
     @media (max-width: $md) {
       padding: 0 5%;
       top: 53%;
     }
-    
   }
+
   &__head {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -39,6 +38,7 @@
       line-height: 38px;
     }
   }
+
   &__text {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -71,6 +71,7 @@
 
     transition: 0.3s;
     &:hover {
+
       .first-screen__icon {
         rect {
           transition: 0.3s;
@@ -83,10 +84,12 @@
         color: $color-btn;  
       }
     }
+
     @media (max-width: $sm) {
       display: none;
     }
   }
+
   &__down {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -99,17 +102,16 @@
 
   &__icon {
     margin: 0 auto;
-    
   }
+
   &__chat {
     position: fixed;
-    bottom: 44px;
-    right: 15px;
+    bottom: 14px;
+    right: 28px;
     transition: 0.3s;
     z-index: 1;
 
     &:hover {
-      // z-index: 10;
       path {
         transition: 0.3s;
         fill: $color-head;
@@ -124,5 +126,4 @@
       right: 0px;
     }
   }
-
 }
