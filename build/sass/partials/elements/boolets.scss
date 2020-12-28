@@ -1,0 +1,45 @@
+.boolets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__item {
+    position: relative;
+    display: flex;
+    min-width: 29px;
+    width: 29px;
+    min-height: 29px;
+    min-height: 29px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &::before {
+      content: '';
+      display: flex;
+      width: 9px;
+      height: 9px;
+      border: 2px solid $c-benefit;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(50%, 50%);
+      transition: 0.3s;
+    }
+
+    &:hover {
+      transition: 0.3s;
+      &::before {
+        border: 2px solid $color-btn;
+      }
+    }
+
+    &--active {
+      cursor: default;
+      transition: 0.3s;
+      &::before {
+        border: 2px solid $color-btn;
+        background: $color-btn;
+      }
+    }
+  }
+}
