@@ -2598,6 +2598,45 @@ button {
   line-height: 24px;
 }
 
+.page-excursion.page-hotels .page-hotels__star {
+  margin-top: 38px;
+}
+
+.page-excursion.page-hotels .page-excursion__top {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-excursion.page-hotels .page-excursion__rating {
+  margin-top: 38px;
+}
+
+.page-excursion.page-hotels .page-excursion__slider {
+  width: 100%;
+}
+
+.page-excursion.page-hotels .page-excursion__btn {
+  max-width: 343px;
+  width: 100%;
+}
+
+.page-hotels.contacts .container__title {
+  padding-top: 60px;
+}
+
+.page-hotels.contacts .contacts__map {
+  margin-top: 40px;
+}
+
+.page-hotels.contacts .contacts__map iframe {
+  max-height: 480px;
+  height: 100%;
+}
+
 .footer {
   background: #454545;
   min-height: 276px;
@@ -3146,6 +3185,38 @@ button {
     width: 100%;
   }
 
+  .page-excursion.page-hotels .page-hotels__star {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100%;
+  }
+
+  .page-excursion.page-hotels .page-excursion__rating {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 50%;
+  }
+
+  .page-excursion.page-hotels .page-excursion__info {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 50%;
+    margin-top: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
   .footer__item {
     width: 50%;
     -webkit-box-align: center;
@@ -3526,6 +3597,14 @@ button {
   .card-info__item {
     margin-bottom: 20px;
   }
+
+  .page-hotels.contacts .container__title {
+    padding-top: 40px;
+  }
+
+  .page-hotels.contacts .contacts__map iframe {
+    max-height: 530px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3734,6 +3813,14 @@ button {
     padding-right: 0;
   }
 
+  .page-excursion.page-hotels .page-excursion__info {
+    width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
   .footer__wrapper {
     padding: 60px 0 80px;
   }
@@ -3757,7 +3844,7 @@ button {
   }
 
   .footer__social li {
-    margin: 0px 16px;
+    margin: 0px 10px;
   }
 
   .footer__social {
@@ -3891,9 +3978,5 @@ button {
   .instagram .container__title {
     font-size: 28px;
     line-height: 38px;
-  }
-
-  .footer__social li {
-    margin: 0px 10px;
   }
 }
