@@ -2697,6 +2697,12 @@ button {
   opacity: 0.5;
 }
 
+.page-excursion.page-hotels.page-go .rating {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
 .footer {
   background: #454545;
   min-height: 276px;
