@@ -2703,6 +2703,18 @@ button {
   order: 4;
 }
 
+.page-excursion.page-activity .page-excursion__breack-btn {
+  margin-top: 0;
+}
+
+.page-excursion.page-activity .page-excursion__bottom {
+  margin-top: 60px;
+}
+
+.page-excursion.page-activity .page-excursion__wrapper {
+  padding-bottom: 60px;
+}
+
 .footer {
   background: #454545;
   min-height: 276px;
