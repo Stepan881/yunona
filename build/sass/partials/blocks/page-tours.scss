@@ -1,0 +1,104 @@
+.page-tours {
+  max-height: 585px;
+  height: 100%;
+  position: relative;
+
+  &__bg {
+    display: flex;
+    height: 585px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+
+  }
+
+  &__icon {
+    position: absolute;
+    top: 110px;
+    right: 150px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30.807px;
+    line-height: 31px;
+
+    width: 102px;
+    height: 102px;
+
+    background: #812AB6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-head;  
+    
+    @media (max-width: $md) {
+      font-size: 20.3636px;
+      line-height: 20px;
+      width: 56px;
+      height: 56px;
+      top: 60px;
+      right: 16px;
+    }
+  }
+  
+  &__wrapper {
+    max-width: 752px;
+    margin-top: 146px;
+
+    @media (max-width: $md) {
+      max-width: 100%;
+    }
+  }
+
+  &__page {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: $color-head;
+
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &__head {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 68px;
+    color: $color-head;
+    margin-top: 20px;
+
+    @media (max-width: $md) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &__price {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-head;
+    margin-top: 20px;
+    display: flex;
+
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

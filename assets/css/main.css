@@ -62,6 +62,9 @@ a {
 
 img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2715,6 +2718,384 @@ button {
   padding-bottom: 60px;
 }
 
+.page-tours {
+  max-height: 585px;
+  height: 100%;
+  position: relative;
+}
+
+.page-tours__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 585px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.page-tours__wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.page-tours__icon {
+  position: absolute;
+  top: 110px;
+  right: 150px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30.807px;
+  line-height: 31px;
+  width: 102px;
+  height: 102px;
+  background: #812AB6;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.page-tours__wrapper {
+  max-width: 752px;
+  margin-top: 146px;
+}
+
+.page-tours__page {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.page-tours__head {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 68px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.page-tours__price {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tours-program {
+  padding-bottom: 80px;
+}
+
+.tours-program__wrapper {
+  position: relative;
+  margin-top: 80px;
+}
+
+.tours-program__slider {
+  margin-top: 54px;
+  position: relative;
+}
+
+.tours-program__slider .excursion-card.horizon .excursion-card__wrapper-img {
+  height: auto;
+}
+
+.tours-program__paginations {
+  position: absolute;
+  top: calc(50% - 22px);
+  width: calc(100% + 128px);
+  margin: 0 -64px;
+}
+
+.tours-program__paginations .pagination__num {
+  display: none;
+}
+
+.tours-program__buttons {
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #252525;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 60px auto 0;
+}
+
+.tours-program__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 145px;
+  height: 38px;
+  background: none;
+  border: 1px solid #EDB362;
+  border-radius: 29px;
+  margin-right: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tours-program__details:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+}
+
+.tours-program__tobook {
+  min-width: 145px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+  border-radius: 29px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tours-program__tobook:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #DF9B3B;
+  border: 1px solid #DF9B3B;
+}
+
+.tours-information {
+  background: #ffffff;
+}
+
+.tours-information .container__title {
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.tours-information__sub-head {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 32px;
+}
+
+.tours-information__wrapper {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.tours-information__block {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.tours-information__text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tours-information__wrapper-card {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tours-information__wrapper-card .card-info {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.tours-choice {
+  padding-bottom: 100px;
+}
+
+.tours-choice__mobile-head {
+  display: none;
+}
+
+.tours-choice__nav {
+  margin-top: 60px;
+}
+
+.tours-choice__wrapper-card {
+  margin-top: 60px;
+}
+
+.tours-choice .page-excursion__btn-bottom {
+  margin-top: 80px;
+  background: inherit;
+}
+
+.tours-card {
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: #ffffff;
+  margin-bottom: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tours-card:hover {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+}
+
+.tours-card__wrapper {
+  padding: 24px 95px;
+}
+
+.tours-card__sub-head {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #686868;
+}
+
+.tours-card__sub-head--color {
+  color: #252525;
+}
+
+.tours-card__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.tours-card__head {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #252525;
+}
+
+.tours-card__price {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #252525;
+}
+
+.tours-card__place {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #252525;
+}
+
+.tours-card__btn {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 227px;
+  width: 100%;
+  height: 38px;
+  background: none;
+  border: 1px solid #EDB362;
+  border-radius: 29px;
+  margin-right: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tours-card__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #EDB362;
+  border: 1px solid #EDB362;
+}
+
 .footer {
   background: #454545;
   min-height: 276px;
@@ -2979,10 +3360,6 @@ button {
 }
 
 @media (max-width: 992px) {
-  .main-page {
-    margin-top: 88px;
-  }
-
   .container-head {
     max-width: 768px;
   }
@@ -3295,6 +3672,14 @@ button {
     margin-left: auto;
   }
 
+  .tours-card__wrapper {
+    padding: 24px;
+  }
+
+  .tours-card__wrapper {
+    padding: 20px;
+  }
+
   .footer__item {
     width: 50%;
     -webkit-box-align: center;
@@ -3388,6 +3773,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .main-page {
+    margin-top: 88px;
+  }
+
   .section-icon {
     width: 120px;
     top: -30px;
@@ -3683,6 +4072,139 @@ button {
   .page-hotels.contacts .contacts__map iframe {
     max-height: 530px;
   }
+
+  .page-tours__icon {
+    font-size: 20.3636px;
+    line-height: 20px;
+    width: 56px;
+    height: 56px;
+    top: 60px;
+    right: 16px;
+  }
+
+  .page-tours__wrapper {
+    max-width: 100%;
+  }
+
+  .page-tours__page {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .page-tours__head {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .page-tours__price {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tours-program__slider .excursion-card.horizon .excursion-card__wrapper-img {
+    height: 220px;
+  }
+
+  .tours-program__paginations {
+    position: static;
+    margin: 40px auto 0;
+    width: 200px;
+  }
+
+  .tours-program__paginations .pagination__num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .tours-program__buttons {
+    width: calc(100% - 30px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 343px;
+  }
+
+  .tours-program__details {
+    width: calc(100%);
+    margin-right: 0;
+  }
+
+  .tours-program__tobook {
+    width: calc(100%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 0;
+    margin-top: 60px;
+  }
+
+  .tours-information__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .tours-information__block {
+    width: 100%;
+  }
+
+  .tours-information__wrapper-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .tours-information__wrapper-card .card-info {
+    width: 100%;
+  }
+
+  .tours-choice {
+    background: #F6F3EE;
+  }
+
+  .tours-choice__mobile-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+    margin-top: 24px;
+  }
+
+  .tours-card__sub-head {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tours-card__head {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .tours-card__price {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .tours-card__place {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tours-card__btn {
+    width: calc(100%);
+    margin: 24px 0 0 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3899,6 +4421,16 @@ button {
     margin-top: 15px;
   }
 
+  .tours-program__buttons {
+    width: calc(100% - 30px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .footer__wrapper {
     padding: 60px 0 80px;
   }
@@ -4056,5 +4588,26 @@ button {
   .instagram .container__title {
     font-size: 28px;
     line-height: 38px;
+  }
+
+  .tours-program__buttons {
+    width: calc(100% - 20px);
+  }
+
+  .tours-card__sub-head {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .tours-card__head {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tours-card__price {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 10px;
+    min-width: 65px;
   }
 }

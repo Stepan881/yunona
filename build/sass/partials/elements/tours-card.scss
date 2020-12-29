@@ -1,0 +1,145 @@
+.tours-card {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: $color-head;
+  margin-bottom: 12px;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  }
+  
+  &__wrapper {
+      padding: 24px 95px;
+
+      @media (max-width: $lg) {
+        padding: 24px;
+      }
+
+      @media (max-width: $lg) {
+        padding: 20px;
+      }
+
+      @media (max-width: $lg) {
+        
+      }
+
+  }
+
+  &__sub-head {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-benefit;
+    
+    @media (max-width: $md) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $m) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &--color {
+      color: $color;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+
+  &__head {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px; 
+    color: $color;
+
+    @media (max-width: $md) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @media (max-width: $m) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &__price {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color;
+
+    @media (max-width: $md) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @media (max-width: $m) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-left: 10px;
+      min-width: 65px;
+    }
+  }
+
+  &__place {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &__btn {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 227px;
+    width: 100%;
+    height: 38px;
+    background: none;
+    border: 1px solid $color-btn;
+    border-radius: 29px;
+    margin-right: 24px;
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      background: $color-btn;
+      border: 1px solid $color-btn;
+    }
+
+    @media (max-width: $md) {
+      width: calc(100%);
+      margin: 24px 0 0 0;
+    } 
+  }
+  
+}

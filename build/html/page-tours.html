@@ -1,0 +1,174 @@
+@@include('./templates/head.html')
+<body>
+  
+  @@include('./templates/header.html')
+  
+  
+  <main class="main-page">
+    <section class="page-tours">
+      <div class="page-tours__bg-wrapper">
+        <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+      </div>
+
+      <div class="page-tours__icon">
+        <span>new</span>
+      </div>
+
+      <div class="container">
+        <div class="page-tours__wrapper">
+          <span class="page-tours__page">Тур</span>
+          <h2 class="page-tours__head">«Русская Прибалтика» 15.10.20-25.12.20</h2>
+          <span class="page-tours__price">От 1 000 ₽</span>
+        </div>
+      </div>
+    </section>    
+
+    <section class="tours-program">
+      <div class="container">
+        <h2 class="container__title">Программа тура</h2>
+        <div class="tours-program__wrapper">
+          <div class="tours-program__nav">
+            @@include('./templates/components/sub-nav.html', {
+              "text" : ['День 1', 'День 2', 'День 3', 'День 4']
+            })
+          </div>
+          <div class="tours-program__slider">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/tours-program.png",
+              "day" : "",
+              "time": "",
+              "underline": "",
+              "new" : "",
+              "gold": "",
+              "head": "День 1",
+              "text": "Прибытие в Калининград. 10-00 Выезд на экскурсию «История Кёнигсберга-Калининграда» (3 часа). Экскурсия по городу с посещением исторических мест и самых значимых памятников. Вы увидите уникальный облик города, где причудливо переплелись эпохи от средневековья до современности. Пройдетесь по острову Кнайпхоф, где расположена могила Канта и Кафедральный собор, увидите мосты старого города – «Медовый», «Деревянный», городские ворота — «Закхаймские» и «Королевские», оборонительные сооружения города-крепости и чудом сохранившиеся кварталы города-сада (район вилл по ул.Кутузова). Завершение экскурсии. Размещение в отеле. Свободное время. По желанию можно посетить музей Мирового океана, органный концерт в Кафедральном соборе.",
+              "classname": "horizon"
+            })
+
+          </div>
+          <div class="tours-program__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+          <div class="tours-program__buttons">
+            <a class="tours-program__details" href="#">Подробнее</a>
+            <a class="tours-program__tobook" href="#">Забронировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours-information">
+      <div class="container">
+        <h2 class="container__title">Информация о туре</h2>
+        <p class="tours-information__sub-head">Маршрут: по программе экскурсий «История Кёнигсберга-Калининграда», 
+          “Куршская коса", "Балтийск-Янтарный".</p>
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <p class="tours-information__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
+          </div>
+        </div> 
+
+        <div class="tours-information__wrapper-card">
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)",
+            "text": ""
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Форма одежды — максимально удобная, обувь без каблуков. По окончанию экскурсии предлагаем присоединиться к виртуальной прогулке по Кёнигсбергскому замку. С апитками и едой в автобус проходить запрещается!"
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3."
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3."
+          })
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="tours-choice page-excursion">
+      <div class="container">
+        <h2 class="container__title">Выбор гостиницы</h2>
+        <p class="tours-choice__mobile-head">Стоимость за одного человека при проживании в выбранном номере</p>
+        <div class="tours-choice__nav">
+          @@include('./templates/components/sub-nav.html', {
+            "text" : ['Одноместный номер', 'Двухместный номер', 'Трехместный номер ']
+          })
+        </div> 
+        <div class="tours-choice__wrapper-card">
+          @@include('./templates/components/tours-card.html', {
+            "sub-head": "Стоимость указана за человека при проживании в одномкстном номере",
+            "head": "«Холидей Инн» 4*",
+            "sub-head2": "Центр города",
+            "place": "Скидка для ребенка до 12 лет",
+            "price": "18 700 ₽",
+            "price2": " 300 ₽"
+          })
+          @@include('./templates/components/tours-card.html', {
+            "sub-head": "Стоимость указана за человека при проживании в одномкстном номере",
+            "head": "«Холидей Инн» 4*",
+            "sub-head2": "Центр города",
+            "place": "Скидка для ребенка до 12 лет",
+            "price": "18 700 ₽",
+            "price2": " 300 ₽"
+          })
+          @@include('./templates/components/tours-card.html', {
+            "sub-head": "Стоимость указана за человека при проживании в одномкстном номере",
+            "head": "«Холидей Инн» 4*",
+            "sub-head2": "Центр города",
+            "place": "Скидка для ребенка до 12 лет",
+            "price": "18 700 ₽",
+            "price2": " 300 ₽"
+          })
+          @@include('./templates/components/tours-card.html', {
+            "sub-head": "Стоимость указана за человека при проживании в одномкстном номере",
+            "head": "«Холидей Инн» 4*",
+            "sub-head2": "Центр города",
+            "place": "Скидка для ребенка до 12 лет",
+            "price": "18 700 ₽",
+            "price2": " 300 ₽"
+          })
+        </div>
+
+        <div class="page-excursion__btn-bottom events">
+          <a class="events__btn-bottom" href="#">Забронировать </a>
+        </div>
+        <a class="page-excursion__breack-btn" href="#">
+          <span>
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
+            </svg>                    
+          </span>
+          Вернуться назад
+        </a>
+         
+      </div>
+    <section>
+  </main>
+
+
+@@include('./templates/footer.html')
+
+
+<script src="./assets/js/scripts.min.js"></script>
+
+</body>
+</html>
+
