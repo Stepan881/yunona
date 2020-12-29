@@ -1,0 +1,48 @@
+.page-excursion.page-hotels.page-restaurant {
+  .page-restaurant {
+
+    .page-excursion__page {
+      margin-top: 32px;
+    }
+
+    &__wrapper {
+      margin-top: 32px;
+      order: 2;
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 32px;
+      max-width: 312px;
+      min-width: 312px;
+      width: 100%;
+    }
+
+    &__btn {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 22px;
+      color: $c-benefit;
+      height: 32px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 14px;
+      border: 1px solid $c-benefit;
+      background: $bg-color-menu;
+      padding: 0 8px;
+      cursor: pointer;
+
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+  }
+}

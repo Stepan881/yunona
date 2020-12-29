@@ -1,0 +1,108 @@
+ @@include('./templates/head.html')
+<body>
+  
+  @@include('./templates/header.html')  
+  
+  
+  <main class="main-page">
+    <section class="page-excursion page-hotels page-restaurant">
+      <div class="container">
+        <div class="page-excursion__wrapper">
+          <div class="page-excursion__top">
+            <p class="page-excursion__page">Ресторан</p>
+            <h2 class="page-excursion__header">Штайндамм 99</h2>
+
+            <div class="page-excursion__rating rating">
+              <div class="rating__icon-wrapper">
+                <img class="rating__icon" src="./assets/img/rating-icon.svg" alt="иконка">
+              </div>
+              <span class="rating__rating">4.6 рейтинг</span>
+            </div>
+
+            <div class="page-restaurant__wrapper">
+              <p class="page-excursion__page">Калининград</p>
+
+              <div class="page-restaurant__button">
+                <a class="page-restaurant__btn" href="#">Итальянская кухня</a>
+                <a class="page-restaurant__btn" href="#">Азиатская кухня</a>
+              </div>
+              
+            </div>
+             <p class="page-excursion__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
+             <p class="page-excursion__info">Номера от 1000 руб.</p>
+             <div class="page-excursion__btn events">
+              <a class="events__btn-bottom" href="#">Забронировать </a>
+             </div>
+             <div class="page-excursion__slider">
+               <div class="page-excursion__slide">
+                 <div class="page-excursion__wrapper-img">
+                   <img class="page-excursion__img" src="./assets/img/page-hotels.png" alt="excursion">
+                   <!-- <img class="page-excursion__img" src="./assets/img/bg_head.jpg" alt="excursion"> -->
+                 </div>
+               </div>
+
+               <div class="page-excursion__paginations">
+                @@include('./templates/components/pagination.html')
+                <div class="boolets">
+                  <span class="boolets__item boolets__item--active"></span>
+                  <span class="boolets__item"></span>
+                  <span class="boolets__item"></span>
+                  <span class="boolets__item"></span>
+                </div>
+              </div>
+             </div>
+          </div>
+
+          <div class="page-excursion__bottom">
+            <div class="page-excursion__wrapper-card">
+
+              @@include('./templates/components/card-info.html', {
+                "img": "./assets/img/info-icon/p.svg",
+                "head": "Стоимость и продолжительность",
+                "item": "Бесплатная парковка",
+                "text": ""
+              })
+
+              @@include('./templates/components/card-info.html', {
+                "img": "./assets/img/info-icon/exclamation.svg",
+                "head": "Важно",
+                "item": "Бесплатная парковка",
+                "text": ""
+              })
+              
+            </div>
+              <a class="page-excursion__breack-btn" href="#">
+                <span>
+                  <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
+                  </svg>                    
+                </span>
+                Вернуться назад
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <section class="page-hotels contacts">
+      <div class="container">
+        <h2 class="container__title">Контакты</h2>
+        <address class="contacts__address">г. Калининград, ул. Октябрьская, 57.</address>
+      </div>
+
+      <div class="contacts__wrapper">
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.5436695950684!2d20.51680781555462!3d54.700057480153106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3166ab622b42b%3A0xbdc188a047753449!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgNTcsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1609081925696!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>  
+  </main>
+
+
+@@include('./templates/footer.html')
+
+
+<script src="./assets/js/scripts.min.js"></script>
+
+</body>
+</html>

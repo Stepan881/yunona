@@ -2637,6 +2637,66 @@ button {
   height: 100%;
 }
 
+.page-excursion.page-hotels.page-restaurant .page-restaurant .page-excursion__page {
+  margin-top: 32px;
+}
+
+.page-excursion.page-hotels.page-restaurant .page-restaurant__wrapper {
+  margin-top: 32px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.page-excursion.page-hotels.page-restaurant .page-restaurant__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 32px;
+  max-width: 312px;
+  min-width: 312px;
+  width: 100%;
+}
+
+.page-excursion.page-hotels.page-restaurant .page-restaurant__btn {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #686868;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 1px solid #686868;
+  background: #F6F3EE;
+  padding: 0 8px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-excursion.page-hotels.page-restaurant .page-restaurant__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
 .footer {
   background: #454545;
   min-height: 276px;
