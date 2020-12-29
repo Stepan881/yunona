@@ -1,0 +1,119 @@
+.page-tours.page-events.page-excursion {
+  position: relative;
+  max-height: 700px;
+  height: 100%;
+
+  .page-excursion__breack-btn {
+    display: none;
+    @media (max-width: $md) {
+      display: flex;
+      margin: 0;
+      padding: 40px 0;
+    }
+  }
+  
+  .page-events {
+    &__paginations {
+      position: absolute;
+      bottom: 60px; 
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__paginations {
+      .pagination {
+        
+        &__arrow {
+          color: $color-head;
+          background-color: transparent;
+          border: 1px solid $color-head;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+        &__text {
+          color: $color-head;
+        }
+      }
+
+      @media (max-width: $md) {
+        display: none;
+      }
+
+    }
+  }
+
+  .page-tours {
+
+    &__wrapper {
+      max-width: 1043px;
+
+      @media (max-width: $md) {
+        max-width: 90%;
+        width: 90%;
+        margin-top: 206px;
+      }
+    }
+
+    &__page {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+
+
+      @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    &__head {
+      font-size: 48px;
+      line-height: 56px;
+
+      @media (max-width: $md) {
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+
+    &__bg {
+      min-height: 700px;
+      @media (max-width: $md) {
+        min-height: 554px;
+      }
+    }
+
+    &__btn-buy {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-head;
+      margin-top: 60px;
+
+      display: flex;
+      height: 48px;
+      width: 174px;
+
+      border: 2px solid $color-head;
+      border-radius: 29px;
+      justify-content: center;
+      align-items: center;
+      
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+
+      @media (max-width: $md) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

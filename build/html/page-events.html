@@ -1,0 +1,169 @@
+@@include('./templates/head.html')
+<body>
+  
+  @@include('./templates/header.html')
+  
+  
+  <main class="main-page">
+    <section class="page-tours page-events page-excursion">
+      <a class="page-excursion__breack-btn" href="#">
+        <span>
+          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
+          </svg>                    
+        </span>
+        Вернуться назад
+      </a>
+      <div class="page-events__sliders">
+        <div class="page-events__slide">
+          <div class="page-tours__bg-wrapper">
+            <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+          </div>
+          <div class="container">
+            <div class="page-tours__wrapper">
+              <span class="page-tours__page">Событие</span>
+              <h2 class="page-tours__head">Театрализованное музыкальное представление
+                «Пер Гюнт» в рамках проекта «Классика в древних стенах»
+                </h2>
+              <a class="page-tours__btn-buy" href="#">Купить билет</a>
+            </div>
+          </div>        
+          
+          <div class="page-events__paginations">
+            @@include('./templates/components/pagination.html')
+          </div>
+
+        </div>
+      </div>
+
+    </section>    
+
+    <section class="tours-information">
+      <div class="container page-excursion">
+        <h2 class="container__title">Информация о мероприятии</h2>
+
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <p class="tours-information__text">На открытой площадке орденского замка Шаакен состоится театрализованное музыкальное представление по мотивам пьесы Генриха Ибсена на музыку Эдварда Грига “Пер Гюнт” в сопровождении Калининградского симфонического оркестра под руководством Заслуженного Деятеля искусств России Аркадия Фельдмана и артистов хореографической группы Ильи Чепелева.
+              Замок Шаакен – одна из исторических архитектурных достопримечательностей Калининградской области неподалеку от Куршского залива, орденский замок, основанный на месте Прусской крепости около 1270 г. Живописные руины замка принимают гостей с 2010 года, воссоздавая эпоху средневековья.
+              Новый уникальный проект объединяет воедино театральное искусство и чарующие звуки музыки в древних стенах замка.
+              Действие спектакля переносит нас в Норвегию первой половины XIX века. Именно отсюда начинаются долгие странствия главного героя, Пера Гюнта.</p>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text">На открытой площадке орденского замка Шаакен состоится театрализованное музыкальное представление по мотивам пьесы Генриха Ибсена на музыку Эдварда Грига “Пер Гюнт” в сопровождении Калининградского симфонического оркестра под руководством Заслуженного Деятеля искусств России Аркадия Фельдмана и артистов хореографической группы Ильи Чепелева.
+              Замок Шаакен – одна из исторических архитектурных достопримечательностей Калининградской области неподалеку от Куршского залива, орденский замок, основанный на месте Прусской крепости около 1270 г. Живописные руины замка принимают гостей с 2010 года, воссоздавая эпоху средневековья.
+              Новый уникальный проект объединяет воедино театральное искусство и чарующие звуки музыки в древних стенах замка.
+              Действие спектакля переносит нас в Норвегию первой половины XIX века. Именно отсюда начинаются долгие странствия главного героя, Пера Гюнта.</p>
+              <p class="tours-information__text">На открытой площадке орденского замка Шаакен состоится театрализованное музыкальное представление по мотивам пьесы Генриха Ибсена на музыку Эдварда Грига “Пер Гюнт” в сопровождении Калининградского симфонического оркестра под руководством Заслуженного Деятеля искусств России Аркадия Фельдмана и артистов хореографической группы Ильи Чепелева.
+                Замок Шаакен – одна из исторических архитектурных достопримечательностей Калининградской области неподалеку от Куршского залива, орденский замок, основанный на месте Прусской крепости около 1270 г. Живописные руины замка принимают гостей с 2010 года, воссоздавая эпоху средневековья.
+                Новый уникальный проект объединяет воедино театральное искусство и чарующие звуки музыки в древних стенах замка.
+                Действие спектакля переносит нас в Норвегию первой половины XIX века. Именно отсюда начинаются долгие странствия главного героя, Пера Гюнта.</p>
+            </div>
+        </div> 
+        <div class="tours-information__wrapper-card">
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)",
+            "text": ""
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/time.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Форма одежды — максимально удобная, обувь без каблуков. По окончанию экскурсии предлагаем присоединиться к виртуальной прогулке по Кёнигсбергскому замку. С апитками и едой в автобус проходить запрещается!"
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/time.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3."
+          })
+          @@include('./templates/components/card-info.html', {
+            "img": "./assets/img/info-icon/p.svg",
+            "head": "Стоимость и продолжительность",
+            "item": "",
+            "text": "Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3."
+          })
+          
+        </div>
+        
+       <div class="mobile-none">
+        <h2 class="container__title">Программа</h2>
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <p class="tours-information__text">16:20 выезд из Калининграда от экскурсионного бюро «Юнона» (ул.Октябрьская, 8. Рыбная деревня, здание Делового центра «На острове», вход со стороны реки, 1 этаж). Организованный трансфер до Замка Шаакен (пос. Некрасово).</p>
+              <p class="tours-information__text">16:00 выезд из Светлогорска от ул. Ленина 33 (ориентир ж/д вокзал Светлогорск -2)</p>            
+              <p class="tours-information__text">16:30 выезд из Зеленоградска от ул. Ленина 10 (ориентир магазин «Пивной двор»)</p>            
+              <p class="tours-information__text">17:00 ориентировочно, прибытие в Шаакен.</p>            
+              <p class="tours-information__text">17:15 – 17:45 знакомство с историей Замка Шаакен. Тематическая экскурсия по музеям и территории замка.</p>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text">18:00 – 19:00 Театрально-музыкальное представление по мотивам пьесы Генриха Ибсена, на музыку Эдварда Грига «Пер Гюнт».</p>  
+            <p class="tours-information__text">19:00 – 19:40 Заключительная часть вечера: комплимент от организаторов, фаер-шоу. Свободное время для фотосессий с артистами.</p>  
+            <p class="tours-information__text">20:00 Выезд в Калининград.</p> 
+            <p class="tours-information__text">20:30 Прибытие в Калининград.</p>          
+        </div>
+        </div> 
+
+        <h2 class="container__title">В ролях</h2>
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <p class="tours-information__text">
+              Пер Гюнт – Александр Лазарев, Сольвейг – Мария Шиляева/Анаит Макарчян
+              Режиссер–постановщик, Заслуженный артист России — Николай Захаров
+            </p>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text"></p>        
+          </div>
+        </div> 
+
+        <h2 class="container__title">Музыкально –танцевальные произведения</h2>
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <ul class="tours-information__list">
+              <li class="tours-information__item">1. Увертюра «Утро»</li>
+              <li class="tours-information__item">2. Танец Анитры</li>
+              <li class="tours-information__item">3. Озе</li>
+              <li class="tours-information__item">4. В пещере горного короля</li>
+              <li class="tours-information__item">5. Буря</li>
+              <li class="tours-information__item">6. Арабский танец</li>
+              <li class="tours-information__item">7. Песня Сольвейг</li>
+              <li class="tours-information__item">8. Эпилог</li>
+            </ul>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text"></p>        
+          </div>
+        </div> 
+
+
+       </div>
+
+        <div class="page-excursion__btn-bottom events">
+          <a class="events__btn-bottom" href="#">Купить билет</a>
+        </div>
+        <a class="page-excursion__breack-btn" href="#">
+          <span>
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
+            </svg>                    
+          </span>
+          Вернуться назад
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+@@include('./templates/footer.html')
+
+
+<script src="./assets/js/scripts.min.js"></script>
+
+</body>
+</html>
+

@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -162,7 +162,7 @@
         <a class="nav-menu__link" href="./page-activity.html">Мероприятия</a>
       </li>
       <li class="nav-menu__item">
-        <a class="nav-menu__link" href="./page-events.html">Безопасность</a>
+        <a class="nav-menu__link" href="">Безопасность</a>
       </li>
       <li class="nav-menu__item">
         <a class="nav-menu__link" href="">Instagram</a>
@@ -214,50 +214,115 @@
 
     </div>
   </div>
-</header>  
+</header>
   
   
   <main class="main-page">
-    <section class="page-excursion page-hotels">
+    <section class="page-tours">
+      <div class="page-tours__bg-wrapper">
+        <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+      </div>
+
+      <div class="page-tours__icon">
+        <span>new</span>
+      </div>
+
       <div class="container">
-        <div class="page-excursion__wrapper">
-          <div class="page-excursion__top">
-            <p class="page-excursion__page">Гостиница</p>
-            <h2 class="page-excursion__header">Вилла «Медведь»</h2>
-            <div class="page-hotels__star">
+        <div class="page-tours__wrapper">
+          <span class="page-tours__page">Тур</span>
+          <h2 class="page-tours__head">«Русская Прибалтика» 15.10.20-25.12.20</h2>
+          <span class="page-tours__price">От 1 000 ₽</span>
+        </div>
+      </div>
+    </section>    
 
-              <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-              </svg>
-              <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-              </svg>
-              <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-              </svg>
-                                                              
-            </div>
-            <div class="page-excursion__rating rating">
-              <div class="rating__icon-wrapper">
-                <img class="rating__icon" src="./assets/img/rating-icon.svg" alt="иконка">
-              </div>
-              <span class="rating__rating">4.6 рейтинг</span>
-            </div>
-             <p class="page-excursion__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
-             <p class="page-excursion__info">Номера от 1000 руб.</p>
-             <div class="page-excursion__btn events">
-              <a class="events__btn-bottom" href="#">Забронировать </a>
-             </div>
-             <div class="page-excursion__slider">
-               <div class="page-excursion__slide">
-                 <div class="page-excursion__wrapper-img">
-                   <img class="page-excursion__img" src="./assets/img/page-hotels.png" alt="excursion">
-                   <!-- <img class="page-excursion__img" src="./assets/img/bg_head.jpg" alt="excursion"> -->
-                 </div>
-               </div>
+    <section class="tours-program">
+      <div class="container">
+        <h2 class="container__title">Программа тура</h2>
+        <div class="tours-program__wrapper">
+          <div class="tours-program__nav">
+            <div class="sub-nav">
+  <ul class="sub-nav__list">
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">День 1</a>
+      </li>
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">День 2</a>
+      </li>
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">День 3</a>
+      </li>
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">День 4</a>
+      </li>
+    
+  </ul>
+</div>
+          </div>
+          <div class="tours-program__slider">
+            <article class="excursion-card horizon">
+  <div class="excursion-card__wrapper">
+    <div class="excursion-card__bonuses">
+       <div class="excursion-card__icon excursion-card__icon--percent">
+        <span>%</span>
+      </div>
+      <div class="excursion-card__icon excursion-card__icon--new">
+        <span>new</span>
+      </div>
+      <div class="excursion-card__icon excursion-card__icon--star">
+        <span>
+          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 0L18.2379 8.16699L27.3148 9.67376L20.8571 16.228L22.229 25.3262L14 21.21L5.77101 25.3262L7.14288 16.228L0.685208 9.67376L9.76207 8.16699L14 0Z" fill="white"/>
+          </svg>
+        </span>
+      </div> 
+    </div>
+    <div class="excursion-card__wrapper-img">
+      <img class="excursion-card__img" src="./assets/img/tours-program.png" alt="Фотография">
+    </div>
+    <div class="excursion-card__content">
+      <div class="excursion-card__options">
+        <span class="excursion-card__day-city"></span>
+        <span class="excursion-card__time"></span>
+        <span class="excursion-card__price-underline"></span>
+        <span class="excursion-card__price-new"></span>
+        <span class="excursion-card__price-gold"></span>
+      </div>
+      <h3 class="excursion-card__head">День 1</h3>
+      <div class="excursion-card__stars">
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+      </div>
+      <p class="excursion-card__text">Прибытие в Калининград. 10-00 Выезд на экскурсию «История Кёнигсберга-Калининграда» (3 часа). Экскурсия по городу с посещением исторических мест и самых значимых памятников. Вы увидите уникальный облик города, где причудливо переплелись эпохи от средневековья до современности. Пройдетесь по острову Кнайпхоф, где расположена могила Канта и Кафедральный собор, увидите мосты старого города – «Медовый», «Деревянный», городские ворота — «Закхаймские» и «Королевские», оборонительные сооружения города-крепости и чудом сохранившиеся кварталы города-сада (район вилл по ул.Кутузова). Завершение экскурсии. Размещение в отеле. Свободное время. По желанию можно посетить музей Мирового океана, органный концерт в Кафедральном соборе.</p>
+      <div class="excursion-card__buttons">
+        <a class="excursion-card__details" href="#">Подробнее</a>
+        <a class="excursion-card__tobook" href="#">Забронировать</a>
+      </div>
+    </div>    
+  </div>
 
-               <div class="page-excursion__paginations">
-                <div class="pagination">
+</article>
+
+          </div>
+          <div class="tours-program__paginations">
+            <div class="pagination">
   <div class="pagination__wrapper">
     <div class="pagination__arrow pagination__prew">
       <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,20 +341,31 @@
     </div>
   </div>
 </div>
-                <div class="boolets">
-                  <span class="boolets__item boolets__item--active"></span>
-                  <span class="boolets__item"></span>
-                  <span class="boolets__item"></span>
-                  <span class="boolets__item"></span>
-                </div>
-              </div>
-             </div>
           </div>
+          <div class="tours-program__buttons">
+            <a class="tours-program__details" href="#">Подробнее</a>
+            <a class="tours-program__tobook" href="#">Забронировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="page-excursion__bottom">
-            <div class="page-excursion__wrapper-card">
+    <section class="tours-information">
+      <div class="container">
+        <h2 class="container__title">Информация о туре</h2>
+        <p class="tours-information__sub-head">Маршрут: по программе экскурсий «История Кёнигсберга-Калининграда», 
+          “Куршская коса", "Балтийск-Янтарный".</p>
+        <div class="tours-information__wrapper">
+          <div class="tours-information__block">
+            <p class="tours-information__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
+          </div>
+          <div class="tours-information__block">
+            <p class="tours-information__text">Вполне возможно, что всё это правда: «Под Кёнигсбергом есть громадные подземелья. Форты соединены с современными командными пунктами туннелями. Они ведут также к важнейшим загородным объектам — подземным мастерским и заводам, госпиталям и нефтехранилищам. Многочисленные сокровища, в том числе Янтарная комната, спрятаны в подземельях…»</p>
+          </div>
+        </div> 
 
-              <article class="card-info">
+        <div class="tours-information__wrapper-card">
+          <article class="card-info">
   <div class="card-info__wrapper">
     <div class="card-info__header">
       <span class="card-info__icon">
@@ -299,66 +375,187 @@
     </div>
     <div class="card-info__content">
       <ul class="card-info__list card-info__list--row">
-        <li class="card-info__item">Бесплатная парковка
+        <li class="card-info__item">От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)
         </li>
-        <li class="card-info__item">Бесплатная парковка</li>
-        <li class="card-info__item">Бесплатная парковка</li>
-        <li class="card-info__item">Бесплатная парковка</li>
+        <li class="card-info__item">От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)</li>
+        <li class="card-info__item">От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)</li>
+        <li class="card-info__item">От 1000 руб. взрослые От 900 руб. дети (до 11 лет включительно)</li>
       </ul>
       <p class="card-info__text"></p>
     </div>
   </div>
 </article>
 
-
-              <article class="card-info">
+          <article class="card-info">
   <div class="card-info__wrapper">
     <div class="card-info__header">
       <span class="card-info__icon">
-        <img src="./assets/img/info-icon/exclamation.svg" alt="Иконка">
+        <img src="./assets/img/info-icon/p.svg" alt="Иконка">
       </span>
-      <h3 class="card-info__head">Важно</h3>
+      <h3 class="card-info__head">Стоимость и продолжительность</h3>
     </div>
     <div class="card-info__content">
       <ul class="card-info__list card-info__list--row">
-        <li class="card-info__item">Бесплатная парковка
+        <li class="card-info__item">
         </li>
-        <li class="card-info__item">Бесплатная парковка</li>
-        <li class="card-info__item">Бесплатная парковка</li>
-        <li class="card-info__item">Бесплатная парковка</li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
       </ul>
-      <p class="card-info__text"></p>
+      <p class="card-info__text">Форма одежды — максимально удобная, обувь без каблуков. По окончанию экскурсии предлагаем присоединиться к виртуальной прогулке по Кёнигсбергскому замку. С апитками и едой в автобус проходить запрещается!</p>
     </div>
   </div>
 </article>
 
-              
-            </div>
-              <a class="page-excursion__breack-btn" href="#">
-                <span>
-                  <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
-                  </svg>                    
-                </span>
-                Вернуться назад
-              </a>
-          </div>
+          <article class="card-info">
+  <div class="card-info__wrapper">
+    <div class="card-info__header">
+      <span class="card-info__icon">
+        <img src="./assets/img/info-icon/p.svg" alt="Иконка">
+      </span>
+      <h3 class="card-info__head">Стоимость и продолжительность</h3>
+    </div>
+    <div class="card-info__content">
+      <ul class="card-info__list card-info__list--row">
+        <li class="card-info__item">
+        </li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
+      </ul>
+      <p class="card-info__text">Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3.</p>
+    </div>
+  </div>
+</article>
+
+          <article class="card-info">
+  <div class="card-info__wrapper">
+    <div class="card-info__header">
+      <span class="card-info__icon">
+        <img src="./assets/img/info-icon/p.svg" alt="Иконка">
+      </span>
+      <h3 class="card-info__head">Стоимость и продолжительность</h3>
+    </div>
+    <div class="card-info__content">
+      <ul class="card-info__list card-info__list--row">
+        <li class="card-info__item">
+        </li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
+        <li class="card-info__item"></li>
+      </ul>
+      <p class="card-info__text">Транспортно-экскурсионное обслуживание, входные билеты в музей «Бункер Ляша», входные билеты на форт №3.</p>
+    </div>
+  </div>
+</article>
+
+          
         </div>
       </div>
-    </section>    
+    </section>
 
-    <section class="page-hotels contacts">
+
+
+    <section class="tours-choice page-excursion">
       <div class="container">
-        <h2 class="container__title">Контакты</h2>
-        <address class="contacts__address">г. Калининград, ул. Октябрьская, 57.</address>
-      </div>
-
-      <div class="contacts__wrapper">
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.5436695950684!2d20.51680781555462!3d54.700057480153106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3166ab622b42b%3A0xbdc188a047753449!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgNTcsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMDY!5e0!3m2!1sru!2sru!4v1609081925696!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <h2 class="container__title">Выбор гостиницы</h2>
+        <p class="tours-choice__mobile-head">Стоимость за одного человека при проживании в выбранном номере</p>
+        <div class="tours-choice__nav">
+          <div class="sub-nav">
+  <ul class="sub-nav__list">
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">Одноместный номер</a>
+      </li>
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">Двухместный номер</a>
+      </li>
+    
+      <li>
+        <a class="sub-nav__link sub-nav__link--active" href="#">Трехместный номер </a>
+      </li>
+    
+  </ul>
+</div>
+        </div> 
+        <div class="tours-choice__wrapper-card">
+          <article class="tours-card">
+  <div class="tours-card__wrapper">
+    <p class="tours-card__sub-head">Стоимость указана за человека при проживании в одномкстном номере</p>
+    <div class="tours-card__block">
+      <h3 class="tours-card__head">«Холидей Инн» 4*</h3>
+      <span class="tours-card__price">18 700 ₽</span>
+    </div>
+    <p class="tours-card__sub-head tours-card__sub-head--color">Центр города</p>
+    <div class="tours-card__block">
+      <span class="tours-card__place">Скидка для ребенка до 12 лет</span>
+      <span class="tours-card__price"> 300 ₽</span>
+    </div>
+    <a class="tours-card__btn" href="#">Подробнее о гостинице</a>
+  </div>
+</article>
+          <article class="tours-card">
+  <div class="tours-card__wrapper">
+    <p class="tours-card__sub-head">Стоимость указана за человека при проживании в одномкстном номере</p>
+    <div class="tours-card__block">
+      <h3 class="tours-card__head">«Холидей Инн» 4*</h3>
+      <span class="tours-card__price">18 700 ₽</span>
+    </div>
+    <p class="tours-card__sub-head tours-card__sub-head--color">Центр города</p>
+    <div class="tours-card__block">
+      <span class="tours-card__place">Скидка для ребенка до 12 лет</span>
+      <span class="tours-card__price"> 300 ₽</span>
+    </div>
+    <a class="tours-card__btn" href="#">Подробнее о гостинице</a>
+  </div>
+</article>
+          <article class="tours-card">
+  <div class="tours-card__wrapper">
+    <p class="tours-card__sub-head">Стоимость указана за человека при проживании в одномкстном номере</p>
+    <div class="tours-card__block">
+      <h3 class="tours-card__head">«Холидей Инн» 4*</h3>
+      <span class="tours-card__price">18 700 ₽</span>
+    </div>
+    <p class="tours-card__sub-head tours-card__sub-head--color">Центр города</p>
+    <div class="tours-card__block">
+      <span class="tours-card__place">Скидка для ребенка до 12 лет</span>
+      <span class="tours-card__price"> 300 ₽</span>
+    </div>
+    <a class="tours-card__btn" href="#">Подробнее о гостинице</a>
+  </div>
+</article>
+          <article class="tours-card">
+  <div class="tours-card__wrapper">
+    <p class="tours-card__sub-head">Стоимость указана за человека при проживании в одномкстном номере</p>
+    <div class="tours-card__block">
+      <h3 class="tours-card__head">«Холидей Инн» 4*</h3>
+      <span class="tours-card__price">18 700 ₽</span>
+    </div>
+    <p class="tours-card__sub-head tours-card__sub-head--color">Центр города</p>
+    <div class="tours-card__block">
+      <span class="tours-card__place">Скидка для ребенка до 12 лет</span>
+      <span class="tours-card__price"> 300 ₽</span>
+    </div>
+    <a class="tours-card__btn" href="#">Подробнее о гостинице</a>
+  </div>
+</article>
         </div>
+
+        <div class="page-excursion__btn-bottom events">
+          <a class="events__btn-bottom" href="#">Забронировать </a>
+        </div>
+        <a class="page-excursion__breack-btn" href="#">
+          <span>
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07493 9.00094L9.32195 13.7697L7.97679 15.2498L0.814244 8.74005L6.33792e-07 8.00002L0.814244 7.25999L7.97679 0.750288L9.32195 2.23034L4.07292 7.00094L17.8002 7.00094L17.8002 9.00094L4.07493 9.00094Z" fill="#EDB362"/>
+            </svg>                    
+          </span>
+          Вернуться назад
+        </a>
+         
       </div>
-    </section>  
+    <section>
   </main>
 
 
@@ -429,3 +626,4 @@
 
 </body>
 </html>
+

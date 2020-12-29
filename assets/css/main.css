@@ -2908,11 +2908,21 @@ button {
 
 .tours-information {
   background: #ffffff;
+  padding-bottom: 100px;
 }
 
 .tours-information .container__title {
   font-size: 44px;
   line-height: 52px;
+}
+
+.tours-information .events {
+  margin-top: 60px;
+}
+
+.tours-information .events__btn-bottom {
+  margin: 0;
+  width: 174px;
 }
 
 .tours-information__sub-head {
@@ -2946,6 +2956,7 @@ button {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 30px;
 }
 
 .tours-information__wrapper-card {
@@ -2967,6 +2978,15 @@ button {
 .tours-information__wrapper-card .card-info {
   width: 48%;
   margin-bottom: 30px;
+}
+
+.tours-information__list {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252525;
 }
 
 .tours-choice {
@@ -3094,6 +3114,88 @@ button {
   transition: 0.3s;
   background: #EDB362;
   border: 1px solid #EDB362;
+}
+
+.page-tours.page-events.page-excursion {
+  position: relative;
+  max-height: 700px;
+  height: 100%;
+}
+
+.page-tours.page-events.page-excursion .page-excursion__breack-btn {
+  display: none;
+}
+
+.page-tours.page-events.page-excursion .page-events__paginations {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.page-tours.page-events.page-excursion .page-events__paginations .pagination__arrow {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.page-tours.page-events.page-excursion .page-events__paginations .pagination__arrow:hover {
+  opacity: 0.5;
+}
+
+.page-tours.page-events.page-excursion .page-events__paginations .pagination__text {
+  color: #ffffff;
+}
+
+.page-tours.page-events.page-excursion .page-tours__wrapper {
+  max-width: 1043px;
+}
+
+.page-tours.page-events.page-excursion .page-tours__page {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.page-tours.page-events.page-excursion .page-tours__head {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.page-tours.page-events.page-excursion .page-tours__bg {
+  min-height: 700px;
+}
+
+.page-tours.page-events.page-excursion .page-tours__btn-buy {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  width: 174px;
+  border: 2px solid #ffffff;
+  border-radius: 29px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page-tours.page-events.page-excursion .page-tours__btn-buy:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
 }
 
 .footer {
@@ -3777,6 +3879,10 @@ button {
     margin-top: 88px;
   }
 
+  .mobile-none {
+    display: none;
+  }
+
   .section-icon {
     width: 120px;
     top: -30px;
@@ -4141,6 +4247,17 @@ button {
     margin-top: 60px;
   }
 
+  .tours-information .container__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .tours-information .events__btn-bottom {
+    margin: 0 auto;
+    max-width: 343px;
+    width: 100%;
+  }
+
   .tours-information__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4204,6 +4321,43 @@ button {
   .tours-card__btn {
     width: calc(100%);
     margin: 24px 0 0 0;
+  }
+
+  .page-tours.page-events.page-excursion .page-excursion__breack-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 40px 0;
+  }
+
+  .page-tours.page-events.page-excursion .page-events__paginations {
+    display: none;
+  }
+
+  .page-tours.page-events.page-excursion .page-tours__wrapper {
+    max-width: 90%;
+    width: 90%;
+    margin-top: 206px;
+  }
+
+  .page-tours.page-events.page-excursion .page-tours__page {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .page-tours.page-events.page-excursion .page-tours__head {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .page-tours.page-events.page-excursion .page-tours__bg {
+    min-height: 554px;
+  }
+
+  .page-tours.page-events.page-excursion .page-tours__btn-buy {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
