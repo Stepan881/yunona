@@ -28,5 +28,9 @@
     line-height: 22px;
     color: $c-benefit;
     margin-top: 10px;
+
+    @media (max-width: $md) {
+      margin: 10px 0 0;
+    }
   }
 }

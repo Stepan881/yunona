@@ -54,7 +54,8 @@ var concat = require('gulp-concat');
 
   gulp.task("js", function () {
     return gulp.src([
-      'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+      'node_modules/jquery/dist/jquery.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+      'node_modules/slick-carousel/slick/slick.js',
       'build/js/_libs.js', // JS libraries (all in one)
       'build/js/_custom.js', // Custom scripts. Always at the end
       ])

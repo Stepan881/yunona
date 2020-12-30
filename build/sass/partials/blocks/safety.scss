@@ -27,6 +27,16 @@
     &__wrapper-cards {
       margin-top: 80px;
 
+      @media (max-width: $sm) {
+        .article-benefit {
+          max-width: 40%;
+        }
+        .article-benefit__text {
+          text-align: left;
+        }
+      } 
     }
+
+
   }
 }

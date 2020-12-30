@@ -1,3 +1,5 @@
+@import './libs/slick';
+
 @import './general/vars';
 @import './general/mixin';
 @import './general/global';
@@ -57,3 +59,6 @@
 
 
 @import './partials/blocks/footer';
+
+
+@import './general/slider';

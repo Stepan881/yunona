@@ -1,0 +1,131 @@
+
+
+.reviews__cards,
+.activity__cards,
+.tours__cards,
+.excursion__cards {
+  margin: 65px -40px 0!important;
+  width: calc(100% + 80px)!important;
+  justify-content: center;
+  display: flex !important;
+}
+
+.excursion-card {
+  margin: 30px auto 40px !important;
+  justify-content: space-around;
+  display: flex !important;
+  height: inherit !important;
+}
+
+.excursion-card.horizon {
+  width: calc(100% + -80px) !important;
+  justify-content: space-around;
+  height: inherit !important;
+}
+
+.reviews-card,
+.excursion-card.house {
+  display: flex !important;
+  max-width: 100% !important;
+  width: calc(100% + -50px)!important;
+  margin: 30px auto 40px !important;
+}
+
+@media (max-width: $xxl) {// $xxl: 1400px;
+  .reviews__cards,
+  .activity__cards,
+  .tours__cards,
+  .excursion__cards {
+    margin: 65px -10px 0!important;
+    width: calc(100% + 20px) !important;
+  }
+
+  .excursion-card {
+    margin: 30px auto 40px !important;  
+  }
+
+  .reviews-card,
+  .excursion-card.horizon {
+    width: calc(100% + -80px) !important;
+  }
+
+}
+
+
+@media (max-width: $xl) {// $xl: 1200px;
+  .reviews__cards,
+  .activity__cards,
+  .tours__cards,
+  .excursion__cards {
+    margin: 65px -30px 0!important;
+    width: calc(100% + 60px) !important;
+  }
+  .excursion-card {
+    margin: 60px auto 40px !important;  
+    max-width: 470px !important;
+  }
+  .excursion-card.horizon {
+    width: calc(100% + -80px) !important;
+    max-width: 100% !important;
+  }
+
+  .reviews-card,
+  .excursion-card.house {
+    width: calc(100% + -80px) !important;
+    max-width: 100% !important;
+  }
+}
+
+
+@media (max-width: $lg) {// $lg: 992px;
+  .reviews__cards,
+  .activity__cards,
+  .tours__cards,
+  .excursion__cards {
+    margin: 35px -30px 0!important;
+    width: calc(100% + 60px) !important;
+  }
+  
+  .excursion-card {
+    margin: 30px auto 30px!important;
+    max-width: 350px!important;
+  }
+
+  .excursion-card.horizon {
+    width: calc(100% + -80px) !important;
+    max-width: 100% !important;
+  }
+
+  .reviews-card,
+  .excursion-card.house {
+    margin: 30px auto 30px!important;
+    width: calc(100% + -50px)!important;
+    max-width: 350px!important;
+    
+  }
+}
+
+@media (max-width: $md) {// $md: 768px;
+  .reviews__cards,
+  .activity__cards,
+  .tours__cards,
+  .excursion__cards {
+    margin: 35px -30px 0!important;
+    width: calc(100% + 60px) !important;
+  }
+  .excursion-card {
+    margin: 30px auto 30px!important;
+    max-width: calc(100% - 60px) !important;
+  }
+
+  .reviews-card,
+  .excursion-card.house {
+    margin: 30px auto 30px!important;
+    max-width: calc(100% - 60px) !important;
+  }
+}
+
+
+.slick-track {
+  display: flex !important;
+}

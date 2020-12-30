@@ -1,7 +1,7 @@
 .nav-menu {
   position: fixed;
   width: 315px;
-  right: 0%;
+  right: calc(50% - 700px);
   top: -100vh;
   bottom: 0;
   height: 100vh;
@@ -9,6 +9,24 @@
   z-index: 11;
   padding-bottom: 20px;
   transition: 0.3s top;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: $bg-color-menu;
+    transform: translate(314px);
+    top: 0;
+  }
+
+  @media (max-width: $xxl) {
+    right: 0;
+    &::after {
+      content: none;
+    }
+  }
+
 
   &--open {
     transition: 0.3s top;

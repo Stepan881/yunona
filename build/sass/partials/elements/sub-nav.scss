@@ -2,11 +2,21 @@
 
   &__list {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
+  }
 
+  li {
+    padding-bottom: 3px;
+
+    @media (max-width: $md) {
+      border-bottom: 2px solid #D0D0D0;
+      padding-bottom: 0;
+    }
   }
 
   &__link {
+    
+    margin-bottom: 5px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -14,8 +24,10 @@
     line-height: 26px;
     border-bottom: 2px solid transparent;
     margin-right: 44px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     white-space: nowrap;
+    display: flex;
+    margin-bottom: -2px;
 
     &--active {
       border-bottom: 2px solid $color-btn;
