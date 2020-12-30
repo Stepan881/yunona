@@ -5076,6 +5076,8 @@ button {
   .article-benefit__img {
     width: 100%;
     height: auto;
+    width: 120px;
+    height: 120px;
   }
 
   .excursion-card__buttons {
