@@ -923,7 +923,6 @@ button {
   -ms-flex-align: center;
   align-items: center;
   background: #ffffff;
-  width: 100%;
   padding-left: 15px;
   position: relative;
   left: 1000px;
@@ -932,6 +931,8 @@ button {
   justify-content: flex-end;
   padding-right: 15px;
   z-index: -1;
+  margin-left: 15px;
+  width: auto;
 }
 
 .main-nav__text::before {
@@ -941,10 +942,10 @@ button {
   width: 10px;
   height: 10px;
   border-radius: 2px;
-  right: -4px;
-  top: 26%;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  right: 0px;
+  top: 45%;
+  -webkit-transform: rotate(-50deg) translate(50%);
+  transform: rotate(-50deg) translate(50%);
   z-index: -1;
 }
 
@@ -978,20 +979,7 @@ button {
 }
 
 .main-nav__link:hover .main-nav__text {
-  left: -160px;
-}
-
-.main-nav__text {
-  position: absolute;
-  margin-left: 15px;
-  width: 140px;
-}
-
-.main-nav__text::before {
-  -webkit-transform: rotate(-50deg) translate(50%);
-  transform: rotate(-50deg) translate(50%);
-  right: 0px;
-  top: 45%;
+  left: -10px;
 }
 
 .main-nav__dot {
