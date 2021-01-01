@@ -592,15 +592,15 @@ button {
 .nav-menu {
   position: fixed;
   width: 315px;
-  right: calc(50% - 700px);
-  top: -100vh;
+  right: -100vw;
+  top: 0;
   bottom: 0;
   height: 100vh;
   background: #F6F3EE;
   z-index: 11;
   padding-bottom: 20px;
-  -webkit-transition: 0.3s top;
-  transition: 0.3s top;
+  -webkit-transition: 0.3s right;
+  transition: 0.3s right;
 }
 
 .nav-menu::after {
@@ -615,9 +615,10 @@ button {
 }
 
 .nav-menu--open {
-  -webkit-transition: 0.3s top;
-  transition: 0.3s top;
+  -webkit-transition: 0.3s right;
+  transition: 0.3s right;
   top: 0;
+  right: calc(50% - 700px);
 }
 
 .nav-menu__close {

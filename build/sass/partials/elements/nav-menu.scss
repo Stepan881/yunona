@@ -1,14 +1,14 @@
 .nav-menu {
   position: fixed;
   width: 315px;
-  right: calc(50% - 700px);
-  top: -100vh;
+  right: -100vw;
+  top: 0 ;
   bottom: 0;
   height: 100vh;
   background: $bg-color-menu;
   z-index: 11;
   padding-bottom: 20px;
-  transition: 0.3s top;
+  transition: 0.3s right;
 
   &::after {
     content: '';
@@ -29,8 +29,9 @@
 
 
   &--open {
-    transition: 0.3s top;
+    transition: 0.3s right;
     top: 0;
+    right: calc(50% - 700px)
   }
 
   @media (max-width: $md) {

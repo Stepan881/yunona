@@ -29,6 +29,20 @@ jQuery(document).ready(function($){
     });
   }
    
+  // header переключение цвета 
+  jQuery(function($) {
+      var $nav = $('#header'),
+          $win = $(window),
+          winH = $win.height(); 
+
+      $win.on("scroll", function () {
+        $nav.toggleClass("header-white", $(this).scrollTop() > winH );
+      }).on("resize", function(){
+        winH = $(this).height();
+      });
+  });
+
+
   // навигация меню
   $('.sub-nav__list').slick({
     dots: false,
