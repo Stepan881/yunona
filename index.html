@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <!-- Слик слайдер -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./assets/css/main.min.css">
@@ -43,23 +44,22 @@
       </div>
       <button class="header__tel-btn">
         <span class="header__tel-text">Заказать звонок</span>
-          <svg class="header__tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clips)">
-            <path d="M23.7886 4.76807L16.5099 11.9999L23.7886 19.2317C23.9202 18.9567 24 18.6527 24 18.328V5.67177C24 5.34707 23.9202 5.04308 23.7886 4.76807Z" fill="white"/>
-            <path d="M21.8906 3.5625H2.10939C1.78469 3.5625 1.4807 3.64233 1.20569 3.77391L10.5086 13.03C11.3312 13.8526 12.6688 13.8526 13.4914 13.03L22.7943 3.77391C22.5193 3.64233 22.2153 3.5625 21.8906 3.5625Z" fill="white"/>
-            <path d="M0.211406 4.76807C0.0798281 5.04308 0 5.34707 0 5.67177V18.328C0 18.6527 0.0798281 18.9568 0.211406 19.2317L7.49011 11.9999L0.211406 4.76807Z" fill="white"/>
-            <path d="M15.5156 12.9941L14.4857 14.0241C13.1151 15.3947 10.8849 15.3947 9.51433 14.0241L8.48439 12.9941L1.20569 20.226C1.4807 20.3575 1.78469 20.4374 2.10939 20.4374H21.8906C22.2153 20.4374 22.5193 20.3575 22.7943 20.226L15.5156 12.9941Z" fill="white"/>
-            </g>
-            <defs>
-            <clipPath id="clips">
-            <rect width="24" height="24" fill="white"/>
-            </clipPath>
-            </defs>
-          </svg>
-          
-          
       </button>
-      
+      <a class="header__mail" href="">
+        <svg class="header__tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clips)">
+          <path d="M23.7886 4.76807L16.5099 11.9999L23.7886 19.2317C23.9202 18.9567 24 18.6527 24 18.328V5.67177C24 5.34707 23.9202 5.04308 23.7886 4.76807Z" fill="white"/>
+          <path d="M21.8906 3.5625H2.10939C1.78469 3.5625 1.4807 3.64233 1.20569 3.77391L10.5086 13.03C11.3312 13.8526 12.6688 13.8526 13.4914 13.03L22.7943 3.77391C22.5193 3.64233 22.2153 3.5625 21.8906 3.5625Z" fill="white"/>
+          <path d="M0.211406 4.76807C0.0798281 5.04308 0 5.34707 0 5.67177V18.328C0 18.6527 0.0798281 18.9568 0.211406 19.2317L7.49011 11.9999L0.211406 4.76807Z" fill="white"/>
+          <path d="M15.5156 12.9941L14.4857 14.0241C13.1151 15.3947 10.8849 15.3947 9.51433 14.0241L8.48439 12.9941L1.20569 20.226C1.4807 20.3575 1.78469 20.4374 2.10939 20.4374H21.8906C22.2153 20.4374 22.5193 20.3575 22.7943 20.226L15.5156 12.9941Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clips">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
       <div class="header__social-wrapper">
         <div class="social">
   <ul>
@@ -107,23 +107,25 @@
     <img class="language__head-img" src="./assets/img/country/rus.svg" alt="rus">
   </span>
   
-  <ul class="language__list">
-    <li>
-      <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
-    </li>
-    <li>
-      <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
-    </li>
-    <li>
-      <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
-    </li>
-    <li>
-      <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
-    </li>
-    <li>
-      <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
-    </li>
-  </ul>
+  <div class="language__wrapper">
+    <ul class="language__list">
+      <li>
+        <a href="#"><img src="./assets/img/country/germany.svg" alt="germany"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/img/country/great-britain.svg" alt="great-britain"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/img/country/italia.svg" alt="italia"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/img/country/spain.svg" alt="spain"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/img/country/china.svg" alt="china"></a>
+      </li>
+    </ul>
+  </div>
 </div>
 
       </div>
@@ -139,6 +141,7 @@
 <!-- nav-menu--open -->
 <nav class="nav-menu">
   <div class="nav-menu__wrapper">
+    <div class="nav-menu__overlay"></div>
     <a class="nav-menu__close" href="#"></a>
     <ul class="nav-menu__list">
       <li class="nav-menu__item">
@@ -374,7 +377,7 @@
 
     <section class="benefits" id="benefits">
       <div class="container">
-        <h2 class="container__title">Преимущества</h2>
+        <h2 class="container__title">Преимущества</h2> 
         <div class="benefits__nav">
           <div class="sub-nav">
   <ul class="sub-nav__list">
@@ -390,58 +393,59 @@
   </ul>
 </div>
         </div>
-        <div class="benefits__wrapper-cards" id="benefits-slider">
-          <div class="article-benefit">
+        <div class="benefits__wrapper" id="benefits-slider">
+          <div class="benefits__wrapper-cards">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon1.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon2.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon3.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon4.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon1.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon2.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon3.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-          <div class="article-benefit">
+            <div class="article-benefit">
   <div class="article-benefit__img-wrapper">
     <img class="article-benefit__img" src=./assets/img/benefit/icon4.svg alt="Иконка">
   </div>
   <p class="article-benefit__text">Развитая туристическая инфраструктура</p>
 </div>
-        </div>
-        <div class="benefits__pagination">
-          <div class="pagination">
+          </div>
+          <div class="benefits__pagination">
+            <div class="pagination">
   <div class="pagination__wrapper">
     <div class="pagination__arrow pagination__prew">
       <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -460,6 +464,7 @@
     </div>
   </div>
 </div>
+          </div>
         </div>
         <div class="benefits__btn-wrapper">
           <a class="btn-modal" href="#">Как попасть в Калининград</a>
@@ -489,9 +494,8 @@
     <section class="excursion" id="excursion">
       <div class="container">
         <h2 class="container__title">Экскурсии</h2>
-        <div class="excursion__wrapper benefits">
-          <div class="benefits__nav">
-            <div class="sub-nav">
+        <div class="benefits__nav">
+          <div class="sub-nav">
   <ul class="sub-nav__list">
     
       <li>
@@ -532,9 +536,10 @@
     
   </ul>
 </div>
-          </div>
-          <div class="excursion__cards" id="excursion-slider">
-            <article class="excursion-card @@classname">
+        </div>
+        <div class="excursion__wrapper benefits" id="excursion-slider">
+          <div class="excursion__cards">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -589,7 +594,7 @@
   </div>
 
 </article>
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -644,7 +649,7 @@
   </div>
 
 </article>
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -699,7 +704,7 @@
   </div>
 
 </article>
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -755,7 +760,7 @@
 
 </article>
             
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -811,7 +816,7 @@
 
 </article>
             
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -867,7 +872,7 @@
 
 </article>
             
-            <article class="excursion-card @@classname">
+            <article class="excursion-card swiper-slide @@classname">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -981,7 +986,7 @@
 </div>
           </div>
           <div class="tours__cards" id="tours-slider">
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1037,7 +1042,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1093,7 +1098,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1149,7 +1154,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1236,7 +1241,63 @@
         <h2 class="container__title">Активности</h2>
         <div class="activity__wrapper">
           <div class="activity__cards" id="activity-slider">
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
+  <div class="excursion-card__wrapper">
+    <div class="excursion-card__bonuses">
+       <div class="excursion-card__icon excursion-card__icon--percent">
+        <span>%</span>
+      </div>
+      <div class="excursion-card__icon excursion-card__icon--new">
+        <span>new</span>
+      </div>
+      <div class="excursion-card__icon excursion-card__icon--star">
+        <span>
+          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 0L18.2379 8.16699L27.3148 9.67376L20.8571 16.228L22.229 25.3262L14 21.21L5.77101 25.3262L7.14288 16.228L0.685208 9.67376L9.76207 8.16699L14 0Z" fill="white"/>
+          </svg>
+        </span>
+      </div> 
+    </div>
+    <div class="excursion-card__wrapper-img">
+      <img class="excursion-card__img" src="./assets/img/card/excursion-card1.png" alt="Фотография">
+    </div>
+    <div class="excursion-card__content">
+      <div class="excursion-card__options">
+        <span class="excursion-card__day-city"></span>
+        <span class="excursion-card__time">12:00</span>
+        <span class="excursion-card__price-underline"></span>
+        <span class="excursion-card__price-new">1 000 ₽</span>
+        <span class="excursion-card__price-gold"></span>
+      </div>
+      <h3 class="excursion-card__head"> Локомотив — Енисей 14.12.2020 Локомотив — Локомотив — Енисей 14.12.2020 Локомотив — Локомотив — Енисей 14.12.2020 Локомотив — Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020</h3>
+      <div class="excursion-card__stars">
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+        <span>
+        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+          </svg>
+        </span>
+      </div>
+      <p class="excursion-card__text"></p>
+      <div class="excursion-card__buttons">
+        <a class="excursion-card__details" href="#">Подробнее</a>
+        <a class="excursion-card__tobook" href="#">Забронировать</a>
+      </div>
+    </div>    
+  </div>
+
+</article>
+            
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1292,7 +1353,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1348,7 +1409,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1404,7 +1465,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1460,63 +1521,7 @@
 
 </article>
             
-            <article class="excursion-card ">
-  <div class="excursion-card__wrapper">
-    <div class="excursion-card__bonuses">
-       <div class="excursion-card__icon excursion-card__icon--percent">
-        <span>%</span>
-      </div>
-      <div class="excursion-card__icon excursion-card__icon--new">
-        <span>new</span>
-      </div>
-      <div class="excursion-card__icon excursion-card__icon--star">
-        <span>
-          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 0L18.2379 8.16699L27.3148 9.67376L20.8571 16.228L22.229 25.3262L14 21.21L5.77101 25.3262L7.14288 16.228L0.685208 9.67376L9.76207 8.16699L14 0Z" fill="white"/>
-          </svg>
-        </span>
-      </div> 
-    </div>
-    <div class="excursion-card__wrapper-img">
-      <img class="excursion-card__img" src="./assets/img/card/excursion-card1.png" alt="Фотография">
-    </div>
-    <div class="excursion-card__content">
-      <div class="excursion-card__options">
-        <span class="excursion-card__day-city"></span>
-        <span class="excursion-card__time">12:00</span>
-        <span class="excursion-card__price-underline"></span>
-        <span class="excursion-card__price-new">1 000 ₽</span>
-        <span class="excursion-card__price-gold"></span>
-      </div>
-      <h3 class="excursion-card__head"> Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020</h3>
-      <div class="excursion-card__stars">
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-      </div>
-      <p class="excursion-card__text"></p>
-      <div class="excursion-card__buttons">
-        <a class="excursion-card__details" href="#">Подробнее</a>
-        <a class="excursion-card__tobook" href="#">Забронировать</a>
-      </div>
-    </div>    
-  </div>
-
-</article>
-            
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1572,7 +1577,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1628,7 +1633,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1713,9 +1718,8 @@
       <img class="section-icon" src="./assets/img/tours.svg" alt="tours">
       <div class="container">
         <h2 class="container__title">Гостиницы</h2>
-        <div class="tours__wrapper">
-          <div class="tours__nav">
-            <div class="sub-nav">
+        <div class="tours__nav">
+          <div class="sub-nav">
   <ul class="sub-nav__list">
     
       <li>
@@ -1748,9 +1752,10 @@
     
   </ul>
 </div>
-          </div>
-          <div class="tours__cards" id="hotels-slider">
-            <article class="excursion-card house">
+        </div>
+        <div class="tours__wrapper" id="hotels-slider">
+          <div class="tours__cards swiper-wrapper">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1806,7 +1811,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1862,7 +1867,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1918,7 +1923,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -1974,7 +1979,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2030,7 +2035,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2086,7 +2091,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2173,7 +2178,7 @@
         <h2 class="container__title">Музеи</h2>
         <div class="activity__wrapper">
           <div class="activity__cards" id="museums-slider">
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2229,7 +2234,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2285,7 +2290,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2341,7 +2346,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2397,7 +2402,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2453,7 +2458,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2509,7 +2514,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2565,7 +2570,7 @@
 
 </article>
             
-            <article class="excursion-card ">
+            <article class="excursion-card swiper-slide ">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2675,7 +2680,7 @@
 </div>
           </div>
           <div class="tours__cards" id="restaurants-slider">
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2731,7 +2736,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2787,7 +2792,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2843,7 +2848,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2899,7 +2904,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -2955,7 +2960,7 @@
 
 </article>
             
-            <article class="excursion-card house">
+            <article class="excursion-card swiper-slide house">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3042,7 +3047,7 @@
         <h2 class="container__title">События</h2>
         <div class="tours__wrapper">
           <div class="tours__cards" id="events-slider">
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3098,7 +3103,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3154,7 +3159,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3210,7 +3215,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3266,7 +3271,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3322,7 +3327,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -3378,7 +3383,7 @@
 
 </article>
             
-            <article class="excursion-card horizon">
+            <article class="excursion-card swiper-slide horizon">
   <div class="excursion-card__wrapper">
     <div class="excursion-card__bonuses">
        <div class="excursion-card__icon excursion-card__icon--percent">
@@ -4369,6 +4374,7 @@
 
   <!-- Слик слайдер -->
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/scripts.min.js"></script>
 
   <script>

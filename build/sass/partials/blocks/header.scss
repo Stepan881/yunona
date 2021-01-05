@@ -5,6 +5,7 @@
 
   background: linear-gradient(180deg, #532A13 0%, rgba(83, 42, 19, 0.927083) 21.88%, rgba(83, 42, 19, 0) 100%);
   filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+  transition: 0.3s;
 
   &__wrapper {
     display: flex;
@@ -69,11 +70,19 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
+    padding: 10px;
+    margin-left: 10px;
 
     transition: 0.3s;
     &:hover {
       transition: 0.3s;
       color: $color-btn;
+    }
+
+    @media (max-width: $lg) {
+      padding: 0;
+      margin-left: 0;
+
     }
   }
   &__number {
@@ -102,6 +111,7 @@
   }
 
   &__tel-btn {
+    outline: none;
     color: $color-head;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -124,37 +134,28 @@
     }
 
     @media (max-width: $lg) {
-      min-width: auto;
-      margin: 0 28px;
-      border: none;
-      &:hover {
-        border: none;
-        path {
-          transition: 0.3s;
-          fill: $color-btn;
-        }
-      }
-    }
-
-    @media (max-width: $sm) {
-      margin: 0;
-      margin-left: auto;
-      order: 2;
-    }
-  }
-
-  &__tel-text {
-
-    @media (max-width: $lg) {
       display: none;
     }
   }
 
-  &__tel-icon {
+  &__mail {
     display: none;
 
     @media (max-width: $lg) {
-      display: block;
+      display: flex;
+      padding: 10px;
+      margin-left: 10px;
+      transition: 0.3s;
+
+      &:hover {
+        svg {
+          path {
+            fill: $color-btn;
+            transition: 0.3s;
+            border: 2px solid ;
+          }
+        }
+      }
     }
   }
 
@@ -240,11 +241,26 @@
 
 
 .header.header-white {
+  transition: 0.3s;
   background: $color-head;
   .header {
     
     &__number {
       color: $c-benefit;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+    &__tel-wrapper {
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        opacity: 0.5;
+      }
+    }
+    &__mail {
       transition: 0.3s;
       &:hover {
         transition: 0.3s;
@@ -264,7 +280,7 @@
         fill: $c-benefit;
       }   
     }
-    &__tel-icon {
+    &__mail {
       path {
         fill: $c-benefit;
       }  

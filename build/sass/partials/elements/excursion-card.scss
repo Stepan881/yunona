@@ -1,28 +1,27 @@
 .excursion-card {
   display: flex;
   background: #FFFFFF;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); 
+
   border-radius: 20px;
   transition: 0.3s;
-  margin: 0 0 15px;
-  max-width: 555px;
+  // margin: 0 0 15px;
+  // max-width: 555px;
   width: 100%;
   overflow: hidden;
   
+
+
   @media (max-width: $xl) {
     max-width: 485px;
   }
   @media (max-width: $lg) {
-    max-width: 365px;
+    // max-width: 365px;
   }
   @media (max-width: $md) {
     max-width: 100%;
   }
 
-  &:hover {
-    transition: 0.3s;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
-  }
+
 
   &__wrapper {
     position: relative;
@@ -289,14 +288,14 @@
 }
 
 .excursion-card.house {
-  max-width: 31%;
+  // max-width: 31%;
 
   @media (max-width: $xl) {
-    max-width: 48%;
+    // max-width: 48%;
   }
 
   @media (max-width: $md) {
-    max-width: 100%;
+    // max-width: 100%;
   }
 
   .excursion-card {
