@@ -1,18 +1,45 @@
 .tours-program {
   padding-bottom: 80px;
+  background: #F6F3EE;
 
   &__wrapper {
     position: relative;
     margin-top: 80px;
+    overflow: hidden;
+    
+    width: calc(100% + 128px);
+    margin: 0 -64px;
+
+    @media (max-width: $xxl) {
+      width: calc(100% + 64px);
+      margin: 0 -32px;
+    }
+    @media (max-width: $xl) {
+      width: calc(100% + 64px);
+      margin: 0 -32px;
+    }
+    @media (max-width: $lg) {
+      width: calc(100%);
+      margin: 0;
+    }
   }
 
   &__nav {
-
+    margin-top: 54px;
   }
 
   &__slider {
-    margin-top: 54px;
+
     position: relative;
+    display: flex;
+    
+    .wrapper-slides {
+      padding: 30px 100px;
+
+      @media (max-width: $lg) {
+        padding: 30px;
+      }
+    }
 
     .excursion-card.horizon {
       .excursion-card__wrapper-img {
@@ -27,12 +54,23 @@
   &__paginations {
     position: absolute;
     top: calc(50% - 22px);
-    width: calc(100% + 128px);
-    margin: 0 -64px;
+    width: calc(95%);
+    left: 50%;
+    transform: translate(-50%);
 
-    @media (max-width: $md) {
+    @media (max-width: $xxl) {
+      width: calc(93%);
+    }
+    @media (max-width: $xl) {
+      width: calc(93%);
+    }
+    @media (max-width: $lg) {
+      transform: translate(0);
+    }
+
+    @media (max-width: $lg) {
       position: static;
-      margin: 40px auto 0;
+      margin: 40px auto;
       width: 200px;
     }
 
@@ -41,7 +79,7 @@
       &__num {
         display: none;
 
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
           display: flex;
         }
       }

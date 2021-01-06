@@ -11,11 +11,9 @@
     }
   }
   .page-excursion {
-    & {
-      &__top {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
+    &__top {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &__rating {

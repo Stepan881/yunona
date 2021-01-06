@@ -1,5 +1,5 @@
 .reviews-card {
-  max-width: 360px;
+  // max-width: 360px;
   width: 100%;
   padding: 40px 20px;
   background-color: $color-head;
@@ -12,11 +12,11 @@
   }
 
   @media (max-width: $xl) {
-    max-width: 310px;
+    // max-width: 310px;
   }
 
   @media (max-width: $lg) {
-    max-width: 48%;
+    // max-width: 48%;
   }
 
   @media (max-width: $md) {

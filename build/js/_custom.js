@@ -73,7 +73,7 @@ jQuery(document).ready(function($){
 
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 993,
           settings: {
             rows: 3,
             swipe: true,          
@@ -82,7 +82,7 @@ jQuery(document).ready(function($){
           }
 
         },{
-          breakpoint: 768, 
+          breakpoint: 769, 
           settings: {         
             swipe: true,
             slidesToShow: 2,
@@ -130,7 +130,7 @@ const excursionSwiper = new Swiper('#excursion-slider', {
   breakpoints: {  
     993: {       
       slidesPerColumn: 2,
-       slidesPerView: 2,
+      slidesPerView: 2,
     },   
     769: {       
       slidesPerColumn: 2,
@@ -451,4 +451,66 @@ const teamSwiper = new Swiper('#team-slider', {
     },   
 
   }
+});
+
+// page-excursion-slider
+const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
+  wrapperClass: 'page-excursion__slider-wrapper',
+  slideClass: 'page-excursion__slide',
+
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+  breakpoints: {  
+    993: {       
+      pagination: {
+        el: '.pagination__num',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="pagination__text pagination__active '+ currentClass +'"></span>' +
+                 '<span class="pagination__text pagination__slash">/</span>'+
+                 '<span class="pagination__text pagination__count '+ totalClass +'"></span>';
+        },
+      },
+    },
+    320: {       
+      pagination: {
+        clickable: true,
+        bulletClass: 'boolets__item',
+        el: '.boolets',
+        type: 'bullets',
+        bulletActiveClass: 'boolets__item--active',
+        renderBullet: function (index, className) {
+          console.log('className: ', className);
+          return '<span class="boolets__item"></span>';
+        }
+      },
+    },
+  }
+
+});
+
+window.addEventListener('resize', function(event){
+  pageExcursionSwiper.update();
+});
+
+const toursProgramSwiper = new Swiper('#tours-program-slider', {
+  wrapperClass: 'tours-program__slider',
+  slideClass: 'wrapper-slides',
+
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+  pagination: {
+    el: '.pagination__num',
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class="pagination__text pagination__active '+ currentClass +'"></span>' +
+             '<span class="pagination__text pagination__slash">/</span>'+
+             '<span class="pagination__text pagination__count '+ totalClass +'"></span>';
+    },
+  },
+
 });
