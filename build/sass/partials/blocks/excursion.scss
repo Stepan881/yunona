@@ -1,5 +1,4 @@
 .excursion {
-
   .container__title {
     @media (max-width: $sm) {
       padding-top: 70px;
@@ -25,11 +24,12 @@
 
     @media (max-width: $md) {
       margin-top: 64px;
+      flex-wrap: nowrap;
     }
   }
 
   &__paginations {
     width: 169px;
-    margin: 50px auto 0;
+    margin: 50px auto;
   }
 }

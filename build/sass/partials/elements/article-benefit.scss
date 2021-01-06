@@ -29,9 +29,9 @@
     font-size: 14px;
     line-height: 22px;
     color: $c-benefit;
-    margin-top: 10px;
+    margin: 10px auto 0;
 
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       margin: 10px 0 0;
     }
   }

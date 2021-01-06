@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Slider */
 
 .slick-slider {
@@ -1183,8 +1185,7 @@ button {
   margin: 0 52px 40px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  height: calc((100% - 30px) / 2);
+  background: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,11 +1217,37 @@ button {
   flex-direction: row !important;
 }
 
-.sub-nav li {
+.sub-nav__wrapper {
+  width: 100%;
+}
+
+.sub-nav__list {
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding-bottom: 3px;
+  min-width: 100%;
+  width: 100%;
+  /* хром, сафари */
+  /* ie 10+ */
+  -ms-overflow-style: none;
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  overflow: -moz-scrollbars-none;
+}
+
+.sub-nav__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.sub-nav__list li:last-child a {
+  margin-right: 0;
+}
+
+.sub-nav li {
+  position: relative;
 }
 
 .sub-nav__link {
+  position: relative;
   margin-bottom: 5px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -1271,7 +1298,7 @@ button {
   font-size: 14px;
   line-height: 22px;
   color: #686868;
-  margin-top: 10px;
+  margin: 10px auto 0;
 }
 
 .pagination__wrapper {
@@ -1425,10 +1452,12 @@ button {
 
 .excursion__paginations {
   width: 169px;
-  margin: 50px auto 0;
+  margin: 50px auto;
 }
 
 .excursion-card {
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1438,6 +1467,13 @@ button {
   transition: 0.3s;
   width: 100%;
   overflow: hidden;
+}
+
+.excursion-card:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
 }
 
 .excursion-card__wrapper {
@@ -1765,7 +1801,7 @@ button {
 
 .tours__paginations {
   width: 169px;
-  margin: 50px auto 0;
+  margin: 50px auto;
 }
 
 .activity {
@@ -1793,7 +1829,7 @@ button {
 
 .activity__paginations {
   width: 169px;
-  margin: 44px auto 0;
+  margin: 44px auto;
 }
 
 .events {
@@ -1973,7 +2009,7 @@ button {
 
 .reviews__paginations {
   width: 169px;
-  margin: 35px auto 0;
+  margin: 35px auto;
 }
 
 .reviews-card {
@@ -1988,8 +2024,8 @@ button {
 }
 
 .reviews-card:hover {
-  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
 }
 
 .reviews-card__wrapper {
@@ -2264,7 +2300,7 @@ button {
 }
 
 .team.reviews .reviews__paginations {
-  margin: 50px auto 0;
+  margin: 50px auto;
 }
 
 .contacts {
@@ -3590,6 +3626,133 @@ button {
   color: #EDB362;
 }
 
+.wrapper-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.pagination__num {
+  width: auto !important;
+}
+
+#excursion .excursion__cards {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+#excursion .excursion__wrapper {
+  margin: 0 -17px;
+}
+
+#tours .wrapper-slides {
+  width: 100%;
+}
+
+#tours .tours__wrapper {
+  margin: 0 -17px;
+}
+
+#tours .tours__cards {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#activity .activity__wrapper {
+  overflow: hidden;
+  margin: 0 -17px;
+}
+
+#activity .activity__cards {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#hotels .tours__wrapper {
+  overflow: hidden;
+  margin: 0 -60px;
+}
+
+#hotels .tours__cards {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#museums .activity__wrapper {
+  overflow: hidden;
+  margin: 0 -17px;
+}
+
+#museums .activity__cards {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+#restaurants .tours__wrapper {
+  overflow: hidden;
+  margin: 0 -60px;
+}
+
+#restaurants .tours__cards {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#events .wrapper-slides {
+  width: 100%;
+}
+
+#events .tours__wrapper {
+  margin: 0 -17px;
+}
+
+#events .tours__cards {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#reviews .reviews__wrapper {
+  overflow: hidden;
+  margin: 0 -60px;
+}
+
+#reviews .reviews__cards {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+#team .reviews__wrapper {
+  overflow: hidden;
+  margin: 0 -17px;
+}
+
+#team .reviews__cards {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
@@ -3611,10 +3774,6 @@ button {
 
   .container-head {
     max-width: 1200px;
-  }
-
-  .container-head {
-    background-color: lime;
   }
 
   .container {
@@ -3644,15 +3803,47 @@ button {
   .page-excursion__wrapper-img {
     width: 686px;
   }
+
+  #excursion .excursion__wrapper {
+    margin: 0 -30px;
+  }
+
+  #tours .tours__wrapper {
+    margin: 0 -30px;
+  }
+
+  #activity .activity__wrapper {
+    margin: 0 -30px;
+  }
+
+  #hotels .tours__wrapper {
+    margin: 0 -30px;
+  }
+
+  #museums .activity__wrapper {
+    margin: 0 -30px;
+  }
+
+  #restaurants .tours__wrapper {
+    margin: 0 -30px;
+  }
+
+  #events .tours__wrapper {
+    margin: 0 -30px;
+  }
+
+  #reviews .reviews__wrapper {
+    margin: 0 -30px;
+  }
+
+  #team .reviews__wrapper {
+    margin: 0 -30px;
+  }
 }
 
 @media (max-width: 1200px) {
   .container-head {
     max-width: 992px;
-  }
-
-  .container-head {
-    background-color: silver;
   }
 
   .container {
@@ -3679,10 +3870,6 @@ button {
     max-width: 416px;
   }
 
-  .excursion-card {
-    max-width: 485px;
-  }
-
   .instagram__images {
     max-width: 420px;
   }
@@ -3705,10 +3892,6 @@ button {
     max-width: 768px;
   }
 
-  .container-head {
-    background-color: salmon;
-  }
-
   .container {
     max-width: 768px;
   }
@@ -3720,6 +3903,12 @@ button {
   .header__tel {
     padding: 0;
     margin-left: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .header__number {
@@ -4162,10 +4351,6 @@ button {
     max-width: 100%;
   }
 
-  .container-head {
-    background-color: red;
-  }
-
   .container {
     max-width: 576px;
   }
@@ -4186,10 +4371,6 @@ button {
 
   .header__language-wrapper {
     display: none;
-  }
-
-  .header__wrapper-menu {
-    margin: 0;
   }
 
   .nav-menu__close {
@@ -4227,22 +4408,31 @@ button {
     max-width: 281px;
   }
 
+  .benefits__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 26px auto 60px;
+  }
+
   .benefits__btn-wrapper {
     max-width: 343px;
   }
 
-  .sub-nav li {
+  .sub-nav li::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
     border-bottom: 2px solid #D0D0D0;
-    padding-bottom: 0;
+    width: 100%;
   }
 
   .article-benefit__img {
     width: 132px;
     height: 130px;
-  }
-
-  .article-benefit__text {
-    margin: 10px 0 0;
   }
 
   .location__title {
@@ -4256,6 +4446,8 @@ button {
 
   .excursion__cards {
     margin-top: 64px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .excursion-card {
@@ -4329,7 +4521,7 @@ button {
   }
 
   .team.reviews .reviews__paginations {
-    margin: 35px auto 0;
+    margin: 35px auto;
   }
 
   .team.reviews .reviews__cards {
@@ -4621,15 +4813,51 @@ button {
     font-size: 16px;
     line-height: 24px;
   }
+
+  #tours .tours__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #activity .activity__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #hotels .tours__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #museums .activity__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #restaurants .tours__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #events .tours__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #reviews .reviews__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #team .reviews__cards {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (max-width: 576px) {
   .container-head {
     max-width: 100%;
-  }
-
-  .container-head {
-    background-color: green;
   }
 
   .container {
@@ -4649,9 +4877,9 @@ button {
 
   .header__logo {
     margin-right: 20px;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
   }
 
   .header__tel-wrapper {
@@ -4661,11 +4889,15 @@ button {
     margin: 0 0 0 30px;
   }
 
+  .header__mail {
+    margin: 0 0 0 auto;
+  }
+
   .header__wrapper-menu {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
-    margin-left: 26px;
+    margin-left: 30px;
   }
 
   .main-nav {
@@ -4697,22 +4929,17 @@ button {
 
   .benefits__wrapper-cards .article-benefit {
     max-width: 100%;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  .benefits__pagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 26px auto 60px;
   }
 
   .sub-nav__link {
     margin-right: 30px;
+  }
+
+  .article-benefit__text {
+    margin: 10px 0 0;
   }
 
   .location__wrapper {

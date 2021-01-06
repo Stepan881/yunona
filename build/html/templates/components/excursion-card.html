@@ -1,55 +1,58 @@
-<article class="excursion-card swiper-slide @@classname">
-  <div class="excursion-card__wrapper">
-    <div class="excursion-card__bonuses">
-       <div class="excursion-card__icon excursion-card__icon--percent">
-        <span>%</span>
+<div class="wrapper-slides swiper-slide">
+  <article class="excursion-card @@classname">
+    <div class="excursion-card__wrapper">
+      <div class="excursion-card__bonuses">
+         <div class="excursion-card__icon excursion-card__icon--percent">
+          <span>%</span>
+        </div>
+        <div class="excursion-card__icon excursion-card__icon--new">
+          <span>new</span>
+        </div>
+        <div class="excursion-card__icon excursion-card__icon--star">
+          <span>
+            <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 0L18.2379 8.16699L27.3148 9.67376L20.8571 16.228L22.229 25.3262L14 21.21L5.77101 25.3262L7.14288 16.228L0.685208 9.67376L9.76207 8.16699L14 0Z" fill="white"/>
+            </svg>
+          </span>
+        </div> 
       </div>
-      <div class="excursion-card__icon excursion-card__icon--new">
-        <span>new</span>
+      <div class="excursion-card__wrapper-img">
+        <img class="excursion-card__img" src="@@url" alt="Фотография">
       </div>
-      <div class="excursion-card__icon excursion-card__icon--star">
-        <span>
-          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 0L18.2379 8.16699L27.3148 9.67376L20.8571 16.228L22.229 25.3262L14 21.21L5.77101 25.3262L7.14288 16.228L0.685208 9.67376L9.76207 8.16699L14 0Z" fill="white"/>
-          </svg>
-        </span>
-      </div> 
+      <div class="excursion-card__content">
+        <div class="excursion-card__options">
+          <span class="excursion-card__day-city">@@day</span>
+          <span class="excursion-card__time">@@time</span>
+          <span class="excursion-card__price-underline">@@underline</span>
+          <span class="excursion-card__price-new">@@new</span>
+          <span class="excursion-card__price-gold">@@gold</span>
+        </div>
+        <h3 class="excursion-card__head">@@head</h3>
+        <div class="excursion-card__stars">
+          <span>
+          <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+            </svg>
+          </span>
+          <span>
+          <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+            </svg>
+          </span>
+          <span>
+          <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
+            </svg>
+          </span>
+        </div>
+        <p class="excursion-card__text">@@text</p>
+        <div class="excursion-card__buttons">
+          <a class="excursion-card__details" href="#">Подробнее</a>
+          <a class="excursion-card__tobook" href="#">Забронировать</a>
+        </div>
+      </div>    
     </div>
-    <div class="excursion-card__wrapper-img">
-      <img class="excursion-card__img" src="@@url" alt="Фотография">
-    </div>
-    <div class="excursion-card__content">
-      <div class="excursion-card__options">
-        <span class="excursion-card__day-city">@@day</span>
-        <span class="excursion-card__time">@@time</span>
-        <span class="excursion-card__price-underline">@@underline</span>
-        <span class="excursion-card__price-new">@@new</span>
-        <span class="excursion-card__price-gold">@@gold</span>
-      </div>
-      <h3 class="excursion-card__head">@@head</h3>
-      <div class="excursion-card__stars">
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-        <span>
-        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0L14.6942 8.2918H23.4127L16.3593 13.4164L19.0534 21.7082L12 16.5836L4.94658 21.7082L7.64074 13.4164L0.587322 8.2918H9.30583L12 0Z" fill="#EDB362"/>
-          </svg>
-        </span>
-      </div>
-      <p class="excursion-card__text">@@text</p>
-      <div class="excursion-card__buttons">
-        <a class="excursion-card__details" href="#">Подробнее</a>
-        <a class="excursion-card__tobook" href="#">Забронировать</a>
-      </div>
-    </div>    
-  </div>
+  
+  </article>
 
-</article>
+</div>

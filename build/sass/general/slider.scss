@@ -157,55 +157,184 @@
 // }
 
 
-@mixin boxShadow () {
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); 
-  &:hover {
-  
-    transition: 0.3s;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
+
+
+.wrapper-slides {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+.pagination__num {
+  width: auto !important;
+}
+
+// Преимущества
+#benefits {
+  .benefits__wrapper-cards {
+    // justify-content: space-between;
+
+  }
+  .article-benefit {
   }
 }
 
-// .swiper-slide-visible {
-//   @include boxShadow ();
-  
-// }
+// Экскурсии
+#excursion {
+  .excursion__cards {
+    justify-content: flex-start !important;   
+  }
+  .excursion__wrapper {
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+}
 
-// .swiper-slide {
-//   height: auto !important;
-// }
-// .pagination__num {
-//   width: auto !important;
-// }
+// Туры
+#tours {
+  .wrapper-slides {
+    width: 100%;
+  }
+  .tours__wrapper {
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .tours__cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-// .excursion__wrapper {
-//   // padding: 50px 0;
-//   margin: 0px -15px;
-//   width: calc(100% - 30px);
-// }
-// .excursion__cards {
-//   // margin: 15px 40px;
-//   justify-content: flex-start !important;
-// }
-// .excursion-card {
-//   // margin: 0 auto;
-//   // margin: 30px !important;
-//   margin-top: 0 !important;
-//   margin-bottom: 15px !important;
-// }
+    @media (max-width: $md) {
+      flex-wrap: nowrap;
+    }
+  }
+}
 
-// .tours__wrapper {
-//   padding: 50px 30px;
-//   margin: 0 -30px 0 -30px;
-// }
+// Активности
+#activity {
+  .activity__wrapper {
+    overflow: hidden;
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .activity__cards {
+    justify-content: flex-start;
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}
 
-// .tours__cards {
-//   width: 100%;
-//   // margin: 0 -30px 0 -30px;
-//   // display: flex;
-//   // justify-content: center;
-// }
+// Гостиницы
+#hotels {
+  .tours__wrapper {
+    overflow: hidden;
+    margin: 0 -60px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .tours__cards {
+    justify-content: flex-start;
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}
 
+// Музеи
+#museums {
+  .activity__wrapper {
+    overflow: hidden;
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .activity__cards {
+    justify-content: flex-start !important;  
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}
 
+// Рестораны
+#restaurants {
+  .tours__wrapper {
+    overflow: hidden;
+    margin: 0 -60px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .tours__cards {
+    justify-content: flex-start;
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}
 
+// Туры
+#events {
+  .wrapper-slides {
+    width: 100%;
+  }
+  .tours__wrapper {
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .tours__cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
+    @media (max-width: $md) {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+// Отзывы
+#reviews {
+  .reviews__wrapper {
+    overflow: hidden;
+    margin: 0 -60px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .reviews__cards {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+#team {
+  .reviews__wrapper {
+    overflow: hidden;
+    margin: 0 -17px;
+    @media (max-width: $xxl) {// $xxl: 1400px;
+      margin: 0 -30px;
+    }
+  }
+  .reviews__cards {
+    justify-content: flex-start !important;  
+    @media (max-width: $md) {// $md: 768px;
+      flex-wrap: nowrap;
+    }
+  }
+}

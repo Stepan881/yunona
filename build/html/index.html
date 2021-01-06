@@ -3,7 +3,7 @@
   
   @@include('./templates/header.html')
 
-  <main>
+  <main class="index">
     <section class="main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul>
@@ -166,8 +166,8 @@
             "text" : ['Калининградская область', 'Компания Юнона']
           })
         </div>
-        <div class="benefits__wrapper" id="benefits-slider">
-          <div class="benefits__wrapper-cards">
+        <div class="benefits__wrapper">
+          <div class="benefits__wrapper-cards" id="benefits-slider">
             @@include('./templates/components/article-benefit.html', {
               "url": "./assets/img/benefit/icon1.svg"
             })
@@ -239,7 +239,7 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -310,13 +310,24 @@
       <img class="section-icon" src="./assets/img/car.svg" alt="car">
       <div class="container">
         <h2 class="container__title">Туры</h2>
-        <div class="tours__wrapper">
-          <div class="tours__nav">
-            @@include('./templates/components/sub-nav.html', {
-              "text" : ['Все туры', 'Еженедельные туры', 'Туры для компаний', 'Туры на праздники и события', 'Школьные туры']
+        <div class="tours__nav">
+          @@include('./templates/components/sub-nav.html', {
+            "text" : ['Все туры', 'Еженедельные туры', 'Туры для компаний', 'Туры на праздники и события', 'Школьные туры']
+          })
+        </div>
+        <div class="tours__wrapper" id="tours-slider">
+          <div class="tours__cards">
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. ",
+              "classname": "horizon"
             })
-          </div>
-          <div class="tours__cards" id="tours-slider">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "Пн-Пт",
@@ -328,19 +339,6 @@
               "text": "Даты заездов: каждую субботу. ",
               "classname": "horizon"
             })
-            
-            @@include('./templates/components/excursion-card.html', {
-              "url": "./assets/img/card/excursion-card1.png",
-              "day" : "Чт",
-              "time": "09:00 - 16:00",
-              "underline": "1 000 ₽",
-              "new" : "1 000 ₽",
-              "gold": "1 000 ₽",
-              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)",
-              "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», ",
-              "classname": "horizon"
-            })
-            
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "Пн-Пт",
@@ -349,10 +347,9 @@
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
-              "text": "Lorem ipsum dolor sit amet..",
+              "text": "Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. ",
               "classname": "horizon"
             })
-            
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "Пн-Пт",
@@ -361,7 +358,18 @@
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
-              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla quos quis ea numquam natus expedita, excepturi exercitationem a praesentium!",
+              "text": "Даты заездов: каждую субботу. ",
+              "classname": "horizon"
+            })
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "Пн-Пт",
+              "time": "09:00 - 16:00",
+              "underline": "1 000 ₽",
+              "new" : "1 000 ₽",
+              "gold": "1 000 ₽",
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "text": "Даты заездов: каждую субботу. ",
               "classname": "horizon"
             })
           </div>
@@ -376,8 +384,8 @@
       <img class="section-icon" src="./assets/img/activity.svg" alt="car">
       <div class="container">
         <h2 class="container__title">Активности</h2>
-        <div class="activity__wrapper">
-          <div class="activity__cards" id="activity-slider">
+        <div class="activity__wrapper" id="activity-slider">
+          <div class="activity__cards">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "",
@@ -491,7 +499,7 @@
           })
         </div>
         <div class="tours__wrapper" id="hotels-slider">
-          <div class="tours__cards swiper-wrapper">
+          <div class="tours__cards">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/tours/tours1.png",
               "day" : "Зеленоградск",
@@ -587,8 +595,8 @@
       <img class="section-icon" src="./assets/img/museums.png" alt="car">
       <div class="container">
         <h2 class="container__title">Музеи</h2>
-        <div class="activity__wrapper">
-          <div class="activity__cards" id="museums-slider">
+        <div class="activity__wrapper" id="museums-slider">
+          <div class="activity__cards">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "Пн-Пт",
@@ -596,7 +604,7 @@
               "underline": "",
               "new" : "1 000 ₽",
               "gold": "",
-              "head": "Музей Мирового океана",
+              "head": "Музей Мирового океанаМузей Мирового океанаМузей Мирового океанаМузей Мирового океанаМузей Мирового океана",
               "text": "",
               "classname": ""
             })
@@ -684,6 +692,17 @@
               "text": "",
               "classname": ""
             })
+            @@include('./templates/components/excursion-card.html', {
+              "url": "./assets/img/card/excursion-card1.png",
+              "day" : "",
+              "time": "12:00",
+              "underline": "",
+              "new" : "1 000 ₽",
+              "gold": "",
+              "head": "Музей Марципана",
+              "text": "",
+              "classname": ""
+            })
           </div>
           <div class="activity__paginations">
             @@include('./templates/components/pagination.html')
@@ -696,13 +715,13 @@
       <img class="section-icon" src="./assets/img/restaurants.png" alt="restaurants">
       <div class="container">
         <h2 class="container__title">Рестораны</h2>
-        <div class="tours__wrapper">
-          <div class="tours__nav">
-            @@include('./templates/components/sub-nav.html', {
-              "text" : ['Калининград', 'Побережье', 'Черняховск', 'Гусев']
-            })
-          </div>
-          <div class="tours__cards" id="restaurants-slider">
+        <div class="tours__nav">
+          @@include('./templates/components/sub-nav.html', {
+            "text" : ['Калининград', 'Побережье', 'Черняховск', 'Гусев']
+          })
+        </div>
+        <div class="tours__wrapper" id="restaurants-slider">
+          <div class="tours__cards">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
               "day" : "Зеленоградск",
@@ -786,8 +805,8 @@
       <img class="section-icon" src="./assets/img/events.png" alt="events">
       <div class="container">
         <h2 class="container__title">События</h2>
-        <div class="tours__wrapper">
-          <div class="tours__cards" id="events-slider">
+        <div class="tours__wrapper" id="events-slider">
+          <div class="tours__cards">
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/events-avatar.png",
               "day" : "",
@@ -883,7 +902,7 @@
     <section class="benefits safety" id="safety">
       <div class="container">
         <h2 class="container__title">Безопасность на отдыхе</h2>
-        <div class="benefits__wrapper-cards">
+        <div class="benefits__wrapper-cards" id="safety-slider">
           @@include('./templates/components/article-benefit.html', {
             "url": "./assets/img/benefit/icon1.svg"
           })
@@ -942,8 +961,8 @@
             @@include('./templates/components/rating.html')
           </div>
         </div>
-        <div class="reviews__wrapper">
-          <div class="reviews__cards" id="reviews-slider">
+        <div class="reviews__wrapper" id="reviews-slider">
+          <div class="reviews__cards">
             @@include('./templates/components/reviews-card.html', {
               "url": "./assets/img/avatar.png",
               "data" : "23/06/19",
@@ -1011,8 +1030,8 @@
     <section class="team reviews" id="team">
       <div class="container">
         <h2 class="container__title">Кто вам поможет</h2>
-        <div class="reviews__wrapper">
-          <div class="reviews__cards" id="team-slider">
+        <div class="reviews__wrapper" id="team-slider">
+          <div class="reviews__cards">
             @@include('./templates/components/reviews-card.html', {
               "url": "./assets/img/avatar.png",
               "data" : "23/06/19",
