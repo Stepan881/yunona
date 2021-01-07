@@ -963,6 +963,8 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   height: 30px;
   white-space: nowrap;
   -webkit-transition: 0.3s opacity, left 0.3s 0.3s;
@@ -1003,6 +1005,8 @@ button {
 }
 
 .main-nav__dot {
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-left: 15px;
@@ -1011,7 +1015,7 @@ button {
   display: flex;
   width: 12px;
   height: 12px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #686868;
   border-radius: 50%;
   padding: 4px;
   cursor: pointer;
@@ -1178,7 +1182,7 @@ button {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 67px;
+  margin-top: 40px;
 }
 
 .benefits__wrapper-cards .article-benefit {
@@ -1435,7 +1439,7 @@ button {
 
 .excursion__cards {
   width: 100%;
-  margin-top: 84px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,6 +1755,10 @@ button {
   height: 300px;
 }
 
+.excursion-card.house .excursion-card__content {
+  padding: 20px 20px 100px;
+}
+
 .excursion-card.house .excursion-card__text {
   margin-top: 20px;
   -webkit-box-ordinal-group: 3;
@@ -1773,7 +1781,7 @@ button {
 .tours {
   position: relative;
   background: #F6F3EE;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .tours__nav {
@@ -1786,7 +1794,7 @@ button {
 
 .tours__cards {
   width: 100%;
-  margin-top: 84px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1807,7 +1815,7 @@ button {
 .activity {
   position: relative;
   background: #ffffff;
-  padding-bottom: 80px;
+  padding-bottom: 33px;
 }
 
 .activity__cards {
@@ -1837,7 +1845,7 @@ button {
 }
 
 .events__btn-bottom {
-  margin: 80px auto 0;
+  margin: 30px auto 47px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1972,7 +1980,7 @@ button {
 
 .reviews {
   background: #F6F3EE;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .reviews__titl-wrapper {
@@ -3672,7 +3680,7 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 .swiper-slide {
@@ -4504,6 +4512,7 @@ button {
 
   .benefits__btn-wrapper {
     max-width: 343px;
+    margin: 6px auto 0;
   }
 
   .sub-nav li::before {
@@ -4529,7 +4538,7 @@ button {
   }
 
   .excursion__cards {
-    margin-top: 64px;
+    margin-top: 25px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
@@ -4563,19 +4572,19 @@ button {
   }
 
   .tours {
-    padding-bottom: 75px;
+    padding-bottom: 27px;
   }
 
   .tours__cards {
-    margin-top: 64px;
+    margin-top: 25px;
   }
 
   .activity__cards {
-    margin-top: 64px;
+    margin-top: 43px;
   }
 
   .reviews {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .reviews-card {
@@ -4589,7 +4598,7 @@ button {
 
   .about .section-icon {
     top: auto;
-    bottom: -40px;
+    bottom: -140px;
   }
 
   .about__text {
@@ -5006,6 +5015,7 @@ button {
 
   .article-benefit__text {
     margin: 10px 0 0;
+    width: 90%;
   }
 
   .location__wrapper {
@@ -5051,11 +5061,11 @@ button {
   }
 
   .excursion-card.horizon .excursion-card__content {
-    padding: 8px 10px 100px;
+    padding: 24px 10px 100px;
   }
 
   .excursion-card.house .excursion-card__content {
-    padding: 8px 10px 100px;
+    padding: 20px 10px 100px;
   }
 
   .benefits.safety {
@@ -5102,7 +5112,7 @@ button {
   }
 
   .reviews__cards {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .page-excursion__right {

@@ -101,7 +101,10 @@ jQuery(document).ready(function($){
       $(`#${id}-slider`).slick('resize');
     });
   };
+
+
 });
+
 
 // Экскурсии
 const excursionSwiper = new Swiper('#excursion-slider', {
@@ -457,7 +460,7 @@ const teamSwiper = new Swiper('#team-slider', {
 const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
   wrapperClass: 'page-excursion__slider-wrapper',
   slideClass: 'page-excursion__slide',
-
+  lazyLoading: true,
   navigation: {
     nextEl: '.pagination__next',
     prevEl: '.pagination__prew',
@@ -482,7 +485,6 @@ const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
         type: 'bullets',
         bulletActiveClass: 'boolets__item--active',
         renderBullet: function (index, className) {
-          console.log('className: ', className);
           return '<span class="boolets__item"></span>';
         }
       },
@@ -498,7 +500,7 @@ window.addEventListener('resize', function(event){
 const toursProgramSwiper = new Swiper('#tours-program-slider', {
   wrapperClass: 'tours-program__slider',
   slideClass: 'wrapper-slides',
-
+  lazyLoading: true,
   navigation: {
     nextEl: '.pagination__next',
     prevEl: '.pagination__prew',
