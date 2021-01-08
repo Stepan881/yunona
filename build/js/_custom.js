@@ -73,12 +73,7 @@ jQuery(document).ready(function($){
     $('#header').addClass('header-white');
   }
 
-
-  // 2px solid #FFFFFF
-  // 2px solid #686868
-
   // меняет цвет булетов
-
   $(function($) {
     var $nav = $('.main-nav__dot'),
         $win = $(window),
@@ -95,24 +90,6 @@ jQuery(document).ready(function($){
       });
     });
 });
-
-
-
-  // $(function($) {
-  //     var $nav = $('.main-nav__dot'),
-  //         $win = $(window),
-  //         winH = $win.height(); 
-
-  //     $win.on("scroll", function () {
-
-  //       $nav.toggleClass("main-nav__dot--white", $('.dot').offset().top > winH );
-
-  //     }).on("resize", function(){
-
-  //       winH = $(this).height();
-
-  //     });
-  // });
 
   // слайдер Преимущества
   sliderSlic(`benefits`);

@@ -60,7 +60,9 @@
     font-size: 20px;
     line-height: 20px;
     width: 44px;
+    min-width: 44px;
     height: 44px;
+    min-height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,6 +83,23 @@
       background: #DA1F1F;
     }
 
+  }
+
+  &__info {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: $c-benefit;
+    background-color: $bg-color-menu;
+    border: 1px solid $c-benefit;
+    border-radius: 14px;
+    padding: 4px 8px;
+    min-width: 149px;
+    height: 30px;
+    display: flex;
+    align-items: center;
   }
 
   &__wrapper-img {

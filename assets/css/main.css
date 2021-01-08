@@ -1512,7 +1512,9 @@ button {
   font-size: 20px;
   line-height: 20px;
   width: 44px;
+  min-width: 44px;
   height: 44px;
+  min-height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1538,6 +1540,27 @@ button {
 
 .excursion-card__icon--star {
   background: #DA1F1F;
+}
+
+.excursion-card__info {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #686868;
+  background-color: #F6F3EE;
+  border: 1px solid #686868;
+  border-radius: 14px;
+  padding: 4px 8px;
+  min-width: 149px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .excursion-card__wrapper-img {
