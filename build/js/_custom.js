@@ -73,6 +73,47 @@ jQuery(document).ready(function($){
     $('#header').addClass('header-white');
   }
 
+
+  // 2px solid #FFFFFF
+  // 2px solid #686868
+
+  // меняет цвет булетов
+
+  $(function($) {
+    var $nav = $('.main-nav__dot'),
+        $win = $(window),
+        winH = $win.height(); 
+
+    $win.on("scroll", function () {
+      if ($(this).scrollTop() > winH) return;
+      $nav.each((i, el) => {
+        if ($(el).offset().top > winH) {
+          $(el).addClass("main-nav__dot--white");
+        } else {
+          $(el).removeClass("main-nav__dot--white");
+        }
+      });
+    });
+});
+
+
+
+  // $(function($) {
+  //     var $nav = $('.main-nav__dot'),
+  //         $win = $(window),
+  //         winH = $win.height(); 
+
+  //     $win.on("scroll", function () {
+
+  //       $nav.toggleClass("main-nav__dot--white", $('.dot').offset().top > winH );
+
+  //     }).on("resize", function(){
+
+  //       winH = $(this).height();
+
+  //     });
+  // });
+
   // слайдер Преимущества
   sliderSlic(`benefits`);
    // слайдер Безопасность на отдыхе
@@ -480,11 +521,9 @@ const teamSwiper = new Swiper('#team-slider', {
   }
 });
 
-
 window.addEventListener('resize', function(event){
   pageExcursionSwiper.update();
 });
-
 
 // page-excursion-slider
 const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
@@ -522,8 +561,6 @@ const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
   }
 
 });
-
-
 
 const toursProgramSwiper = new Swiper('#tours-program-slider', {
   wrapperClass: 'tours-program__slider',

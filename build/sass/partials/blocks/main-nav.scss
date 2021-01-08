@@ -109,10 +109,14 @@
     display: flex;
     width: 12px;
     height: 12px;
-    border: 2px solid #686868;
+    border: 2px solid $color-head;
     border-radius: 50%;
     padding: 4px;
     cursor: pointer;
+
+    &--white {
+      border: 2px solid $c-benefit;
+    }
   }
 }
 

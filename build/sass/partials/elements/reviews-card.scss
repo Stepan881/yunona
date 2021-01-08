@@ -33,7 +33,7 @@
   &__top {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin-top: 5px;
   }
 
   &__img-wrapper {
@@ -47,6 +47,10 @@
 
   &__profile {
     margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
   }
 
   &__name {

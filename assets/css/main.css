@@ -1015,10 +1015,14 @@ button {
   display: flex;
   width: 12px;
   height: 12px;
-  border: 2px solid #686868;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   padding: 4px;
   cursor: pointer;
+}
+
+.main-nav__dot--white {
+  border: 2px solid #686868;
 }
 
 .main-nav {
@@ -1618,6 +1622,8 @@ button {
   font-size: 14px;
   line-height: 22px;
   color: #252525;
+  max-width: 290px;
+  width: 100%;
 }
 
 .excursion-card__details {
@@ -1630,12 +1636,11 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 145px;
   height: 38px;
   background: none;
   border: 1px solid #EDB362;
   border-radius: 29px;
-  margin-right: 24px;
+  width: 145px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1648,7 +1653,6 @@ button {
 }
 
 .excursion-card__tobook {
-  min-width: 145px;
   height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1662,6 +1666,8 @@ button {
   background: #EDB362;
   border: 1px solid #EDB362;
   border-radius: 29px;
+  margin-left: 24px;
+  width: 145px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2054,9 +2060,7 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  margin-top: 5px;
 }
 
 .reviews-card__img-wrapper {
@@ -2074,6 +2078,16 @@ button {
 
 .reviews-card__profile {
   margin-left: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .reviews-card__name {
@@ -4551,6 +4565,20 @@ button {
     height: 212px;
   }
 
+  .excursion-card__details {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: auto;
+  }
+
+  .excursion-card__tobook {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: auto;
+  }
+
   .excursion-card.horizon .excursion-card__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5044,20 +5072,6 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .excursion-card__details {
-    margin-right: 0;
-    min-width: 0;
-    width: 50%;
-    max-width: 145px;
-  }
-
-  .excursion-card__tobook {
-    margin-left: auto;
-    min-width: 0;
-    width: 50%;
-    max-width: 145px;
   }
 
   .excursion-card.horizon .excursion-card__content {
