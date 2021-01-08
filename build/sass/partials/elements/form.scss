@@ -1,0 +1,207 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (max-width: $lg) {
+    justify-content: center;
+  }
+
+  &__block {
+    max-width: 457px;
+    width: 100%;
+  }
+
+  &__block:nth-child(2) {
+    margin-left: 128px;
+    @media (max-width: $xl) {
+      margin-left: 30px;
+    }
+    @media (max-width: $lg) {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 457px;
+    width: 100%;
+    padding: 28px 0 26px;
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      label {
+        color: $c-benefit;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        transition: 0.3s;
+
+        @media (max-width: $md) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      input {
+        transition: 0.3s;
+        border: 2px solid $c-benefit;
+        color: $c-benefit;
+      }
+    }
+
+    label {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-benefit;
+  
+      display: flex;
+      position: absolute;
+      top: 0;
+
+      @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  
+    textarea,
+    input {
+      border: 1px solid $color;
+      border-radius: 16px;
+      background: transparent;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px; 
+      height: 60px;
+      display: flex;
+      padding: 18px 28px;
+      color: $color;
+      outline: none;
+      transition: 0.3s;
+
+      @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 22px;
+        height: 40px;
+        padding: 15px 13px;
+      }
+  
+      &:focus {
+        transition: 0.3s;
+        border: 2px solid $c-benefit;
+        color: $c-benefit;
+  
+        &~label {
+          transition: 0.3s;
+          color: $c-benefit;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 26px;
+
+          @media (max-width: $md) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-error;
+  
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      @media (max-width: $md) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  
+    textarea {
+      resize: vertical;
+      min-height: 252px;
+
+      @media (max-width: $sm) {
+        min-height: 40px;
+      }
+    }
+
+
+    &--error {
+      transition: 0.3s;
+      
+      label {
+        transition: 0.3s;
+        color: $c-error;
+        font-weight: bold;
+        
+      }
+
+      span {
+        transition: 0.3s;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }  
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-benefit;
+
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+  }
+
+  button {
+    width: 152px;
+    height: 48px;
+    margin: 0 auto;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 36px;
+    color: $color;
+    border: none;
+    border-radius: 29px;
+
+    @include bottom-btn-link();
+
+    @media (max-width: $sm) {
+      max-width: 342px;
+      width: 100%;
+    }
+  }
+}

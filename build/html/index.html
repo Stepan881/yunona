@@ -166,8 +166,8 @@
             "text" : ['Калининградская область', 'Компания Юнона']
           })
         </div>
-        <div class="benefits__wrapper">
-          <div class="benefits__wrapper-cards" id="benefits-slider">
+        <div class="benefits__wrapper" id="benefits-slider">
+          <div class="benefits__wrapper-cards">
             @@include('./templates/components/article-benefit.html', {
               "url": "./assets/img/benefit/icon1.svg"
             })
@@ -902,34 +902,37 @@
     <section class="benefits safety" id="safety">
       <div class="container">
         <h2 class="container__title">Безопасность на отдыхе</h2>
-        <div class="benefits__wrapper-cards" id="safety-slider">
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon1.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon2.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon3.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon4.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon1.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon2.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon3.svg"
-          })
-          @@include('./templates/components/article-benefit.html', {
-            "url": "./assets/img/benefit/icon4.svg"
-          })
-        </div>
-        <div class="benefits__pagination">
-          @@include('./templates/components/pagination.html')
+
+        <div class="benefits__wrapper" id="safety-slider">
+          <div class="benefits__wrapper-cards">
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon1.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon2.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon3.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon4.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon1.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon2.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon3.svg"
+            })
+            @@include('./templates/components/article-benefit.html', {
+              "url": "./assets/img/benefit/icon4.svg"
+            })
+          </div>
+          <div class="benefits__pagination">
+            @@include('./templates/components/pagination.html')
+          </div>
         </div>
       </div>
     </section>
@@ -1024,6 +1027,38 @@
     <section class="help" id="help">
       <div class="container">
         <h2 class="container__title">Мы всегда готовы вам помочь</h2>
+        <div class="help__wrapper">
+          <form  class="form"action="#">
+            <div class="form__block">
+              <div class="form__item">
+                <input id="name" type="text" name="name" required>
+                <label for="name">Имя</label>
+                <span>Не правильно заполнено поле</span>
+              </div>
+              <div class="form__item form__item--error">
+                <input id="phone" type="tel" name="phone" required>
+                <label for="phone">Телефон</label>
+                <span>Не правильно заполнено поле</span>
+              </div>
+              <div class="form__item">
+                <input id="email" type="email" name="E-mail" required>
+                <label for="email">E-mail</label>
+                <span>Не правильно заполнено поле</span>
+              </div>
+            </div>
+            <div class="form__block">
+              <div class="form__item">
+                <textarea id="comments" name="comments" required></textarea>
+                <label for="comments">Комментарий</label>
+                <span>Не правильно заполнено поле</span>
+              </div>
+              <p>Нажимая на кнопку “Отправить” вы принимаеть условия пользовательского соглашения</p>
+            </div>
+            <div class="form__btn">
+              <button type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>   
 
@@ -1165,6 +1200,60 @@
 
   @@include('./templates/footer.html')
 
+
+  <section class="popup-form">
+    <div class="popup-form__overoverlay"></div>
+    <div class="popup-form__container">
+      <a class="popup-form__close" href="#"></a>
+      <h2 class="popup-form__header">Забронировать экскурсию «Тайны подземного Кёнигсберга»</h2>
+     
+      <div class="popup-form__wrapper">
+        <form  class="form" action="#">
+          <div class="form__item">
+            <input id="name" type="text" name="name" required>
+            <label for="name">Имя</label>
+            <span>Не правильно заполнено поле</span>
+          </div>
+          <div class="form__item form__item--error">
+            <input id="phone" type="tel" name="phone" required>
+            <label for="phone">Телефон</label>
+            <span>Не правильно заполнено поле</span>
+          </div>
+          <div class="form__item">
+            <input id="email" type="email" name="E-mail" required>
+            <label for="email">E-mail</label>
+            <span>Не правильно заполнено поле</span>
+          </div>
+          <div class="form__item">
+            <input id="data" type="text" name="data" required>
+            <label for="data">Желаемая дата</label>
+            <span>Не правильно заполнено поле</span>
+          </div>
+          <div class="form__item">
+            <textarea id="comments" name="comments" required></textarea>
+            <label for="comments">Комментарий</label>
+            <span>Не правильно заполнено поле</span>
+          </div>
+          <p>Нажимая на кнопку “Отправить” вы принимаеть условия пользовательского соглашения</p>
+          <div class="form__btn">
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="popup-thanks">
+    <div class="popup-thanks__overoverlay"></div>
+    <div class="popup-thanks__container">
+      <a class="popup-thanks__close" href="#"></a>
+      <h2 class="popup-thanks__header">Спасибо!<br />
+        Мы перезвоним вам <br />
+        в течение одного рабочего дня.</h2>
+    </div>
+  </section>
   <!-- Слик слайдер -->
 
   <script src="./assets/js/scripts.min.js"></script>

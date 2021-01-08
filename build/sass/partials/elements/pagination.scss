@@ -18,12 +18,15 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
 
-  &__prew {
+    &--disable {
+      cursor: default;
+      opacity: 0.5;
+    }
+
     transition: 0.3s;
 
-    &:hover {
+    &:not( .pagination__arrow--disable ):hover {
       transition: 0.3s;
       background-color: $color-btn;
 
@@ -35,21 +38,6 @@
     }
   }
 
-  &__next {
-    transition: 0.3s;
-
-    &:hover {
-      transition: 0.3s;
-      background-color: $color-btn;
-      
-      svg {
-        path {
-          fill: $color-head;
-        }
-      }
-    }
-  }
-  
   &__num {
     display: flex;
     align-items: center;

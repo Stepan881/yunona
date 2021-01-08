@@ -35,6 +35,11 @@
     @media (max-width: $xxl) {
       right: 0;
     }
+
+    .nav-menu__overlay {
+      transition: 0.3s 0.3s opacity;
+      opacity: 1;
+    }
   }
 
   @media (max-width: $lg) {
@@ -43,12 +48,15 @@
   }
 
   &__overlay {
-    background: linear-gradient(to right, #00000000 0%, #00000020 20%, #00000020 100%);
+    position: absolute;
+    transition: 0.3s 0.3s right;
+    background: #00000020;
     position: absolute;
     width: calc(100vw - 315px);
     height: 100vh;
     right: 100%;
     top: 0;
+    opacity: 0;
 
     @media (max-width: $lg) {
       width: calc(100vw - 355px);
