@@ -107,7 +107,14 @@
     </section>
 
     <section class="first-screen" id="first-screen">
-      <img class="first-screen__bg" src="./assets/img/bg_head.jpg" alt="фон">
+      <div class="first-screen__bg">
+        <img class="first-screen__img" src="./assets/img/bg_head.jpg" alt="фон">
+        <video class="first-screen__video" loop="true"> <!-- autoplay -->
+          <source type="video/mp4" src="./assets/video/video.mp4">
+          <source type="video/webm" src="./assets/video/video.webm">
+          <source type="video/ogg" src="./assets/video/video.ogv">
+        </video>
+      </div>
       <div class="container">
         <div class="first-screen__wrapper">
           <p class="first-screen__text first-screen__text--top">Незабываемые туры в янтарную столицу</p>
@@ -126,34 +133,10 @@
       </a>
       <div class="first-screen__chat">
         <a href="#">
-          <svg width="122" height="136" viewBox="0 0 122 136" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#fil)">
-            <mask id="m" mask-type="alpha" maskUnits="userSpaceOnUse" x="30" y="26" width="76" height="76">
-            <circle cx="68" cy="64" r="38" fill="#C4C4C4"/>
-            </mask>
-            <g mask="url(#m)">
-            <rect x="-4.19995" y="-3.7666" width="137.433" height="143.133" fill="white"/>
-            </g>
-            <g clip-path="url(#clip220)">
-            <path d="M74.1112 52.8406C71.8229 48.1682 67.0362 45.0791 61.667 45.0791C53.9843 45.0791 47.734 51.2939 47.734 58.9329C47.734 61.009 48.1797 62.9988 49.0594 64.854L47.757 71.3665C47.5913 72.1955 48.3226 72.9283 49.1518 72.7642L55.7445 71.4608C56.6322 71.8819 57.5505 72.2021 58.4941 72.4227C56.379 62.4051 63.9722 53.0019 74.1112 52.8406Z" fill="#EDB362"/>
-            <path d="M86.9409 74.9868C87.1684 74.507 87.3663 74.018 87.5355 73.5211H87.4921C90.4566 64.8196 84.2222 55.6741 75.0183 55.2288C75.0182 55.2284 75.0181 55.2279 75.0179 55.2274C67.0986 54.8625 60.519 61.2032 60.519 69.0657C60.519 76.6983 66.7225 82.9083 74.3525 82.9193C76.4221 82.9166 78.4058 82.471 80.2557 81.5936C87.4761 83.0211 86.913 82.9196 87.0788 82.9196C87.8292 82.9196 88.3898 82.2319 88.2433 81.4993L86.9409 74.9868Z" fill="#EDB362"/>
-            </g>
-            </g>
-            <defs>
-            <filter id="fil" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-            <feOffset dy="4"/>
-            <feGaussianBlur stdDeviation="15"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-            </filter>
-            <clipPath id="clip220">
-            <rect width="40.5333" height="40.5333" fill="white" transform="translate(47.7333 43.7334)"/>
-            </clipPath>
-            </defs>
-            </svg>     
+          <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.1112 7.84058C24.8229 3.16819 20.0362 0.0791016 14.667 0.0791016C6.98431 0.0791016 0.734009 6.29394 0.734009 13.9329C0.734009 16.009 1.17971 17.9988 2.05939 19.854L0.757045 26.3665C0.591274 27.1955 1.3226 27.9283 2.15177 27.7642L8.74454 26.4608C9.63221 26.8819 10.5505 27.2021 11.4941 27.4227C9.37904 17.4051 16.9722 8.00192 27.1112 7.84058Z" fill="#EDB362"/>
+            <path d="M39.9409 29.9868C40.1684 29.507 40.3663 29.018 40.5355 28.5211H40.4921C43.4566 19.8196 37.2222 10.6741 28.0183 10.2288C28.0182 10.2284 28.0181 10.2279 28.0179 10.2274C20.0986 9.86246 13.519 16.2032 13.519 24.0657C13.519 31.6983 19.7225 37.9083 27.3525 37.9193C29.4221 37.9166 31.4058 37.471 33.2557 36.5936C40.4761 38.0211 39.913 37.9196 40.0788 37.9196C40.8292 37.9196 41.3898 37.2319 41.2433 36.4993L39.9409 29.9868Z" fill="#EDB362"/>
+          </svg>
         </a>
       </div>
     </section>

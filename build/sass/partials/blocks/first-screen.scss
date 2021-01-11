@@ -1,10 +1,22 @@
 .first-screen {
   position: relative;
-
-  &__bg {
+  height: 100vh;
+  
+  &__img {
     object-fit: cover;
-    margin-top: -75px;
-    height: calc(100vh + 75px);
+    height: 100vh;
+    display: none;
+
+  }
+  &__video {
+    min-width: 100%; 
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__wrapper {
@@ -119,24 +131,37 @@
 
   &__chat {
     position: fixed;
-    bottom: 14px;
-    right: 28px;
+    bottom: 82px;
+    right: 45px;
     transition: 0.3s;
     z-index: 1;
+
+    a {
+      display: flex;
+      min-width: 76px;
+      width: 76px;
+      min-height: 76px;
+      height: 76px;
+      background: $color-head;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+    }
 
     &:hover {
       path {
         transition: 0.3s;
         fill: $color-head;
       }
-      rect {
+      a {
         transition: 0.3s;
-        fill: $color-btn;
+        background: $color-btn;
       }
     }
     @media (max-width: $sm) {
-      bottom: 0px;
-      right: 0px;
+      bottom: 101px;
+      right: 16px;
     }
   }
 }

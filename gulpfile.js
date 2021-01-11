@@ -71,6 +71,15 @@ var concat = require('gulp-concat');
     .pipe(gulp.dest('assets/img/'));
   });
 
+  gulp.task("copy", function () {
+    return gulp.src([
+      "build/video/**",
+    ], {
+      base: "build"
+    })
+    .pipe(gulp.dest('assets'));    
+  });
+
   gulp.task("server", function () {
     server.init({
       server: "./",
@@ -91,5 +100,5 @@ var concat = require('gulp-concat');
     done();
   });
 
-gulp.task("build", gulp.series("del", "css", "html", "js", "img"));
+gulp.task("build", gulp.series("del", "copy", "css", "html", "js", "img"));
 gulp.task("start", gulp.series("build", "server"));

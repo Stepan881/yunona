@@ -46,15 +46,28 @@ jQuery(document).ready(function ($) {
     jsThanksPopup : $('.popup-thanks'),
     popupForm: $('.popup-form'),
 
-    show : function() {
+    show: function() {
       this.jsThanksPopup.addClass('popup-thanks--open');
       this.popupForm.removeClass('popup-form--open');
-
-      setTimeout(function() {
-        $('.popup-thanks').removeClass('popup-thanks--open');
-      }, 2000)
+    },
+    close: function() {
+      this.jsThanksPopup.removeClass('popup-thanks--open');
     },
   }
+  $(".popup-thanks__overoverlay").on('click', function (event) {
+    event.preventDefault();
+    if ($(event.target).closest(".popup-thanks__overoverlay")) {
+      thanksPopup.close();
+    }
+  });
+  $(".popup-thanks__close").on('click', function (event) {
+    event.preventDefault();
+    if ($(event.target).closest(".popup-thanks__close")) {
+      thanksPopup.close();
+    }
+  });
+
+  // клик submit
   $('button[type="submit"]').on('click', function (event) {
     event.preventDefault();
     thanksPopup.show();
@@ -108,7 +121,7 @@ jQuery(document).ready(function ($) {
       if (height > 100) {
         $('#header').addClass('header-white');
       } else {
-        $('header').removeClass('header-white');
+        $('#header').removeClass('header-white');
       }
     });
   } else {
