@@ -147,6 +147,13 @@ jQuery(document).ready(function ($) {
   });
 
   
+  // url   -- Удалить
+  function url () {
+    var url = $(location).attr('pathname');
+    var pageUrl = $('.nav-menu__item a[href*="' + url + '"]');
+    pageUrl.closest(".nav-menu__item").addClass('nav-menu__item--active')
+  };
+  url();
 });
 
 // Преимущества
