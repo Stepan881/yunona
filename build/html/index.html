@@ -109,7 +109,7 @@
     <section class="first-screen" id="first-screen">
       <div class="first-screen__bg">
         <!-- <img class="first-screen__img" src="./assets/img/bg_head.jpg" alt="фон"> -->
-        <video class="first-screen__video" poster="./assets/img/bg_head.jpg" autoplay > <!-- loop="true" autoplay -->
+        <video class="first-screen__video" poster="./assets/img/bg_head.jpg" loop="true" muted="muted" autoplay > <!-- loop="true" autoplay -->
           <source type="video/mp4" src="./assets/video/video.mp4">
           <source type="video/webm" src="./assets/video/video.webm">
           <source type="video/ogg" src="./assets/video/video.ogv">
@@ -152,28 +152,28 @@
         <div class="benefits__wrapper" id="benefits-slider">
           <div class="benefits__wrapper-cards">
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon1.svg"
+              "url": "./assets/img/benefit/icon1.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon2.svg"
+              "url": "./assets/img/benefit/icon2.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon3.svg"
+              "url": "./assets/img/benefit/icon3.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon4.svg"
+              "url": "./assets/img/benefit/icon4.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon1.svg"
+              "url": "./assets/img/benefit/icon1.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon2.svg"
+              "url": "./assets/img/benefit/icon2.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon3.svg"
+              "url": "./assets/img/benefit/icon3.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon4.svg"
+              "url": "./assets/img/benefit/icon4.png"
             })
           </div>
           <div class="benefits__pagination">
@@ -181,7 +181,7 @@
           </div>
         </div>
         <div class="benefits__btn-wrapper">
-          <a class="btn-modal" href="#">Как попасть в Калининград</a>
+          <a class="btn-modal" href="./page-come.html">Как попасть в Калининград</a>
         </div>
 
       </div>
@@ -222,7 +222,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "link": "./page-excursion.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -231,7 +232,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "link": "./page-excursion.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -240,7 +242,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "link": "./page-excursion.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -249,7 +252,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "link": "./page-excursion.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -259,7 +263,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)"
+              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)",
+              "link": "./page-excursion.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -269,7 +274,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)"
+              "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
+              "link": "./page-excursion.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -279,7 +285,8 @@
               "underline": "1 000 ₽",
               "new" : "1 000 ₽",
               "gold": "1 000 ₽",
-              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)"
+              "head": "Индивидуальные экскурсии по Калининграду и Калининградской области (межсезонье)",
+              "link": "./page-excursion.html",
             })
           </div>
           <div class="excursion__paginations">
@@ -309,7 +316,8 @@
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. ",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-tours.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -320,7 +328,8 @@
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. ",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-tours.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -331,7 +340,8 @@
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. Даты заездов: каждую субботу. ",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-tours.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -342,7 +352,8 @@
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. ",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-tours.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -353,7 +364,8 @@
               "gold": "1 000 ₽",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. ",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-tours.html",
             })
           </div>
           <div class="tours__paginations">
@@ -378,7 +390,8 @@
               "gold": "",
               "head": " Локомотив — Енисей 14.12.2020 Локомотив — Локомотив — Енисей 14.12.2020 Локомотив — Локомотив —  ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -390,7 +403,8 @@
               "gold": "",
               "head": " Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020  ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -402,7 +416,8 @@
               "gold": "",
               "head": " Локомотив — Енисей 14.12.2020 ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -414,7 +429,8 @@
               "gold": "",
               "head": " Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -426,7 +442,8 @@
               "gold": "",
               "head": " Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — Енисей 14.12.2020 Локомотив — ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -438,7 +455,8 @@
               "gold": "",
               "head": "Локомотив — Енисей 14.12.2020",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -450,7 +468,8 @@
               "gold": "",
               "head": "Локомотив — Енисей 14.12.2020",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -462,7 +481,8 @@
               "gold": "",
               "head": "Локомотив — Енисей 14.12.2020",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-activity.html",
             })
           </div>
           <div class="activity__paginations">
@@ -473,7 +493,7 @@
     </section>   
 
     <section class="tours hotels" id="hotels">
-      <img class="section-icon" src="./assets/img/tours.svg" alt="tours">
+      <img class="section-icon" src="./assets/img/tours.png" alt="tours">
       <div class="container">
         <h2 class="container__title">Гостиницы</h2>
         <div class="tours__nav">
@@ -492,7 +512,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга- Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -504,7 +525,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. ",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -516,7 +538,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -528,7 +551,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -540,7 +564,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -552,7 +577,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -564,7 +590,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-hotels.html",
             })
           </div>
           <div class="tours__paginations">
@@ -589,7 +616,8 @@
               "gold": "",
               "head": "Музей Мирового океанаМузей Мирового океанаМузей Мирового океанаМузей Мирового океанаМузей Мирового океана",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -601,7 +629,8 @@
               "gold": "",
               "head": "Подводная лодка-музей Б-413 ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -613,7 +642,8 @@
               "gold": "",
               "head": "Музей Мирового океана",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -625,7 +655,8 @@
               "gold": "",
               "head": "Подводная лодка-музей Б-413 ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -637,7 +668,8 @@
               "gold": "",
               "head": "Музей Мирового океана",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -649,7 +681,8 @@
               "gold": "",
               "head": "Подводная лодка-музей Б-413 ",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -661,7 +694,8 @@
               "gold": "",
               "head": "Музей-квартира Альтес Хаус",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -673,7 +707,8 @@
               "gold": "",
               "head": "Музей Марципана",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
             @@include('./templates/components/excursion-card.html', {
               "url": "./assets/img/card/excursion-card1.png",
@@ -684,7 +719,8 @@
               "gold": "",
               "head": "Музей Марципана",
               "text": "",
-              "classname": ""
+              "classname": "",
+              "link": "./page-museum.html",
             })
           </div>
           <div class="activity__paginations">
@@ -714,7 +750,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград  на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса —  дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -726,7 +763,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -738,7 +776,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -750,7 +789,8 @@
               "gold": "",
               "head": "Вилла «Медведь»",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -762,7 +802,8 @@
               "gold": "",
               "head": "Локомотив — Енисей 14.12.2020",
               "text": "Даты заездов: каждую субботу. Тур в",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -774,7 +815,8 @@
               "gold": "",
               "head": "Локомотив — Енисей 14.12.2020",
               "text": "Даты заездов: каждую субботу. Тур в",
-              "classname": "house"
+              "classname": "house",
+              "link": "./page-restaurant.html",
             })
           </div>
           <div class="tours__paginations">
@@ -799,7 +841,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -811,7 +854,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -823,7 +867,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -835,7 +880,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -847,7 +893,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -859,7 +906,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
             
             @@include('./templates/components/excursion-card.html', {
@@ -871,7 +919,8 @@
               "gold": "",
               "head": "Экскурсия «Куршская коса — дорога в дюны» в 10:00 (межсезонье)",
               "text": "Даты заездов: каждую субботу. Тур в Калининград на 2 дня с экскурсиями на выбор: «История Кенигсберга-Калининграда», «Куршская коса — дорога в дюны», «Светлогорск-Янтарный».",
-              "classname": "horizon"
+              "classname": "horizon",
+              "link": "./page-events.html",
             })
           </div>
           <div class="tours__paginations">
@@ -892,25 +941,25 @@
               "url": "./assets/img/benefit/icon1.svg"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon2.svg"
+              "url": "./assets/img/benefit/icon2.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon3.svg"
+              "url": "./assets/img/benefit/icon3.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon4.svg"
+              "url": "./assets/img/benefit/icon4.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon1.svg"
+              "url": "./assets/img/benefit/icon1.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon2.svg"
+              "url": "./assets/img/benefit/icon2.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon3.svg"
+              "url": "./assets/img/benefit/icon3.png"
             })
             @@include('./templates/components/article-benefit.html', {
-              "url": "./assets/img/benefit/icon4.svg"
+              "url": "./assets/img/benefit/icon4.png"
             })
           </div>
           <div class="benefits__pagination">

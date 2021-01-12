@@ -79,8 +79,12 @@
       color: $color-btn;
     }
 
-    @media (max-width: $lg) {
+    @media (max-width: $xl) {
       padding: 0;
+    }
+
+    @media (max-width: $lg) {
+
       margin-left: 0;
       align-items: center;
       display: flex;

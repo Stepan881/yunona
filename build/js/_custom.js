@@ -145,16 +145,6 @@ jQuery(document).ready(function ($) {
       });
     });
   });
-
-  
-  // url   -- Удалить
-  function url () {
-    var url = $(location).attr('pathname');
-    if (url === '/') return;
-    var pageUrl = $('.nav-menu__item a[href*="' + url + '"]');
-    pageUrl.closest(".nav-menu__item").addClass('nav-menu__item--active')
-  };
-  url();
 });
 
 // Преимущества
@@ -181,13 +171,16 @@ const benefitsSwiper = new Swiper('#benefits-slider', {
   breakpoints: {
     993: {
       slidesPerView: 4,
-
+      slidesPerGroup: 4,
     },
     769: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
+
     },
     320: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
   }
 });
@@ -218,13 +211,16 @@ const safetySwiper = new Swiper('#safety-slider', {
   breakpoints: {
     993: {
       slidesPerView: 4,
+      slidesPerGroup: 4,
 
     },
     769: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     320: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
 
   }
@@ -260,10 +256,12 @@ const excursionSwiper = new Swiper('#excursion-slider', {
     993: {
       slidesPerColumn: 2,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     769: {
       slidesPerColumn: 2,
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     320: {
       slidesPerColumn: 1,
@@ -346,10 +344,12 @@ const activitySwiper = new Swiper('#activity-slider', {
     993: {
       slidesPerColumn: 2,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     769: {
       slidesPerColumn: 2,
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     320: {
       slidesPerColumn: 1,
@@ -383,12 +383,15 @@ const hotelsSwiper = new Swiper('#hotels-slider', {
   breakpoints: {
     1201: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     769: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     320: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
     }
   }
 });
@@ -422,10 +425,12 @@ const museumsSwiper = new Swiper('#museums-slider', {
     993: {
       slidesPerColumn: 2,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     769: {
       slidesPerColumn: 2,
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     320: {
       slidesPerColumn: 1,
@@ -460,12 +465,15 @@ const restaurantsSwiper = new Swiper('#restaurants-slider', {
   breakpoints: {
     1201: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     769: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     320: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
     }
   }
 });
