@@ -150,6 +150,7 @@ jQuery(document).ready(function ($) {
   // url   -- Удалить
   function url () {
     var url = $(location).attr('pathname');
+    if (url === '/') return;
     var pageUrl = $('.nav-menu__item a[href*="' + url + '"]');
     pageUrl.closest(".nav-menu__item").addClass('nav-menu__item--active')
   };
@@ -593,6 +594,44 @@ const teamSwiper = new Swiper('#team-slider', {
 const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
   wrapperClass: 'page-excursion__slider-wrapper',
   slideClass: 'page-excursion__slide',
+  lazyLoading: true,
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+    disabledClass: 'pagination__arrow--disable',
+  },
+  breakpoints: {
+    993: {
+      pagination: {
+        el: '.pagination__num',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
+            '<span class="pagination__text pagination__slash">/</span>' +
+            '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
+        },
+      },
+    },
+    320: {
+      pagination: {
+        clickable: true,
+        bulletClass: 'boolets__item',
+        el: '.boolets',
+        type: 'bullets',
+        bulletActiveClass: 'boolets__item--active',
+        renderBullet: function (index, className) {
+          return '<span class="boolets__item"></span>';
+        }
+      },
+    },
+  }
+
+});
+
+// page-events-slider
+const pageEventsSwiper = new Swiper('#page-events__sliders', {
+  wrapperClass: 'page-events__wrapper-slider',
+  slideClass: 'page-events__slide',
   lazyLoading: true,
   navigation: {
     nextEl: '.pagination__next',

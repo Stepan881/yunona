@@ -6,7 +6,7 @@
   
   <main class="main-page">
     <h1 class="visually-hidden">Информация о мероприятии</h1>
-    <section class="page-tours page-events page-excursion">
+    <section class="page-events page-tours page-excursion">
       <a class="page-excursion__breack-btn" href="#">
         <span>
           <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,26 +15,68 @@
         </span>
         Вернуться назад
       </a>
-      <div class="page-events__sliders">
-        <div class="page-events__slide">
-          <div class="page-tours__bg-wrapper">
-            <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
-          </div>
-          <div class="container">
-            <div class="page-tours__wrapper">
-              <span class="page-tours__page">Событие</span>
-              <h2 class="page-tours__head">Театрализованное музыкальное представление
-                «Пер Гюнт» в рамках проекта «Классика в древних стенах»
-                </h2>
-              <a class="page-tours__btn-buy" href="#">Купить билет</a>
+      <div class="page-events__sliders" id="page-events__sliders">
+        <div class="page-events__wrapper-slider">
+
+          <div class="page-events__slide">
+            <div class="page-tours__content">
+              <div class="page-tours__bg-wrapper">
+                <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+              </div>
+            
+              <div class="page-tours__wrapper container">
+                <span class="page-tours__page">Событие</span>
+                <h2 class="page-tours__head">Театрализованное музыкальное представление
+                  «Пер Гюнт» в рамках проекта «Классика в древних стенах»
+                  </h2>
+                <a class="page-tours__btn-buy" href="#">Купить билет</a>
+              </div>
             </div>
-          </div>        
-          
-          <div class="page-events__paginations">
-            @@include('./templates/components/pagination.html')
           </div>
 
+
+          <div class="page-events__slide">
+            <div class="page-tours__content">
+              <div class="page-tours__bg-wrapper">
+                <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+              </div>
+            
+              <div class="page-tours__wrapper container">
+                <span class="page-tours__page">Событие</span>
+                <h2 class="page-tours__head">Театрализованное музыкальное представление
+                  «Пер Гюнт» в рамках проекта «Классика в древних стенах»
+                  </h2>
+                <a class="page-tours__btn-buy" href="#">Купить билет</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="page-events__slide">
+            <div class="page-tours__content">
+              <div class="page-tours__bg-wrapper">
+                <img class="page-tours__bg" src="./assets/img/page-tours-bg.png" alt="Баннер">
+              </div>
+            
+              <div class="page-tours__wrapper container">
+                <span class="page-tours__page">Событие</span>
+                <h2 class="page-tours__head">Театрализованное музыкальное представление
+                  «Пер Гюнт» в рамках проекта «Классика в древних стенах»
+                  </h2>
+                <a class="page-tours__btn-buy" href="#">Купить билет</a>
+              </div>
+            </div>
+          </div>
         </div>
+        
+
+          <div class="page-events__paginations">
+            @@include('./templates/components/pagination.html')
+            <div class="boolets">
+            </div>
+          </div>
+
+        
       </div>
 
     </section>    
