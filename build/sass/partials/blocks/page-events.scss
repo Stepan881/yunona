@@ -84,11 +84,6 @@
 
   .page-tours {
     
-    &__content {
-      width: 100%;
-      position: relative;
-    }
-
     &__wrapper {
       margin: 0;
       position: absolute;
@@ -97,6 +92,7 @@
       width: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 1;
 
       @media (max-width: $xxl) {
         max-width: 1200px;
@@ -138,7 +134,7 @@
       @media (max-width: $md) {
         font-size: 30px;
         line-height: 36px;
-    }
+      }
     }
 
     &__bg-wrapper {

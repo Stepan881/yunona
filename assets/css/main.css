@@ -3561,11 +3561,6 @@ button {
   display: none;
 }
 
-.page-tours.page-events.page-excursion .page-tours__content {
-  width: 100%;
-  position: relative;
-}
-
 .page-tours.page-events.page-excursion .page-tours__wrapper {
   margin: 0;
   position: absolute;
@@ -3575,6 +3570,7 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .page-tours.page-events.page-excursion .page-tours__page {
