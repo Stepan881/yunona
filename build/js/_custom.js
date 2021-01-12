@@ -639,7 +639,7 @@ const pageEventsSwiper = new Swiper('#page-events__sliders', {
     disabledClass: 'pagination__arrow--disable',
   },
   breakpoints: {
-    993: {
+    769: {
       pagination: {
         el: '.pagination__num',
         type: 'fraction',
