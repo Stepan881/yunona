@@ -28,6 +28,19 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+
+
+    height: auto;
+    visibility: visible;   
+    opacity: 1;
+
+    transition: 1s;
+    &--close {
+      transition: 1s;
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
   }
 
   &__nav {
@@ -36,16 +49,16 @@
 
   &__wrapper-cards {
     display: flex;
-    // flex-direction: row;
     flex-wrap: wrap;
 
     width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-
-
     margin-top: 40px;
+
+  
+
 
     @media (max-width: $sm) {
       // justify-content: space-around;

@@ -1,17 +1,22 @@
 .first-screen {
   position: relative;
   height: 100vh;
+  min-height: 600px;
+
+  @media (max-width: $lg) {// $lg: 992px;
+    min-height: 470px;
+  }
   
   &__img {
     object-fit: cover;
-    height: 100vh;
+    height: 100%;
     display: none;
 
   }
   &__video {
     min-width: 100%; 
     width: auto;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     left: 50%;
@@ -108,6 +113,10 @@
         transition: 0.3s;
         color: $color-btn;  
       }
+    }
+
+    @media (max-width: $md) {// $md: 768px;
+      bottom: 20px;
     }
 
     @media (max-width: $sm) {

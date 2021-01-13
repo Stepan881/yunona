@@ -70,5 +70,11 @@
     @media (max-width: $sm) {
       margin-right: 30px;
     }
+
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      border-bottom: 2px solid $color-btn;
+    }
   }
 }
