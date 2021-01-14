@@ -223,7 +223,7 @@
 </header>  
   
   
-  <main class="main-page">
+  <main class="main-page" id="page-hotels">
     <h1 class="visually-hidden">Гостиница</h1>
     <section class="page-excursion page-hotels">
       <div class="container">
@@ -445,11 +445,12 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-<section class="popup-form">
+<!-- Телефон popup.showTel -->
+<section class="popup-form form-tel">
   <div class="popup-form__overoverlay"></div>
   <div class="popup-form__container">
     <a class="popup-form__close" href="#"></a>
-    <h2 class="popup-form__header">Забронировать экскурсию «Тайны подземного Кёнигсберга»</h2>
+    <h2 class="popup-form__header">Заказать звонок</h2>
    
     <div class="popup-form__wrapper">
       <form  class="form" action="#">
@@ -484,10 +485,96 @@
         </div>
       </form>
     </div>
-
-
   </div>
 </section>
+
+<!-- Гостиници popup.showHotels -->
+<section class="popup-form form-hotels">
+  <div class="popup-form__overoverlay"></div>
+  <div class="popup-form__container">
+    <a class="popup-form__close" href="#"></a>
+    <h2 class="popup-form__header">Забронировать гостиницу “Вилла медведь” </h2>
+   
+    <div class="popup-form__wrapper">
+      <form  class="form" action="#">
+        <div class="form__item">
+          <input id="name" type="text" name="name" required>
+          <label for="name">Имя</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item form__item--error">
+          <input id="phone" type="tel" name="phone" required>
+          <label for="phone">Телефон</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item">
+          <input id="email" type="email" name="E-mail" required>
+          <label for="email">E-mail</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item">
+          <input id="data" type="text" name="data" required>
+          <label for="data">Желаемая дата</label>
+          <span>Неправильно заполнено поле</span>
+        </div> 
+        <div class="form__item">
+          <textarea id="comments" name="comments" required></textarea>
+          <label for="comments">Комментарий</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <p>Нажимая на кнопку “Отправить” вы принимаеть условия пользовательского соглашения</p>
+        <div class="form__btn">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Экскурсии туры popup.showTours -->
+<section class="popup-form form-tours">
+  <div class="popup-form__overoverlay"></div>
+  <div class="popup-form__container">
+    <a class="popup-form__close" href="#"></a>
+    <h2 class="popup-form__header">Забронировать экскурсию «Тайны подземного Кёнигсберга» </h2>
+   
+    <div class="popup-form__wrapper">
+      <form  class="form" action="#">
+        <div class="form__item">
+          <input id="name" type="text" name="name" required>
+          <label for="name">Имя</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item form__item--error">
+          <input id="phone" type="tel" name="phone" required>
+          <label for="phone">Телефон</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item">
+          <input id="email" type="email" name="E-mail" required>
+          <label for="email">E-mail</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item">
+          <input id="data" type="text" name="data" required>
+          <label for="data">Желаемая дата</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <div class="form__item">
+          <textarea id="comments" name="comments" required></textarea>
+          <label for="comments">Комментарий</label>
+          <span>Неправильно заполнено поле</span>
+        </div>
+        <p>Нажимая на кнопку “Отправить” вы принимаеть условия пользовательского соглашения</p>
+        <div class="form__btn">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="popup-thanks">
   <div class="popup-thanks__overoverlay"></div>
