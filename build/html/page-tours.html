@@ -4,7 +4,7 @@
   @@include('./templates/header.html')
   
   
-  <main class="main-page" id="page-tours">
+  <main class="main-page">
     <h1 class="visually-hidden">Тур</h1>
     <section class="page-tours">
       <div class="page-tours__bg-wrapper">
@@ -76,7 +76,7 @@
         </div>
         <div class="tours-program__buttons">
           <a class="tours-program__details" href="#">Подробнее</a>
-          <a class="tours-program__tobook" href="#">Забронировать</a>
+          <a class="tours-program__tobook js-popup-tours" href="#">Забронировать</a>
         </div>
       </div>
     </section>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="page-excursion__btn-bottom events">
-          <a class="events__btn-bottom" href="#">Забронировать </a>
+          <a class="events__btn-bottom js-popup-tours" href="#">Забронировать </a>
         </div>
         <a class="page-excursion__breack-btn" href="./index.html#tours">
           <span>
@@ -191,6 +191,29 @@
 
 <script src="./assets/js/scripts.min.js"></script>
 
+<!-- Очищает слайды -->
+<script>
+  function rem(i){
+    i.forEach(el => {
+      el.remove();
+    });
+  }
+  
+  rem(document.querySelectorAll(`.excursion-card__buttons`));
+  rem(document.querySelectorAll(`.excursion-card__stars`));
+  rem(document.querySelectorAll(`.excursion-card__options`));
+  rem(document.querySelectorAll(`.excursion-card__icon`));
+  rem(document.querySelectorAll(`.excursion-card__info`));
+
+  const infoCard = document.querySelectorAll(`.card-info__list`);
+  infoCard.forEach(el => {
+    if (el.querySelector(`li`).textContent.trim() === '') {
+      el.remove();
+    }
+    
+  });
+
+</script>
 </body>
 </html>
 

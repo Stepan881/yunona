@@ -101,4 +101,14 @@
       line-height: 22px;
     }
   }
+
+
+}
+
+.tours-program {
+  .excursion-card {  
+    &__content {
+      padding: 24px 40px 32px 30px !important;
+    }
+  }
 }

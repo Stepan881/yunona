@@ -20,7 +20,7 @@
         <h2 class="page-tours__head">Театрализованное музыкальное представление
           «Пер Гюнт» в рамках проекта «Классика в древних стенах»
           </h2>
-        <a class="page-tours__btn-buy" href="#">Купить билет</a>
+        <a class="page-tours__btn-buy js-popup-tours" href="#">Купить билет</a>
       </div>
       <div class="page-events__sliders" id="page-events__sliders">
         <div class="page-events__wrapper-slider">
@@ -159,7 +159,7 @@
        </div>
 
         <div class="page-excursion__btn-bottom events">
-          <a class="events__btn-bottom" href="#">Купить билет</a>
+          <a class="events__btn-bottom js-popup-tours" href="#">Купить билет</a>
         </div>
         <a class="page-excursion__breack-btn" href="./index.html#events">
           <span>
@@ -180,7 +180,15 @@
 @@include('./templates/popup.html')
 
 <script src="./assets/js/scripts.min.js"></script>
-
+<script>
+  const infoCard = document.querySelectorAll(`.card-info__list`);
+  infoCard.forEach(el => {
+    if (el.querySelector(`li`).textContent.trim() === '') {
+      el.remove();
+    }
+    
+  });
+</script>
 </body>
 </html>
 

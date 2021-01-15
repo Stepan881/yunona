@@ -112,73 +112,33 @@ jQuery(document).ready(function ($) {
   }
   closeForms();
 
-  // открыть закрыть Экскурсии
-  function popupExcursion (section) {
-    $(`${section} .excursion-card__tobook`).on('click', function (event) {
+  // открыть форму
+  function popupOpenPopup () {
+    $(`.js-popup-tel`).on('click', function (event) {
       event.preventDefault();
-      if ($(event.target).closest(".excursion-card__tobook")) {
+      if ($(event.target).closest(".js-popup-tel")) {
+        popup.showTel();
+      }
+    });
+    $(`.js-popup-hotels`).on('click', function (event) {
+      event.preventDefault();
+      if ($(event.target).closest(".js-popup-hotels")) {
+        popup.showHotels();
+      }
+    });
+    $(`.js-popup-tours`).on('click', function (event) {
+      event.preventDefault();
+      if ($(event.target).closest(".js-popup-tours")) {
         popup.showTours();
       }
     });
   }
-  function popupHotels (section) {
-    $(`${section} .excursion-card__tobook`).on('click', function (event) {
-      event.preventDefault();
-      if ($(event.target).closest(".excursion-card__tobook")) {
-        popup.showHotels();
-      }
-    });
-  }
-
-  popupExcursion('#excursion');
-  popupExcursion('#tours');
-  popupHotels('#hotels');
-  
-
-  function openPageFormTours (section) {
-    $(`${section} .tours-program__tobook`).on('click', function (event) {
-      event.preventDefault();
-      popup.showTours();
-    });
-    $(`${section} .events__btn-bottom`).on('click', function (event) {
-      event.preventDefault();
-      popup.showTours();
-    });
-    $(`${section} .excursion-card__tobook`).on('click', function (event) {
-      event.preventDefault();
-      popup.showTours();
-    });
-  }
-  function openPageFormHotels (section) {
-    $(`${section} .events__btn-bottom`).on('click', function (event) {
-      event.preventDefault();
-      popup.showHotels();
-    });
-  }
-  openPageFormTours('#page-come');
-  openPageFormTours('#page-excursion');
-  openPageFormTours('#page-tours');
-  openPageFormHotels('#page-hotels');
-
-
+  popupOpenPopup();
 
   // клик submit
   $('button[type="submit"]').on('click', function (event) {
     event.preventDefault();
     thanksPopup.show();
-  });
-
-  // телефон
-  $('button.header__tel-btn').on('click', function (event) {
-    event.preventDefault();
-    popup.showTel();
-  });
-
-  //nav-menu__btn-link
-  $('.nav-menu__btn-link').on('click', function (event) {
-    event.preventDefault();
-    popup.showTel();
-    
   });
 
   // main-nav навигация по странице

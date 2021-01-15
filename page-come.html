@@ -46,7 +46,7 @@
         </a>
       </div>
       <button class="header__tel-btn">
-        <span class="header__tel-text">Заказать звонок</span>
+        <span class="header__tel-text js-popup-tel">Заказать звонок</span>
       </button>
       <a class="header__mail" href="mailto:ya@ya.ru">
         <svg class="header__tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +209,7 @@
 
     </div>
     <div class="nav-menu__btn">
-      <a class="nav-menu__btn-link" href="./index.html#help">Заказать звонок</a>
+      <a class="nav-menu__btn-link js-popup-tel" href="./index.html#help">Заказать звонок</a>
     </div>
   </div>
 </nav>
@@ -223,7 +223,7 @@
 </header>
   
   
-  <main class="main-page" id="page-come">
+  <main class="main-page">
     <h1 class="visually-hidden">Как попасть в Калининград</h1>
     <section class="page-tours">
       <div class="page-tours__bg-wrapper">
@@ -273,7 +273,7 @@
         </div> 
 
         <div class="page-come events">
-          <a class="events__btn-bottom" href="#">Узнать подробнее</a>
+          <a class="events__btn-bottom js-popup-tours" href="#">Узнать подробнее</a>
         </div>
         <a class="page-excursion__breack-btn" href="./index.html#benefits ">
           <span>
@@ -354,7 +354,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-<!-- Телефон popup.showTel -->
+<!-- Телефон  js-popup-tel -->
 <section class="popup-form form-tel">
   <div class="popup-form__overoverlay"></div>
   <div class="popup-form__container">
@@ -363,12 +363,12 @@
    
     <div class="popup-form__wrapper">
       <form  class="form" action="#">
-        <div class="form__item">
+        <div class="form__item"> <!-- form__item--error -->
           <input id="name" type="text" name="name" required>
           <label for="name">Имя</label>
           <span>Неправильно заполнено поле</span>
         </div>
-        <div class="form__item form__item--error">
+        <div class="form__item">
           <input id="phone" type="tel" name="phone" required>
           <label for="phone">Телефон</label>
           <span>Неправильно заполнено поле</span>
@@ -397,7 +397,7 @@
   </div>
 </section>
 
-<!-- Гостиници popup.showHotels -->
+<!-- Гостиници js-popup-hotels -->
 <section class="popup-form form-hotels">
   <div class="popup-form__overoverlay"></div>
   <div class="popup-form__container">
@@ -406,12 +406,12 @@
    
     <div class="popup-form__wrapper">
       <form  class="form" action="#">
-        <div class="form__item">
+        <div class="form__item"> <!-- form__item--error -->
           <input id="name" type="text" name="name" required>
           <label for="name">Имя</label>
           <span>Неправильно заполнено поле</span>
         </div>
-        <div class="form__item form__item--error">
+        <div class="form__item">
           <input id="phone" type="tel" name="phone" required>
           <label for="phone">Телефон</label>
           <span>Неправильно заполнено поле</span>
@@ -440,7 +440,7 @@
   </div>
 </section>
 
-<!-- Экскурсии туры popup.showTours -->
+<!-- Экскурсии туры js-popup-tours -->
 <section class="popup-form form-tours">
   <div class="popup-form__overoverlay"></div>
   <div class="popup-form__container">
@@ -449,12 +449,12 @@
    
     <div class="popup-form__wrapper">
       <form  class="form" action="#">
-        <div class="form__item">
+        <div class="form__item"> <!-- form__item--error -->
           <input id="name" type="text" name="name" required>
           <label for="name">Имя</label>
           <span>Неправильно заполнено поле</span>
-        </div>
-        <div class="form__item form__item--error">
+        </div>        
+        <div class="form__item"> 
           <input id="phone" type="tel" name="phone" required>
           <label for="phone">Телефон</label>
           <span>Неправильно заполнено поле</span>

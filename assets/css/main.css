@@ -3146,6 +3146,10 @@ button {
   display: flex;
 }
 
+.tours-program .excursion-card__content {
+  padding: 24px 40px 32px 30px !important;
+}
+
 .tours-program {
   padding-bottom: 80px;
   background: #F6F3EE;
