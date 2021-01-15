@@ -250,6 +250,45 @@ jQuery(document).ready(function ($) {
 let benefitsSwiper = null;
 let benefitsSwiper2 = null;
 let safetySwiper = null;
+
+const navigationTemplate = () => {
+  return {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+    disabledClass: 'pagination__arrow--disable',
+  }
+}
+const paginationTemplate = () => {
+  return {
+    el: '.pagination__num',
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
+        '<span class="pagination__text pagination__slash">/</span>' +
+        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
+    },
+  }
+}
+
+const breacpointsBenefitsTemplates = () => {
+  return {
+    993: {
+        
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+    },
+    769: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+
+    },
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  }
+}
+
 const benefitsSafetySlider = () => {
   // Преимущества
   benefitsSwiper = new Swiper('#benefits-slider', {
@@ -258,36 +297,9 @@ const benefitsSafetySlider = () => {
     lazyLoading: true,
     wrapperClass: 'benefits__wrapper-cards',
     slideClass: 'article-benefit',
-    navigation: {
-      nextEl: '.pagination__next',
-      prevEl: '.pagination__prew',
-      disabledClass: 'pagination__arrow--disable',
-    },
-    pagination: {
-      el: '.pagination__num',
-      type: 'fraction',
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-          '<span class="pagination__text pagination__slash">/</span>' +
-          '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-      },
-    },
-    breakpoints: {
-      993: {
-        
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-      },
-      769: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-
-      },
-      320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-    }
+    navigation: navigationTemplate(),
+    pagination: paginationTemplate(),
+    breakpoints: breacpointsBenefitsTemplates(),
   });
 
   benefitsSwiper2 = new Swiper('#benefits-slider2', {
@@ -296,36 +308,9 @@ const benefitsSafetySlider = () => {
     lazyLoading: true,
     wrapperClass: 'benefits__wrapper-cards',
     slideClass: 'article-benefit',
-    navigation: {
-      nextEl: '.pagination__next',
-      prevEl: '.pagination__prew',
-      disabledClass: 'pagination__arrow--disable',
-    },
-    pagination: {
-      el: '.pagination__num',
-      type: 'fraction',
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-          '<span class="pagination__text pagination__slash">/</span>' +
-          '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-      },
-    },
-    breakpoints: {
-      993: {
-        
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-      },
-      769: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-
-      },
-      320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-    }
+    navigation: navigationTemplate(),
+    pagination: paginationTemplate(),
+    breakpoints: breacpointsBenefitsTemplates(),
   });
 
   // Безопасность на отдыхе
@@ -335,67 +320,15 @@ const benefitsSafetySlider = () => {
     lazyLoading: true,
     wrapperClass: 'benefits__wrapper-cards',
     slideClass: 'article-benefit',
-    navigation: {
-      nextEl: '.pagination__next',
-      prevEl: '.pagination__prew',
-      disabledClass: 'pagination__arrow--disable',
-    },
-    pagination: {
-      el: '.pagination__num',
-      type: 'fraction',
-
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-          '<span class="pagination__text pagination__slash">/</span>' +
-          '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-      },
-    },
-    breakpoints: {
-      993: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-
-      },
-      769: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-      320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-
-    }
+    navigation: navigationTemplate(),
+    pagination: paginationTemplate(),
+    breakpoints: breacpointsBenefitsTemplates(),
   });
-
 }
-// Экскурсии
-const excursionSwiper = new Swiper('#excursion-slider', {
-  slidesToShow: 4,
-  slidesPerColumn: 2,
-  slidesPerView: 2,
-  spaceBetween: 0,
-  lazyLoading: true,
-  wrapperClass: 'excursion__cards',
-  slideClass: 'wrapper-slides',
 
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
 
-    },
-  },
-  breakpoints: {
+const breacpointsExcursionTemplates = () => {
+  return {
     993: {
       slidesPerColumn: 2,
       slidesPerView: 2,
@@ -410,14 +343,24 @@ const excursionSwiper = new Swiper('#excursion-slider', {
       slidesPerColumn: 1,
       slidesPerView: 1,
     },
-
   }
+}
+// Экскурсии
+const excursionSwiper = new Swiper('#excursion-slider', {
+  slidesToShow: 4,
+  slidesPerColumn: 2,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  lazyLoading: true,
+  wrapperClass: 'excursion__cards',
+  slideClass: 'wrapper-slides',
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
+  breakpoints: breacpointsExcursionTemplates(),
 });
 
 // Туры
 const toursSwiper = new Swiper('#tours-slider', {
-  // autoHeight: true,
-  // calculateHeight:true,
   slidesToShow: 3,
   slidesPerColumn: 3,
   slidesPerView: 1,
@@ -425,22 +368,8 @@ const toursSwiper = new Swiper('#tours-slider', {
   lazyLoading: true,
   wrapperClass: 'tours__cards',
   slideClass: 'wrapper-slides',
-
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     993: {
       slidesToShow: 3,
@@ -454,7 +383,6 @@ const toursSwiper = new Swiper('#tours-slider', {
       slidesToShow: 1,
       slidesPerColumn: 1,
     },
-
   }
 });
 
@@ -467,40 +395,11 @@ const activitySwiper = new Swiper('#activity-slider', {
   lazyLoading: true,
   wrapperClass: 'activity__cards',
   slideClass: 'wrapper-slides',
-
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
-  breakpoints: {
-    993: {
-      slidesPerColumn: 2,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    769: {
-      slidesPerColumn: 2,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    320: {
-      slidesPerColumn: 1,
-      slidesPerView: 1,
-
-    },
-  }
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
+  breakpoints: breacpointsExcursionTemplates(),
 });
+
 
 // Гостиницы
 const hotelsSwiper = new Swiper('#hotels-slider', {
@@ -508,21 +407,8 @@ const hotelsSwiper = new Swiper('#hotels-slider', {
   lazyLoading: true,
   wrapperClass: 'tours__cards',
   slideClass: 'wrapper-slides',
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     1201: {
       slidesPerView: 3,
@@ -548,40 +434,9 @@ const museumsSwiper = new Swiper('#museums-slider', {
   lazyLoading: true,
   wrapperClass: 'activity__cards',
   slideClass: 'wrapper-slides',
-
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
-  breakpoints: {
-    993: {
-      slidesPerColumn: 2,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    769: {
-      slidesPerColumn: 2,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    320: {
-      slidesPerColumn: 1,
-      slidesPerView: 1,
-
-    },
-
-  }
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
+  breakpoints: breacpointsExcursionTemplates(),
 });
 
 // Рестораны
@@ -590,21 +445,8 @@ const restaurantsSwiper = new Swiper('#restaurants-slider', {
   lazyLoading: true,
   wrapperClass: 'tours__cards',
   slideClass: 'wrapper-slides',
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     1201: {
       slidesPerView: 3,
@@ -631,22 +473,8 @@ const eventsSwiper = new Swiper('#events-slider', {
   lazyLoading: true,
   wrapperClass: 'tours__cards',
   slideClass: 'wrapper-slides',
-
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     993: {
       slidesToShow: 3,
@@ -660,7 +488,6 @@ const eventsSwiper = new Swiper('#events-slider', {
       slidesToShow: 1,
       slidesPerColumn: 1,
     },
-
   }
 });
 
@@ -670,21 +497,8 @@ const reviewsSwiper = new Swiper('#reviews-slider', {
   lazyLoading: true,
   wrapperClass: 'reviews__cards',
   slideClass: 'wrapper-slides',
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     1201: {
       slidesPerView: 3,
@@ -707,22 +521,8 @@ const teamSwiper = new Swiper('#team-slider', {
   lazyLoading: true,
   wrapperClass: 'reviews__cards',
   slideClass: 'wrapper-slides',
-
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
   breakpoints: {
     993: {
       slidesPerColumn: 2,
@@ -735,9 +535,7 @@ const teamSwiper = new Swiper('#team-slider', {
     320: {
       slidesPerColumn: 1,
       slidesPerView: 1,
-
     },
-
   }
 });
 
@@ -746,22 +544,11 @@ const pageExcursionSwiper = new Swiper('#page-excursion-slider', {
   wrapperClass: 'page-excursion__slider-wrapper',
   slideClass: 'page-excursion__slide',
   lazyLoading: true,
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
+  navigation: navigationTemplate(),
+  
   breakpoints: {
     993: {
-      pagination: {
-        el: '.pagination__num',
-        type: 'fraction',
-        renderFraction: function (currentClass, totalClass) {
-          return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-            '<span class="pagination__text pagination__slash">/</span>' +
-            '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-        },
-      },
+      pagination: paginationTemplate(),
     },
     320: {
       pagination: {
@@ -784,22 +571,11 @@ const pageEventsSwiper = new Swiper('#page-events__sliders', {
   wrapperClass: 'page-events__wrapper-slider',
   slideClass: 'page-events__slide',
   lazyLoading: true,
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
+  navigation: navigationTemplate(),
+ 
   breakpoints: {
     769: {
-      pagination: {
-        el: '.pagination__num',
-        type: 'fraction',
-        renderFraction: function (currentClass, totalClass) {
-          return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-            '<span class="pagination__text pagination__slash">/</span>' +
-            '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-        },
-      },
+      pagination: paginationTemplate(),
     },
     320: {
       pagination: {
@@ -821,20 +597,8 @@ const toursProgramSwiper = new Swiper('#tours-program-slider', {
   wrapperClass: 'tours-program__slider',
   slideClass: 'wrapper-slides',
   lazyLoading: true,
-  navigation: {
-    nextEl: '.pagination__next',
-    prevEl: '.pagination__prew',
-    disabledClass: 'pagination__arrow--disable',
-  },
-  pagination: {
-    el: '.pagination__num',
-    type: 'fraction',
-    renderFraction: function (currentClass, totalClass) {
-      return '<span class="pagination__text pagination__active ' + currentClass + '"></span>' +
-        '<span class="pagination__text pagination__slash">/</span>' +
-        '<span class="pagination__text pagination__count ' + totalClass + '"></span>';
-    },
-  },
+  navigation: navigationTemplate(),
+  pagination: paginationTemplate(),
 
 });
 
@@ -887,5 +651,4 @@ function benefitsToggle() {
   });
   
 }
-
 benefitsToggle();
